@@ -21,11 +21,13 @@ Port (
 end FSK_Block_correction;
 
 architecture Behavioral of FSK_Block_correction is
-     signal data_block : STD_LOGIC_VECTOR(63 downto 0);
+    signal data_block : STD_LOGIC_VECTOR(63 downto 0);
     signal row_parity : STD_LOGIC_VECTOR(7 downto 0);
     signal col_parity : STD_LOGIC_VECTOR(7 downto 0);
     signal row_parity_calc : STD_LOGIC_VECTOR(7 downto 0);
     signal col_parity_calc : STD_LOGIC_VECTOR(7 downto 0);
+    signal row_error : STD_LOGIC_VECTOR(7 downto 0);
+    signal col_error : STD_LOGIC_VECTOR(7 downto 0);
     signal error_flag : STD_LOGIC;
 begin
 
