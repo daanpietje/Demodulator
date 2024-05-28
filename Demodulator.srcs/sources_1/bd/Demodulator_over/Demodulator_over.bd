@@ -1,0 +1,177 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0xFD080E0EB531A12C",
+      "device": "xc7z020clg400-1",
+      "gen_directory": "../../../../Demodulator.gen/sources_1/bd/Demodulator_over",
+      "name": "Demodulator_over",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2023.1"
+    },
+    "design_tree": {
+      "FSK_Modulator_Block_0": "",
+      "FSK_Demodulator_Block_0": ""
+    },
+    "ports": {
+      "data_in": {
+        "direction": "I",
+        "left": "239",
+        "right": "0"
+      },
+      "reset": {
+        "direction": "I"
+      },
+      "clk": {
+        "direction": "I"
+      },
+      "data_out": {
+        "direction": "O",
+        "left": "239",
+        "right": "0"
+      },
+      "done_out": {
+        "direction": "O"
+      },
+      "start_modulator": {
+        "direction": "I"
+      },
+      "start_demodulator": {
+        "direction": "I"
+      }
+    },
+    "components": {
+      "FSK_Modulator_Block_0": {
+        "vlnv": "xilinx.com:module_ref:FSK_Modulator_Block:1.0",
+        "xci_name": "Demodulator_over_FSK_Modulator_Block_0_0",
+        "xci_path": "ip\\Demodulator_over_FSK_Modulator_Block_0_0\\Demodulator_over_FSK_Modulator_Block_0_0.xci",
+        "inst_hier_path": "FSK_Modulator_Block_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "FSK_Modulator_Block",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "reset",
+                "value_src": "constant"
+              }
+            }
+          },
+          "reset": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "data_in": {
+            "direction": "I",
+            "left": "239",
+            "right": "0"
+          },
+          "start": {
+            "direction": "I"
+          },
+          "fsk_out": {
+            "direction": "O"
+          }
+        }
+      },
+      "FSK_Demodulator_Block_0": {
+        "vlnv": "xilinx.com:module_ref:FSK_Demodulator_Block:1.0",
+        "xci_name": "Demodulator_over_FSK_Demodulator_Block_0_0",
+        "xci_path": "ip\\Demodulator_over_FSK_Demodulator_Block_0_0\\Demodulator_over_FSK_Demodulator_Block_0_0.xci",
+        "inst_hier_path": "FSK_Demodulator_Block_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "FSK_Demodulator_Block",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "reset",
+                "value_src": "constant"
+              }
+            }
+          },
+          "reset": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "fsk_in": {
+            "direction": "I"
+          },
+          "data_out": {
+            "direction": "O",
+            "left": "239",
+            "right": "0"
+          },
+          "start": {
+            "direction": "I"
+          },
+          "done": {
+            "direction": "O"
+          }
+        }
+      }
+    },
+    "nets": {
+      "FSK_Demodulator_Block_0_data_out": {
+        "ports": [
+          "FSK_Demodulator_Block_0/data_out",
+          "data_out"
+        ]
+      },
+      "FSK_Demodulator_Block_0_done": {
+        "ports": [
+          "FSK_Demodulator_Block_0/done",
+          "done_out"
+        ]
+      },
+      "FSK_Modulator_Block_0_fsk_out": {
+        "ports": [
+          "FSK_Modulator_Block_0/fsk_out",
+          "FSK_Demodulator_Block_0/fsk_in"
+        ]
+      },
+      "clk_wiz_1_clk_out1": {
+        "ports": [
+          "clk",
+          "FSK_Modulator_Block_0/clk",
+          "FSK_Demodulator_Block_0/clk"
+        ]
+      },
+      "data_in_1": {
+        "ports": [
+          "data_in",
+          "FSK_Modulator_Block_0/data_in"
+        ]
+      },
+      "rst_clk_wiz_1_100M_peripheral_aresetn": {
+        "ports": [
+          "reset",
+          "FSK_Modulator_Block_0/reset",
+          "FSK_Demodulator_Block_0/reset"
+        ]
+      },
+      "start_demodulator_1": {
+        "ports": [
+          "start_demodulator",
+          "FSK_Demodulator_Block_0/start"
+        ]
+      },
+      "start_modulator_1": {
+        "ports": [
+          "start_modulator",
+          "FSK_Modulator_Block_0/start"
+        ]
+      }
+    }
+  }
+}
