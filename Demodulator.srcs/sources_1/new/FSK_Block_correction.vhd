@@ -45,15 +45,35 @@ begin
      end loop;
 end process;
 
+-- find error
 process(clk)
 begin
     for i in 0 to 7 loop
                 if row_parity(i) /= row_parity_calc(i) then
-                    --error
+                    row_error(i) <= '1';
                 end if;
                 if col_parity(i) /= col_parity_calc(i) then
-                    --error
+                    col_error(i) <= '1';
                 end if;
             end loop;
-end process;            
+end process; 
+
+--correct error
+process(clk)
+begin
+    for i in 0 to 7 loop
+        if row_error(i) = '1' then
+            for j in 0 to 7 loop
+                if col_error(j) = '1' then
+                    if data_block(i * 8 + j) = '0' then
+                        data_block(i * 8 + j) <= '1';                  
+                    else
+                        data_block(i * 8 + j) <= '0';
+                    end if;
+                end if;
+            end loop;
+        end if;
+    end loop;
+end process;
+           
 end Behavioral;
