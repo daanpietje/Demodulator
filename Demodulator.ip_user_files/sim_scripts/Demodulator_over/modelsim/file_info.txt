@@ -1,4 +1,4 @@
-Demodulator_over.v,verilog,xil_defaultlib,../../../bd/Demodulator_over/sim/Demodulator_over.v,
 Demodulator_over_FSK_Demodulator_Block_0_0.v,verilog,xil_defaultlib,../../../bd/Demodulator_over/ip/Demodulator_over_FSK_Demodulator_Block_0_0/sim/Demodulator_over_FSK_Demodulator_Block_0_0.v,
-Demodulator_over_FSK_Modulator_Block_0_0.v,verilog,xil_defaultlib,../../../bd/Demodulator_over/ip/Demodulator_over_FSK_Modulator_Block_0_0/sim/Demodulator_over_FSK_Modulator_Block_0_0.v,
+Demodulator_over_FSK_Block_correction_0_0.v,verilog,xil_defaultlib,../../../bd/Demodulator_over/ip/Demodulator_over_FSK_Block_correction_0_0/sim/Demodulator_over_FSK_Block_correction_0_0.v,
+Demodulator_over.v,verilog,xil_defaultlib,../../../bd/Demodulator_over/sim/Demodulator_over.v,
 glbl.v,Verilog,xil_defaultlib,glbl.v

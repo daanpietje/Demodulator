@@ -70,7 +70,7 @@ input wire clk;
 (* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 reset RST" *)
 input wire reset;
 input wire fsk_in;
-output wire [239 : 0] data_out;
+output wire [79 : 0] data_out;
 input wire start;
 output wire done;
 

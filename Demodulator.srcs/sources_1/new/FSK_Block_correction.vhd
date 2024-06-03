@@ -14,8 +14,8 @@ entity FSK_Block_correction is
 Port (
         clk : in STD_LOGIC;
         reset : in STD_LOGIC;
-        data_in : in STD_LOGIC_VECTOR(63 downto 0);
-        parity_in : in STD_LOGIC_VECTOR(15 downto 0);
+        data_in : in STD_LOGIC_VECTOR(79 downto 0);
+        start : in STD_LOGIC;
         data_out : out STD_LOGIC_VECTOR(63 downto 0)
     );
 end FSK_Block_correction;
@@ -28,12 +28,13 @@ architecture Behavioral of FSK_Block_correction is
     signal col_parity_calc : STD_LOGIC_VECTOR(7 downto 0);
     signal row_error : STD_LOGIC_VECTOR(7 downto 0);
     signal col_error : STD_LOGIC_VECTOR(7 downto 0);
-    signal error_flag : STD_LOGIC;
 begin
-
--- calculate parity
+    
 process(clk)
 begin
+if start = '1' then
+
+    -- calculate parity
     for i in 0 to 7 loop
                 row_parity_calc(i) <= data_block(i*8 + 0) xor data_block(i*8 + 1) xor data_block(i*8 + 2) xor
                                      data_block(i*8 + 3) xor data_block(i*8 + 4) xor data_block(i*8 + 5) xor
@@ -43,11 +44,9 @@ begin
                                      data_block(i + 24) xor data_block(i + 32) xor data_block(i + 40) xor
                                      data_block(i + 48) xor data_block(i + 56);
      end loop;
-end process;
-
--- find error
-process(clk)
-begin
+     
+     
+    -- find error
     for i in 0 to 7 loop
                 if row_parity(i) /= row_parity_calc(i) then
                     row_error(i) <= '1';
@@ -55,12 +54,9 @@ begin
                 if col_parity(i) /= col_parity_calc(i) then
                     col_error(i) <= '1';
                 end if;
-            end loop;
-end process; 
-
+    end loop;
+            
 --correct error
-process(clk)
-begin
     for i in 0 to 7 loop
         if row_error(i) = '1' then
             for j in 0 to 7 loop
@@ -74,6 +70,15 @@ begin
             end loop;
         end if;
     end loop;
+    data_out <= data_block;
+end if;
+end process;
+
+process(data_in)
+begin
+    data_block <= data_in(79 downto 16);
+    row_parity <= data_in(15 downto 8);
+    col_parity <= data_in(7 downto 0);
 end process;
            
 end Behavioral;

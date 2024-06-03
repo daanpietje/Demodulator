@@ -1,0 +1,1 @@
+--incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "secureip" -L "xpm" --snapshot "FSK_Block_correction_behav" "xil_defaultlib.FSK_Block_correction" -log "elaborate.log" 

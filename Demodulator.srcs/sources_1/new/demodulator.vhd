@@ -6,7 +6,7 @@ entity FSK_Demodulator_Block is
     Port ( clk         : in  STD_LOGIC;  
            reset       : in  STD_LOGIC;  
            fsk_in      : in  STD_LOGIC;  
-           data_out    : out STD_LOGIC_VECTOR (239 downto 0);
+           data_out    : out STD_LOGIC_VECTOR (79 downto 0);
            start       : in  STD_LOGIC;  
            done        : out STD_LOGIC   
            );
@@ -14,9 +14,9 @@ end FSK_Demodulator_Block;
 
 architecture Behavioral of FSK_Demodulator_Block is
 
-    constant CLK_FREQ        : integer := 200000; -- 200khz clock
-    constant FREQ_HIGH       : integer := 250000;  -- Frequentie for data '1'
-    constant FREQ_LOW        : integer := 200000;  -- Frequentie for data '0'
+    constant CLK_FREQ        : integer := 1250000; -- 1.25 mhz clock
+    constant FREQ_HIGH       : integer := 5000000;  -- Frequentie for data '1'
+    constant FREQ_LOW        : integer := 2500000;  -- Frequentie for data '0'
     
     constant HIGH_THRESHOLD  : integer := (CLK_FREQ / FREQ_HIGH) * 2;
     constant LOW_THRESHOLD   : integer := (CLK_FREQ / FREQ_LOW) * 2;
@@ -53,7 +53,7 @@ begin
                     end if;
                     high_counter <= 0;
                     low_counter <= 0;
-                    if bit_index < 239 then
+                    if bit_index < 79 then
                         bit_index <= bit_index + 1;
                     else
                         bit_index <= 0;
