@@ -3,46 +3,691 @@
 # SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
 # IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
 # SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
-# Start of session at: Tue May 28 17:36:57 2024
-# Process ID: 15900
-# Current directory: C:/Users/daanv/Desktop/MO8/Demodulator
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11424 C:\Users\daanv\Desktop\MO8\Demodulator\Demodulator.xpr
-# Log file: C:/Users/daanv/Desktop/MO8/Demodulator/vivado.log
-# Journal file: C:/Users/daanv/Desktop/MO8/Demodulator\vivado.jou
-# Running On: DaanAsus, OS: Windows, CPU Frequency: 2419 MHz, CPU Physical cores: 4, Host memory: 16859 MB
+# Start of session at: Mon Jun  3 11:46:01 2024
+# Process ID: 6708
+# Current directory: D:/Users/daanv/Documents/GitHub/Demodulator
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14132 D:\Users\daanv\Documents\GitHub\Demodulator\Demodulator.xpr
+# Log file: D:/Users/daanv/Documents/GitHub/Demodulator/vivado.log
+# Journal file: D:/Users/daanv/Documents/GitHub/Demodulator\vivado.jou
+# Running On: Desktop_Daan, OS: Windows, CPU Frequency: 3593 MHz, CPU Physical cores: 12, Host memory: 17077 MB
 #-----------------------------------------------------------
 start_gui
-open_project C:/Users/daanv/Desktop/MO8/Demodulator/Demodulator.xpr
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.0/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.1 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.1/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.0/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.1 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.1/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.1 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.1/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es:part0:1.2 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/es/1.2/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es:part0:1.3 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/es/1.3/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es_revb:part0:1.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120_revb/es/1.0/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es_revb:part0:1.1 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120_revb/es/1.1/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180_es:part0:1.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/es/1.0/board.xml as part xcvp1802-lsvc4072-2mp-e-s-es1 specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180_es:part0:1.1 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/es/1.1/board.xml as part xcvp1802-lsvc4072-2mp-e-s-es1 specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
-INFO: [Project 1-313] Project file moved from 'C:/Users/daanv/Desktop/MO8/Demodulator_hw/Demodulator' since last save.
-INFO: [filemgmt 56-1] Board Part Repository Path: Directory not found as 'C:/Users/AppData/Roaming/Xilinx/Vivado/2023.1/xhub/board_store/xilinx_board_store'; using path 'C:/Users/daanv/AppData/Roaming/Xilinx/Vivado/2023.1/xhub/board_store/xilinx_board_store' instead.
+open_project D:/Users/daanv/Documents/GitHub/Demodulator/Demodulator.xpr
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.0 available at D:/xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.0/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.1 available at D:/xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.1/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.0 available at D:/xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.0/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.1 available at D:/xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.1/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.0 available at D:/xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.1 available at D:/xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.1/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es:part0:1.2 available at D:/xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/es/1.2/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es:part0:1.3 available at D:/xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/es/1.3/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es_revb:part0:1.0 available at D:/xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120_revb/es/1.0/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es_revb:part0:1.1 available at D:/xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120_revb/es/1.1/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180_es:part0:1.0 available at D:/xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/es/1.0/board.xml as part xcvp1802-lsvc4072-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180_es:part0:1.1 available at D:/xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/es/1.1/board.xml as part xcvp1802-lsvc4072-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at D:/xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at D:/xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at D:/xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at D:/xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+INFO: [Project 1-313] Project file moved from 'C:/Users/daanv/Desktop/MO8/Demodulator' since last save.
+WARNING: [filemgmt 56-2] Board Part Repository Path: Could not find the directory 'D:/Users/daanv/AppData/Roaming/Xilinx/Vivado/2023.1/xhub/board_store/xilinx_board_store', nor could it be found using path 'C:/Users/daanv/AppData/Roaming/Xilinx/Vivado/2023.1/xhub/board_store/xilinx_board_store'.
 Scanning sources...
 Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
-INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2023.1/data/ip'.
-open_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:12 . Memory (MB): peak = 2464.148 ; gain = 403.457
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/xilinx/Vivado/2023.1/data/ip'.
+open_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:26 . Memory (MB): peak = 2497.754 ; gain = 447.840
+launch_simulation -simset [get_filesets sim_blockcorrection ]
+Command: launch_simulation  -simset sim_blockcorrection
+INFO: [Vivado 12-12493] Simulation top is 'FSK_Block_correction'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Users/daanv/Documents/GitHub/Demodulator/Demodulator.sim/sim_blockcorrection/behav/xsim'
+INFO: [Vivado 12-13660] Precompiled IP simulation library mode is enabled (default). The design IP libraries will be referenced from the compiled library path. Please note that if the precompiled version of the library is not found from the path or the IP is in locked state, then the library source files for these IPs will be compiled locally as part of the compile order.
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_blockcorrection'
+INFO: [SIM-utils-72] Using boost library from 'D:/xilinx/Vivado/2023.1/tps/boost_1_72_0'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/xilinx/Vivado/2023.1/data/xsim/xsim.ini' copied to run dir:'D:/Users/daanv/Documents/GitHub/Demodulator/Demodulator.sim/sim_blockcorrection/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'FSK_Block_correction' in fileset 'sim_blockcorrection'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_blockcorrection'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Users/daanv/Documents/GitHub/Demodulator/Demodulator.sim/sim_blockcorrection/behav/xsim'
+"xvhdl --incr --relax -prj FSK_Block_correction_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Users/daanv/Documents/GitHub/Demodulator/Demodulator.srcs/sources_1/new/FSK_Block_correction.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'FSK_Block_correction'
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Users/daanv/Documents/GitHub/Demodulator/Demodulator.sim/sim_blockcorrection/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip -L xpm --snapshot FSK_Block_correction_behav xil_defaultlib.FSK_Block_correction -log elaborate.log"
+Vivado Simulator v2023.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: D:/xilinx/Vivado/2023.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip -L xpm --snapshot FSK_Block_correction_behav xil_defaultlib.FSK_Block_correction -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling architecture behavioral of entity xil_defaultlib.fsk_block_correction
+Built simulation snapshot FSK_Block_correction_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 2509.016 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '8' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Users/daanv/Documents/GitHub/Demodulator/Demodulator.sim/sim_blockcorrection/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "FSK_Block_correction_behav -key {Behavioral:sim_blockcorrection:Functional:FSK_Block_correction} -tclbatch {FSK_Block_correction.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source FSK_Block_correction.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'FSK_Block_correction_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:19 . Memory (MB): peak = 2544.840 ; gain = 47.086
 update_compile_order -fileset sources_1
-open_bd_design {C:/Users/daanv/Desktop/MO8/Demodulator/Demodulator.srcs/sources_1/bd/Demodulator_over/Demodulator_over.bd}
-Reading block design file <C:/Users/daanv/Desktop/MO8/Demodulator/Demodulator.srcs/sources_1/bd/Demodulator_over/Demodulator_over.bd>...
-Adding component instance block -- xilinx.com:module_ref:FSK_Modulator_Block:1.0 - FSK_Modulator_Block_0
+add_force {/FSK_Block_correction/clk} -radix hex {0 0ns} {1 50000ps} -repeat_every 100000ps
+add_force {/FSK_Block_correction/reset} -radix hex {0 0ns}
+add_force {/FSK_Block_correction/data_in} -radix bin {10110000000001010111001000000100011010110001000011010100010010100010011010011101 0ns}
+add_force {/FSK_Block_correction/start} -radix hex {0 0ns}
+run 10 us
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation -simset [get_filesets sim_blockcorrection ]
+Command: launch_simulation  -simset sim_blockcorrection
+INFO: [Vivado 12-12493] Simulation top is 'FSK_Block_correction'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Users/daanv/Documents/GitHub/Demodulator/Demodulator.sim/sim_blockcorrection/behav/xsim'
+INFO: [Vivado 12-13660] Precompiled IP simulation library mode is enabled (default). The design IP libraries will be referenced from the compiled library path. Please note that if the precompiled version of the library is not found from the path or the IP is in locked state, then the library source files for these IPs will be compiled locally as part of the compile order.
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_blockcorrection'
+INFO: [SIM-utils-72] Using boost library from 'D:/xilinx/Vivado/2023.1/tps/boost_1_72_0'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/xilinx/Vivado/2023.1/data/xsim/xsim.ini' copied to run dir:'D:/Users/daanv/Documents/GitHub/Demodulator/Demodulator.sim/sim_blockcorrection/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'FSK_Block_correction' in fileset 'sim_blockcorrection'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_blockcorrection'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Users/daanv/Documents/GitHub/Demodulator/Demodulator.sim/sim_blockcorrection/behav/xsim'
+"xvhdl --incr --relax -prj FSK_Block_correction_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Users/daanv/Documents/GitHub/Demodulator/Demodulator.srcs/sources_1/new/FSK_Block_correction.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'FSK_Block_correction'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Users/daanv/Documents/GitHub/Demodulator/Demodulator.sim/sim_blockcorrection/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip -L xpm --snapshot FSK_Block_correction_behav xil_defaultlib.FSK_Block_correction -log elaborate.log"
+Vivado Simulator v2023.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: D:/xilinx/Vivado/2023.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip -L xpm --snapshot FSK_Block_correction_behav xil_defaultlib.FSK_Block_correction -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-666] expression has 65 elements; expected 64 [D:/Users/daanv/Documents/GitHub/Demodulator/Demodulator.srcs/sources_1/new/FSK_Block_correction.vhd:79]
+ERROR: [XSIM 43-3321] Static elaboration of top level VHDL design unit fsk_block_correction in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'D:/Users/daanv/Documents/GitHub/Demodulator/Demodulator.sim/sim_blockcorrection/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'D:/Users/daanv/Documents/GitHub/Demodulator/Demodulator.sim/sim_blockcorrection/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+update_module_reference Demodulator_over_FSK_Demodulator_Block_0_0
+INFO: [IP_Flow 19-5107] Inferred bus interface 'reset' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'clk': Added interface parameter 'ASSOCIATED_RESET' with value 'reset'.
+WARNING: [IP_Flow 19-5661] Bus Interface 'clk' does not have any bus interfaces associated with it.
+WARNING: [IP_Flow 19-11770] Clock interface 'clk' has no FREQ_HZ parameter.
+INFO: [IP_Flow 19-5107] Inferred bus interface 'reset' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'clk': Added interface parameter 'ASSOCIATED_RESET' with value 'reset'.
+WARNING: [IP_Flow 19-5661] Bus Interface 'clk' does not have any bus interfaces associated with it.
+WARNING: [IP_Flow 19-11770] Clock interface 'clk' has no FREQ_HZ parameter.
+Reading block design file <D:/Users/daanv/Documents/GitHub/Demodulator/Demodulator.srcs/sources_1/bd/Demodulator_over/Demodulator_over.bd>...
 Adding component instance block -- xilinx.com:module_ref:FSK_Demodulator_Block:1.0 - FSK_Demodulator_Block_0
-Successfully read diagram <Demodulator_over> from block design file <C:/Users/daanv/Desktop/MO8/Demodulator/Demodulator.srcs/sources_1/bd/Demodulator_over/Demodulator_over.bd>
-open_bd_design: Time (s): cpu = 00:00:06 ; elapsed = 00:00:14 . Memory (MB): peak = 2582.672 ; gain = 89.109
+Adding component instance block -- xilinx.com:module_ref:FSK_Block_correction:1.0 - FSK_Block_correction_0
+Successfully read diagram <Demodulator_over> from block design file <D:/Users/daanv/Documents/GitHub/Demodulator/Demodulator.srcs/sources_1/bd/Demodulator_over/Demodulator_over.bd>
+Upgrading 'D:/Users/daanv/Documents/GitHub/Demodulator/Demodulator.srcs/sources_1/bd/Demodulator_over/Demodulator_over.bd'
+INFO: [IP_Flow 19-3420] Updated Demodulator_over_FSK_Demodulator_Block_0_0 to use current project options
+Wrote  : <D:\Users\daanv\Documents\GitHub\Demodulator\Demodulator.srcs\sources_1\bd\Demodulator_over\Demodulator_over.bd> 
+Wrote  : <D:/Users/daanv/Documents/GitHub/Demodulator/Demodulator.srcs/sources_1/bd/Demodulator_over/ui/bd_42084125.ui> 
+upgrade_ip: Time (s): cpu = 00:00:01 ; elapsed = 00:00:14 . Memory (MB): peak = 2570.391 ; gain = 14.395
+update_module_reference: Time (s): cpu = 00:00:02 ; elapsed = 00:00:15 . Memory (MB): peak = 2570.391 ; gain = 14.395
+update_module_reference Demodulator_over_FSK_Block_correction_0_0
+INFO: [IP_Flow 19-5107] Inferred bus interface 'reset' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'clk': Added interface parameter 'ASSOCIATED_RESET' with value 'reset'.
+WARNING: [IP_Flow 19-5661] Bus Interface 'clk' does not have any bus interfaces associated with it.
+WARNING: [IP_Flow 19-11770] Clock interface 'clk' has no FREQ_HZ parameter.
+INFO: [IP_Flow 19-5107] Inferred bus interface 'reset' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'clk': Added interface parameter 'ASSOCIATED_RESET' with value 'reset'.
+WARNING: [IP_Flow 19-5661] Bus Interface 'clk' does not have any bus interfaces associated with it.
+WARNING: [IP_Flow 19-11770] Clock interface 'clk' has no FREQ_HZ parameter.
+Upgrading 'D:/Users/daanv/Documents/GitHub/Demodulator/Demodulator.srcs/sources_1/bd/Demodulator_over/Demodulator_over.bd'
+INFO: [IP_Flow 19-3420] Updated Demodulator_over_FSK_Block_correction_0_0 to use current project options
+Wrote  : <D:\Users\daanv\Documents\GitHub\Demodulator\Demodulator.srcs\sources_1\bd\Demodulator_over\Demodulator_over.bd> 
+Wrote  : <D:/Users/daanv/Documents/GitHub/Demodulator/Demodulator.srcs/sources_1/bd/Demodulator_over/ui/bd_42084125.ui> 
+launch_simulation -simset [get_filesets sim_blockcorrection ]
+Command: launch_simulation  -simset sim_blockcorrection
+INFO: [Vivado 12-12493] Simulation top is 'FSK_Block_correction'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Users/daanv/Documents/GitHub/Demodulator/Demodulator.sim/sim_blockcorrection/behav/xsim'
+INFO: [Vivado 12-13660] Precompiled IP simulation library mode is enabled (default). The design IP libraries will be referenced from the compiled library path. Please note that if the precompiled version of the library is not found from the path or the IP is in locked state, then the library source files for these IPs will be compiled locally as part of the compile order.
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_blockcorrection'
+INFO: [SIM-utils-72] Using boost library from 'D:/xilinx/Vivado/2023.1/tps/boost_1_72_0'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/xilinx/Vivado/2023.1/data/xsim/xsim.ini' copied to run dir:'D:/Users/daanv/Documents/GitHub/Demodulator/Demodulator.sim/sim_blockcorrection/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'FSK_Block_correction' in fileset 'sim_blockcorrection'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_blockcorrection'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Users/daanv/Documents/GitHub/Demodulator/Demodulator.sim/sim_blockcorrection/behav/xsim'
+"xvhdl --incr --relax -prj FSK_Block_correction_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Users/daanv/Documents/GitHub/Demodulator/Demodulator.sim/sim_blockcorrection/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip -L xpm --snapshot FSK_Block_correction_behav xil_defaultlib.FSK_Block_correction -log elaborate.log"
+Vivado Simulator v2023.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: D:/xilinx/Vivado/2023.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip -L xpm --snapshot FSK_Block_correction_behav xil_defaultlib.FSK_Block_correction -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-666] expression has 65 elements; expected 64 [D:/Users/daanv/Documents/GitHub/Demodulator/Demodulator.srcs/sources_1/new/FSK_Block_correction.vhd:79]
+ERROR: [XSIM 43-3321] Static elaboration of top level VHDL design unit fsk_block_correction in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'D:/Users/daanv/Documents/GitHub/Demodulator/Demodulator.sim/sim_blockcorrection/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'D:/Users/daanv/Documents/GitHub/Demodulator/Demodulator.sim/sim_blockcorrection/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+update_module_reference Demodulator_over_FSK_Block_correction_0_0
+INFO: [IP_Flow 19-5107] Inferred bus interface 'reset' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'clk': Added interface parameter 'ASSOCIATED_RESET' with value 'reset'.
+WARNING: [IP_Flow 19-5661] Bus Interface 'clk' does not have any bus interfaces associated with it.
+WARNING: [IP_Flow 19-11770] Clock interface 'clk' has no FREQ_HZ parameter.
+INFO: [IP_Flow 19-5107] Inferred bus interface 'reset' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'clk': Added interface parameter 'ASSOCIATED_RESET' with value 'reset'.
+WARNING: [IP_Flow 19-5661] Bus Interface 'clk' does not have any bus interfaces associated with it.
+WARNING: [IP_Flow 19-11770] Clock interface 'clk' has no FREQ_HZ parameter.
+Upgrading 'D:/Users/daanv/Documents/GitHub/Demodulator/Demodulator.srcs/sources_1/bd/Demodulator_over/Demodulator_over.bd'
+INFO: [IP_Flow 19-3420] Updated Demodulator_over_FSK_Block_correction_0_0 to use current project options
+Wrote  : <D:\Users\daanv\Documents\GitHub\Demodulator\Demodulator.srcs\sources_1\bd\Demodulator_over\Demodulator_over.bd> 
+Wrote  : <D:/Users/daanv/Documents/GitHub/Demodulator/Demodulator.srcs/sources_1/bd/Demodulator_over/ui/bd_42084125.ui> 
+launch_simulation -simset [get_filesets sim_blockcorrection ]
+Command: launch_simulation  -simset sim_blockcorrection
+INFO: [Vivado 12-12493] Simulation top is 'FSK_Block_correction'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Users/daanv/Documents/GitHub/Demodulator/Demodulator.sim/sim_blockcorrection/behav/xsim'
+INFO: [Vivado 12-13660] Precompiled IP simulation library mode is enabled (default). The design IP libraries will be referenced from the compiled library path. Please note that if the precompiled version of the library is not found from the path or the IP is in locked state, then the library source files for these IPs will be compiled locally as part of the compile order.
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_blockcorrection'
+INFO: [SIM-utils-72] Using boost library from 'D:/xilinx/Vivado/2023.1/tps/boost_1_72_0'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/xilinx/Vivado/2023.1/data/xsim/xsim.ini' copied to run dir:'D:/Users/daanv/Documents/GitHub/Demodulator/Demodulator.sim/sim_blockcorrection/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'FSK_Block_correction' in fileset 'sim_blockcorrection'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_blockcorrection'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Users/daanv/Documents/GitHub/Demodulator/Demodulator.sim/sim_blockcorrection/behav/xsim'
+"xvhdl --incr --relax -prj FSK_Block_correction_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Users/daanv/Documents/GitHub/Demodulator/Demodulator.srcs/sources_1/new/FSK_Block_correction.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'FSK_Block_correction'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Users/daanv/Documents/GitHub/Demodulator/Demodulator.sim/sim_blockcorrection/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip -L xpm --snapshot FSK_Block_correction_behav xil_defaultlib.FSK_Block_correction -log elaborate.log"
+Vivado Simulator v2023.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: D:/xilinx/Vivado/2023.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip -L xpm --snapshot FSK_Block_correction_behav xil_defaultlib.FSK_Block_correction -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling architecture behavioral of entity xil_defaultlib.fsk_block_correction
+Built simulation snapshot FSK_Block_correction_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Users/daanv/Documents/GitHub/Demodulator/Demodulator.sim/sim_blockcorrection/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "FSK_Block_correction_behav -key {Behavioral:sim_blockcorrection:Functional:FSK_Block_correction} -tclbatch {FSK_Block_correction.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source FSK_Block_correction.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'FSK_Block_correction_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 2582.922 ; gain = 12.531
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation -simset [get_filesets sim_blockcorrection ]
+Command: launch_simulation  -simset sim_blockcorrection
+INFO: [Vivado 12-12493] Simulation top is 'FSK_Block_correction'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Users/daanv/Documents/GitHub/Demodulator/Demodulator.sim/sim_blockcorrection/behav/xsim'
+INFO: [Vivado 12-13660] Precompiled IP simulation library mode is enabled (default). The design IP libraries will be referenced from the compiled library path. Please note that if the precompiled version of the library is not found from the path or the IP is in locked state, then the library source files for these IPs will be compiled locally as part of the compile order.
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_blockcorrection'
+INFO: [SIM-utils-72] Using boost library from 'D:/xilinx/Vivado/2023.1/tps/boost_1_72_0'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/xilinx/Vivado/2023.1/data/xsim/xsim.ini' copied to run dir:'D:/Users/daanv/Documents/GitHub/Demodulator/Demodulator.sim/sim_blockcorrection/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'FSK_Block_correction' in fileset 'sim_blockcorrection'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_blockcorrection'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Users/daanv/Documents/GitHub/Demodulator/Demodulator.sim/sim_blockcorrection/behav/xsim'
+"xvhdl --incr --relax -prj FSK_Block_correction_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Users/daanv/Documents/GitHub/Demodulator/Demodulator.srcs/sources_1/new/FSK_Block_correction.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'FSK_Block_correction'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Users/daanv/Documents/GitHub/Demodulator/Demodulator.sim/sim_blockcorrection/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip -L xpm --snapshot FSK_Block_correction_behav xil_defaultlib.FSK_Block_correction -log elaborate.log"
+Vivado Simulator v2023.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: D:/xilinx/Vivado/2023.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip -L xpm --snapshot FSK_Block_correction_behav xil_defaultlib.FSK_Block_correction -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-666] expression has 63 elements; expected 64 [D:/Users/daanv/Documents/GitHub/Demodulator/Demodulator.srcs/sources_1/new/FSK_Block_correction.vhd:79]
+ERROR: [XSIM 43-3321] Static elaboration of top level VHDL design unit fsk_block_correction in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'D:/Users/daanv/Documents/GitHub/Demodulator/Demodulator.sim/sim_blockcorrection/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'D:/Users/daanv/Documents/GitHub/Demodulator/Demodulator.sim/sim_blockcorrection/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+update_module_reference Demodulator_over_FSK_Block_correction_0_0
+INFO: [IP_Flow 19-5107] Inferred bus interface 'reset' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'clk': Added interface parameter 'ASSOCIATED_RESET' with value 'reset'.
+WARNING: [IP_Flow 19-5661] Bus Interface 'clk' does not have any bus interfaces associated with it.
+WARNING: [IP_Flow 19-11770] Clock interface 'clk' has no FREQ_HZ parameter.
+INFO: [IP_Flow 19-5107] Inferred bus interface 'reset' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'clk': Added interface parameter 'ASSOCIATED_RESET' with value 'reset'.
+WARNING: [IP_Flow 19-5661] Bus Interface 'clk' does not have any bus interfaces associated with it.
+WARNING: [IP_Flow 19-11770] Clock interface 'clk' has no FREQ_HZ parameter.
+Upgrading 'D:/Users/daanv/Documents/GitHub/Demodulator/Demodulator.srcs/sources_1/bd/Demodulator_over/Demodulator_over.bd'
+INFO: [IP_Flow 19-3420] Updated Demodulator_over_FSK_Block_correction_0_0 to use current project options
+Wrote  : <D:\Users\daanv\Documents\GitHub\Demodulator\Demodulator.srcs\sources_1\bd\Demodulator_over\Demodulator_over.bd> 
+Wrote  : <D:/Users/daanv/Documents/GitHub/Demodulator/Demodulator.srcs/sources_1/bd/Demodulator_over/ui/bd_42084125.ui> 
+create_bd_design "Block_design_V2"
+Wrote  : <D:\Users\daanv\Documents\GitHub\Demodulator\Demodulator.srcs\sources_1\bd\Block_design_V2\Block_design_V2.bd> 
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files D:/Users/daanv/Documents/GitHub/Demodulator/Demodulator.srcs/sources_1/bd/Block_design_V2/Block_design_V2.bd] -no_script -reset -force -quiet
+remove_files  D:/Users/daanv/Documents/GitHub/Demodulator/Demodulator.srcs/sources_1/bd/Block_design_V2/Block_design_V2.bd
+Wrote  : <D:/Users/daanv/Documents/GitHub/Demodulator/Demodulator.srcs/sources_1/bd/Block_design_V2/ui/bd_38d42ceb.ui> 
+file delete -force D:/Users/daanv/Documents/GitHub/Demodulator/Demodulator.srcs/sources_1/bd/Block_design_V2
+file delete -force d:/Users/daanv/Documents/GitHub/Demodulator/Demodulator.gen/sources_1/bd/Block_design_V2
+create_bd_design "Block_correction"
+Wrote  : <D:\Users\daanv\Documents\GitHub\Demodulator\Demodulator.srcs\sources_1\bd\Block_correction\Block_correction.bd> 
+update_compile_order -fileset sources_1
+close [ open D:/Users/daanv/Documents/GitHub/Demodulator/Demodulator.srcs/sources_1/new/Parity_calc.vhd w ]
+add_files D:/Users/daanv/Documents/GitHub/Demodulator/Demodulator.srcs/sources_1/new/Parity_calc.vhd
+update_compile_order -fileset sources_1
+current_bd_design [get_bd_designs Demodulator_over]
+current_bd_design [get_bd_designs Block_correction]
+export_ip_user_files -of_objects  [get_files D:/Users/daanv/Documents/GitHub/Demodulator/Demodulator.srcs/sources_1/bd/Block_correction/Block_correction.bd] -no_script -reset -force -quiet
+remove_files  D:/Users/daanv/Documents/GitHub/Demodulator/Demodulator.srcs/sources_1/bd/Block_correction/Block_correction.bd
+Wrote  : <D:/Users/daanv/Documents/GitHub/Demodulator/Demodulator.srcs/sources_1/bd/Block_correction/ui/bd_6fe86090.ui> 
+file delete -force D:/Users/daanv/Documents/GitHub/Demodulator/Demodulator.srcs/sources_1/bd/Block_correction
+file delete -force d:/Users/daanv/Documents/GitHub/Demodulator/Demodulator.gen/sources_1/bd/Block_correction
+launch_simulation -simset [get_filesets sim_blockcorrection ]
+Command: launch_simulation  -simset sim_blockcorrection
+INFO: [Vivado 12-12493] Simulation top is 'FSK_Block_correction'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Users/daanv/Documents/GitHub/Demodulator/Demodulator.sim/sim_blockcorrection/behav/xsim'
+INFO: [Vivado 12-13660] Precompiled IP simulation library mode is enabled (default). The design IP libraries will be referenced from the compiled library path. Please note that if the precompiled version of the library is not found from the path or the IP is in locked state, then the library source files for these IPs will be compiled locally as part of the compile order.
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_blockcorrection'
+INFO: [SIM-utils-72] Using boost library from 'D:/xilinx/Vivado/2023.1/tps/boost_1_72_0'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/xilinx/Vivado/2023.1/data/xsim/xsim.ini' copied to run dir:'D:/Users/daanv/Documents/GitHub/Demodulator/Demodulator.sim/sim_blockcorrection/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'FSK_Block_correction' in fileset 'sim_blockcorrection'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_blockcorrection'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Users/daanv/Documents/GitHub/Demodulator/Demodulator.sim/sim_blockcorrection/behav/xsim'
+"xvhdl --incr --relax -prj FSK_Block_correction_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Users/daanv/Documents/GitHub/Demodulator/Demodulator.srcs/sources_1/new/FSK_Block_correction.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'FSK_Block_correction'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Users/daanv/Documents/GitHub/Demodulator/Demodulator.sim/sim_blockcorrection/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip -L xpm --snapshot FSK_Block_correction_behav xil_defaultlib.FSK_Block_correction -log elaborate.log"
+Vivado Simulator v2023.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: D:/xilinx/Vivado/2023.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip -L xpm --snapshot FSK_Block_correction_behav xil_defaultlib.FSK_Block_correction -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling architecture behavioral of entity xil_defaultlib.fsk_block_correction
+Built simulation snapshot FSK_Block_correction_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Users/daanv/Documents/GitHub/Demodulator/Demodulator.sim/sim_blockcorrection/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "FSK_Block_correction_behav -key {Behavioral:sim_blockcorrection:Functional:FSK_Block_correction} -tclbatch {FSK_Block_correction.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source FSK_Block_correction.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'FSK_Block_correction_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 2612.262 ; gain = 14.820
+add_force {/FSK_Block_correction/clk} -radix hex {0 0ns} {1 50000ps} -repeat_every 100000ps
+add_force {/FSK_Block_correction/reset} -radix hex {0 0ns}
+add_force {/FSK_Block_correction/data_in} -radix bin {10110000000001010111001000000100011010110001000011010100010010100010011010011101 0ns}
+add_force {/FSK_Block_correction/start} -radix hex {0 0ns}
+run 10 us
+add_force {/FSK_Block_correction/start} -radix hex {1 0ns}
+run 10 us
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+update_module_reference Demodulator_over_FSK_Block_correction_0_0
+INFO: [IP_Flow 19-5107] Inferred bus interface 'reset' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'clk': Added interface parameter 'ASSOCIATED_RESET' with value 'reset'.
+WARNING: [IP_Flow 19-5661] Bus Interface 'clk' does not have any bus interfaces associated with it.
+WARNING: [IP_Flow 19-11770] Clock interface 'clk' has no FREQ_HZ parameter.
+INFO: [IP_Flow 19-5107] Inferred bus interface 'reset' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'clk': Added interface parameter 'ASSOCIATED_RESET' with value 'reset'.
+WARNING: [IP_Flow 19-5661] Bus Interface 'clk' does not have any bus interfaces associated with it.
+WARNING: [IP_Flow 19-11770] Clock interface 'clk' has no FREQ_HZ parameter.
+Upgrading 'D:/Users/daanv/Documents/GitHub/Demodulator/Demodulator.srcs/sources_1/bd/Demodulator_over/Demodulator_over.bd'
+INFO: [IP_Flow 19-3420] Updated Demodulator_over_FSK_Block_correction_0_0 to use current project options
+Wrote  : <D:\Users\daanv\Documents\GitHub\Demodulator\Demodulator.srcs\sources_1\bd\Demodulator_over\Demodulator_over.bd> 
+update_module_reference Demodulator_over_FSK_Block_correction_0_0
+INFO: [IP_Flow 19-5107] Inferred bus interface 'reset' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'clk': Added interface parameter 'ASSOCIATED_RESET' with value 'reset'.
+WARNING: [IP_Flow 19-5661] Bus Interface 'clk' does not have any bus interfaces associated with it.
+WARNING: [IP_Flow 19-11770] Clock interface 'clk' has no FREQ_HZ parameter.
+INFO: [IP_Flow 19-5107] Inferred bus interface 'reset' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'clk': Added interface parameter 'ASSOCIATED_RESET' with value 'reset'.
+WARNING: [IP_Flow 19-5661] Bus Interface 'clk' does not have any bus interfaces associated with it.
+WARNING: [IP_Flow 19-11770] Clock interface 'clk' has no FREQ_HZ parameter.
+Upgrading 'D:/Users/daanv/Documents/GitHub/Demodulator/Demodulator.srcs/sources_1/bd/Demodulator_over/Demodulator_over.bd'
+INFO: [IP_Flow 19-3420] Updated Demodulator_over_FSK_Block_correction_0_0 to use current project options
+Wrote  : <D:\Users\daanv\Documents\GitHub\Demodulator\Demodulator.srcs\sources_1\bd\Demodulator_over\Demodulator_over.bd> 
+update_module_reference Demodulator_over_FSK_Block_correction_0_0
+CRITICAL WARNING: [HDL 9-1206] Syntax error near 'if' [d:/Users/daanv/Documents/GitHub/Demodulator/Demodulator.srcs/sources_1/new/FSK_Block_correction.vhd:76]
+ERROR: [IP_Flow 19-259] [HDL Parser] Failed analyze operation while parsing HDL.
+ERROR: [IP_Flow 19-258] [HDL Parser] Error parsing HDL file 'd:/Users/daanv/Documents/GitHub/Demodulator/Demodulator.srcs/sources_1/new/FSK_Block_correction.vhd'.
+WARNING: [IP_Flow 19-378] There are no ports found from top-level file 'd:/Users/daanv/Documents/GitHub/Demodulator/Demodulator.srcs/sources_1/new/FSK_Block_correction.vhd'.
+ERROR: [IP_Flow 19-4668] Failed to infer definition from module 'FSK_Block_correction'.
+ERROR: [Common 17-39] 'update_module_reference' failed due to earlier errors.
+CRITICAL WARNING: [HDL 9-1206] Syntax error near 'if' [D:/Users/daanv/Documents/GitHub/Demodulator/Demodulator.srcs/sources_1/new/FSK_Block_correction.vhd:76]
+CRITICAL WARNING: [HDL 9-1206] Syntax error near 'if' [D:/Users/daanv/Documents/GitHub/Demodulator/Demodulator.srcs/sources_1/new/FSK_Block_correction.vhd:76]
+delete_bd_objs [get_bd_nets FSK_Demodulator_Block_0_data_out] [get_bd_nets FSK_Demodulator_Block_0_done] [get_bd_nets FSK_Block_correction_0_data_out] [get_bd_cells FSK_Block_correction_0]
+CRITICAL WARNING: [HDL 9-1206] Syntax error near 'if' [D:/Users/daanv/Documents/GitHub/Demodulator/Demodulator.srcs/sources_1/new/FSK_Block_correction.vhd:76]
+delete_bd_objs [get_bd_nets clk_wiz_1_clk_out1] [get_bd_nets rst_clk_wiz_1_100M_peripheral_aresetn] [get_bd_nets FSK_in_1] [get_bd_nets start_demodulator_1] [get_bd_cells FSK_Demodulator_Block_0]
+CRITICAL WARNING: [HDL 9-1206] Syntax error near 'if' [D:/Users/daanv/Documents/GitHub/Demodulator/Demodulator.srcs/sources_1/new/FSK_Block_correction.vhd:76]
+CRITICAL WARNING: [HDL 9-1206] Syntax error near 'if' [D:/Users/daanv/Documents/GitHub/Demodulator/Demodulator.srcs/sources_1/new/FSK_Block_correction.vhd:76]
+CRITICAL WARNING: [HDL 9-1206] Syntax error near 'if' [D:/Users/daanv/Documents/GitHub/Demodulator/Demodulator.srcs/sources_1/new/FSK_Block_correction.vhd:76]
+update_compile_order -fileset sources_1
+delete_bd_objs [get_bd_ports start_demodulator]
+delete_bd_objs [get_bd_ports FSK_in]
+delete_bd_objs [get_bd_ports reset]
+CRITICAL WARNING: [HDL 9-1206] Syntax error near 'if' [D:/Users/daanv/Documents/GitHub/Demodulator/Demodulator.srcs/sources_1/new/FSK_Block_correction.vhd:76]
+CRITICAL WARNING: [HDL 9-1206] Syntax error near 'if' [D:/Users/daanv/Documents/GitHub/Demodulator/Demodulator.srcs/sources_1/new/FSK_Block_correction.vhd:76]
+CRITICAL WARNING: [HDL 9-1206] Syntax error near 'if' [D:/Users/daanv/Documents/GitHub/Demodulator/Demodulator.srcs/sources_1/new/FSK_Block_correction.vhd:76]
+delete_bd_objs [get_bd_ports data_out]
+set_property location {-45 19} [get_bd_ports clk]
+delete_bd_objs [get_bd_ports clk]
+update_module_reference Demodulator_over_FSK_Block_correction_0_0
+INFO: [IP_Flow 19-5107] Inferred bus interface 'reset' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'clk': Added interface parameter 'ASSOCIATED_RESET' with value 'reset'.
+WARNING: [IP_Flow 19-5661] Bus Interface 'clk' does not have any bus interfaces associated with it.
+WARNING: [IP_Flow 19-11770] Clock interface 'clk' has no FREQ_HZ parameter.
+WARNING: [Coretcl 2-176] No IPs found
+ERROR: [Common 17-69] Command failed: No IP specified.  Please specify IP with 'objects'
+open_bd_design {D:/Users/daanv/Documents/GitHub/Demodulator/Demodulator.srcs/sources_1/bd/Demodulator_over/Demodulator_over.bd}
+save_bd_design
+Wrote  : <D:\Users\daanv\Documents\GitHub\Demodulator\Demodulator.srcs\sources_1\bd\Demodulator_over\Demodulator_over.bd> 
+Wrote  : <D:/Users/daanv/Documents/GitHub/Demodulator/Demodulator.srcs/sources_1/bd/Demodulator_over/ui/bd_42084125.ui> 
+export_ip_user_files -of_objects  [get_files D:/Users/daanv/Documents/GitHub/Demodulator/Demodulator.srcs/sources_1/new/Parity_calc.vhd] -no_script -reset -force -quiet
+remove_files  D:/Users/daanv/Documents/GitHub/Demodulator/Demodulator.srcs/sources_1/new/Parity_calc.vhd
+file delete -force D:/Users/daanv/Documents/GitHub/Demodulator/Demodulator.srcs/sources_1/new/Parity_calc.vhd
+create_bd_cell -type module -reference FSK_Block_correction FSK_Block_correction_0
+create_bd_cell -type module -reference FSK_Demodulator_Block FSK_Demodulator_Block_0
+set_property location {0.5 -267 -137} [get_bd_cells FSK_Demodulator_Block_0]
+set_property location {1.5 -202 -52} [get_bd_cells FSK_Demodulator_Block_0]
+connect_bd_net [get_bd_pins FSK_Demodulator_Block_0/done] [get_bd_pins FSK_Block_correction_0/data_in]
+regenerate_bd_layout
+delete_bd_objs [get_bd_nets FSK_Demodulator_Block_0_done]
+connect_bd_net [get_bd_pins FSK_Demodulator_Block_0/data_out] [get_bd_pins FSK_Block_correction_0/data_in]
+connect_bd_net [get_bd_pins FSK_Block_correction_0/reset] [get_bd_pins FSK_Demodulator_Block_0/reset]
+connect_bd_net [get_bd_pins FSK_Demodulator_Block_0/clk] [get_bd_pins FSK_Block_correction_0/clk]
+regenerate_bd_layout
+close [ open D:/Users/daanv/Documents/GitHub/Demodulator/Demodulator.srcs/sources_1/new/Controller.vhd w ]
+add_files D:/Users/daanv/Documents/GitHub/Demodulator/Demodulator.srcs/sources_1/new/Controller.vhd
+update_compile_order -fileset sources_1
+save_bd_design
+WARNING: [BD 41-597] NET <Net> has no source
+WARNING: [BD 41-597] NET <Net1> has no source
+Wrote  : <D:\Users\daanv\Documents\GitHub\Demodulator\Demodulator.srcs\sources_1\bd\Demodulator_over\Demodulator_over.bd> 
+Wrote  : <D:/Users/daanv/Documents/GitHub/Demodulator/Demodulator.srcs/sources_1/bd/Demodulator_over/ui/bd_42084125.ui> 
+update_compile_order -fileset sources_1
+regenerate_bd_layout
+create_bd_cell -type module -reference Controller Controller_0
+INFO: [IP_Flow 19-5107] Inferred bus interface 'rst' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'clk': Added interface parameter 'ASSOCIATED_RESET' with value 'rst'.
+WARNING: [IP_Flow 19-5661] Bus Interface 'clk' does not have any bus interfaces associated with it.
+WARNING: [IP_Flow 19-11770] Clock interface 'clk' has no FREQ_HZ parameter.
+update_module_reference Demodulator_over_Controller_0_0
+INFO: [IP_Flow 19-5107] Inferred bus interface 'rst' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'clk': Added interface parameter 'ASSOCIATED_RESET' with value 'rst'.
+WARNING: [IP_Flow 19-5661] Bus Interface 'clk' does not have any bus interfaces associated with it.
+WARNING: [IP_Flow 19-11770] Clock interface 'clk' has no FREQ_HZ parameter.
+INFO: [IP_Flow 19-5107] Inferred bus interface 'rst' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'clk': Added interface parameter 'ASSOCIATED_RESET' with value 'rst'.
+WARNING: [IP_Flow 19-5661] Bus Interface 'clk' does not have any bus interfaces associated with it.
+WARNING: [IP_Flow 19-11770] Clock interface 'clk' has no FREQ_HZ parameter.
+Upgrading 'D:/Users/daanv/Documents/GitHub/Demodulator/Demodulator.srcs/sources_1/bd/Demodulator_over/Demodulator_over.bd'
+INFO: [IP_Flow 19-3420] Updated Demodulator_over_Controller_0_0 to use current project options
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'calc_finish'
+WARNING: [IP_Flow 19-3298] Detected external port differences while upgrading 'Demodulator_over_Controller_0_0'. These changes may impact your design.
+CRITICAL WARNING: [Coretcl 2-1280] The upgrade of 'Demodulator_over_Controller_0_0' has identified issues that may require user intervention. Please verify that the instance is correctly configured, and review any upgrade messages.
+WARNING: [BD 41-597] NET <Net> has no source
+WARNING: [BD 41-597] NET <Net1> has no source
+Wrote  : <D:\Users\daanv\Documents\GitHub\Demodulator\Demodulator.srcs\sources_1\bd\Demodulator_over\Demodulator_over.bd> 
+Wrote  : <D:/Users/daanv/Documents/GitHub/Demodulator/Demodulator.srcs/sources_1/bd/Demodulator_over/ui/bd_42084125.ui> 
+update_compile_order -fileset sources_1
+update_module_reference Demodulator_over_FSK_Block_correction_0_1
+INFO: [IP_Flow 19-5107] Inferred bus interface 'reset' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'clk': Added interface parameter 'ASSOCIATED_RESET' with value 'reset'.
+WARNING: [IP_Flow 19-5661] Bus Interface 'clk' does not have any bus interfaces associated with it.
+WARNING: [IP_Flow 19-11770] Clock interface 'clk' has no FREQ_HZ parameter.
+INFO: [IP_Flow 19-5107] Inferred bus interface 'reset' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'clk': Added interface parameter 'ASSOCIATED_RESET' with value 'reset'.
+WARNING: [IP_Flow 19-5661] Bus Interface 'clk' does not have any bus interfaces associated with it.
+WARNING: [IP_Flow 19-11770] Clock interface 'clk' has no FREQ_HZ parameter.
+Upgrading 'D:/Users/daanv/Documents/GitHub/Demodulator/Demodulator.srcs/sources_1/bd/Demodulator_over/Demodulator_over.bd'
+INFO: [IP_Flow 19-3420] Updated Demodulator_over_FSK_Block_correction_0_1 to use current project options
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'start'
+WARNING: [IP_Flow 19-3298] Detected external port differences while upgrading 'Demodulator_over_FSK_Block_correction_0_1'. These changes may impact your design.
+CRITICAL WARNING: [Coretcl 2-1280] The upgrade of 'Demodulator_over_FSK_Block_correction_0_1' has identified issues that may require user intervention. Please verify that the instance is correctly configured, and review any upgrade messages.
+WARNING: [BD 41-597] NET <Net> has no source
+WARNING: [BD 41-597] NET <Net1> has no source
+Wrote  : <D:\Users\daanv\Documents\GitHub\Demodulator\Demodulator.srcs\sources_1\bd\Demodulator_over\Demodulator_over.bd> 
+Wrote  : <D:/Users/daanv/Documents/GitHub/Demodulator/Demodulator.srcs/sources_1/bd/Demodulator_over/ui/bd_42084125.ui> 
+update_module_reference Demodulator_over_Controller_0_0
+INFO: [IP_Flow 19-5107] Inferred bus interface 'rst' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'clk': Added interface parameter 'ASSOCIATED_RESET' with value 'rst'.
+WARNING: [IP_Flow 19-5661] Bus Interface 'clk' does not have any bus interfaces associated with it.
+WARNING: [IP_Flow 19-11770] Clock interface 'clk' has no FREQ_HZ parameter.
+INFO: [IP_Flow 19-5107] Inferred bus interface 'rst' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'clk': Added interface parameter 'ASSOCIATED_RESET' with value 'rst'.
+WARNING: [IP_Flow 19-5661] Bus Interface 'clk' does not have any bus interfaces associated with it.
+WARNING: [IP_Flow 19-11770] Clock interface 'clk' has no FREQ_HZ parameter.
+Upgrading 'D:/Users/daanv/Documents/GitHub/Demodulator/Demodulator.srcs/sources_1/bd/Demodulator_over/Demodulator_over.bd'
+INFO: [IP_Flow 19-3420] Updated Demodulator_over_Controller_0_0 to use current project options
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'correct_error_finish'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'error_finish'
+WARNING: [IP_Flow 19-3298] Detected external port differences while upgrading 'Demodulator_over_Controller_0_0'. These changes may impact your design.
+CRITICAL WARNING: [Coretcl 2-1280] The upgrade of 'Demodulator_over_Controller_0_0' has identified issues that may require user intervention. Please verify that the instance is correctly configured, and review any upgrade messages.
+WARNING: [BD 41-597] NET <Net> has no source
+WARNING: [BD 41-597] NET <Net1> has no source
+Wrote  : <D:\Users\daanv\Documents\GitHub\Demodulator\Demodulator.srcs\sources_1\bd\Demodulator_over\Demodulator_over.bd> 
+Wrote  : <D:/Users/daanv/Documents/GitHub/Demodulator/Demodulator.srcs/sources_1/bd/Demodulator_over/ui/bd_42084125.ui> 
+open_bd_design {D:/Users/daanv/Documents/GitHub/Demodulator/Demodulator.srcs/sources_1/bd/Demodulator_over/Demodulator_over.bd}
+update_module_reference Demodulator_over_Controller_0_0
+INFO: [IP_Flow 19-5107] Inferred bus interface 'rst' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'clk': Added interface parameter 'ASSOCIATED_RESET' with value 'rst'.
+WARNING: [IP_Flow 19-5661] Bus Interface 'clk' does not have any bus interfaces associated with it.
+WARNING: [IP_Flow 19-11770] Clock interface 'clk' has no FREQ_HZ parameter.
+INFO: [IP_Flow 19-5107] Inferred bus interface 'rst' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'clk': Added interface parameter 'ASSOCIATED_RESET' with value 'rst'.
+WARNING: [IP_Flow 19-5661] Bus Interface 'clk' does not have any bus interfaces associated with it.
+WARNING: [IP_Flow 19-11770] Clock interface 'clk' has no FREQ_HZ parameter.
+Upgrading 'D:/Users/daanv/Documents/GitHub/Demodulator/Demodulator.srcs/sources_1/bd/Demodulator_over/Demodulator_over.bd'
+INFO: [IP_Flow 19-3420] Updated Demodulator_over_Controller_0_0 to use current project options
+WARNING: [BD 41-597] NET <Net> has no source
+WARNING: [BD 41-597] NET <Net1> has no source
+Wrote  : <D:\Users\daanv\Documents\GitHub\Demodulator\Demodulator.srcs\sources_1\bd\Demodulator_over\Demodulator_over.bd> 
+Wrote  : <D:/Users/daanv/Documents/GitHub/Demodulator/Demodulator.srcs/sources_1/bd/Demodulator_over/ui/bd_42084125.ui> 
+update_module_reference Demodulator_over_FSK_Block_correction_0_1
+INFO: [IP_Flow 19-5107] Inferred bus interface 'reset' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'clk': Added interface parameter 'ASSOCIATED_RESET' with value 'reset'.
+WARNING: [IP_Flow 19-5661] Bus Interface 'clk' does not have any bus interfaces associated with it.
+WARNING: [IP_Flow 19-11770] Clock interface 'clk' has no FREQ_HZ parameter.
+INFO: [IP_Flow 19-5107] Inferred bus interface 'reset' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'clk': Added interface parameter 'ASSOCIATED_RESET' with value 'reset'.
+WARNING: [IP_Flow 19-5661] Bus Interface 'clk' does not have any bus interfaces associated with it.
+WARNING: [IP_Flow 19-11770] Clock interface 'clk' has no FREQ_HZ parameter.
+Upgrading 'D:/Users/daanv/Documents/GitHub/Demodulator/Demodulator.srcs/sources_1/bd/Demodulator_over/Demodulator_over.bd'
+INFO: [IP_Flow 19-3420] Updated Demodulator_over_FSK_Block_correction_0_1 to use current project options
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'finish_correct_error'
+WARNING: [IP_Flow 19-3298] Detected external port differences while upgrading 'Demodulator_over_FSK_Block_correction_0_1'. These changes may impact your design.
+CRITICAL WARNING: [Coretcl 2-1280] The upgrade of 'Demodulator_over_FSK_Block_correction_0_1' has identified issues that may require user intervention. Please verify that the instance is correctly configured, and review any upgrade messages.
+WARNING: [BD 41-597] NET <Net> has no source
+WARNING: [BD 41-597] NET <Net1> has no source
+Wrote  : <D:\Users\daanv\Documents\GitHub\Demodulator\Demodulator.srcs\sources_1\bd\Demodulator_over\Demodulator_over.bd> 
+Wrote  : <D:/Users/daanv/Documents/GitHub/Demodulator/Demodulator.srcs/sources_1/bd/Demodulator_over/ui/bd_42084125.ui> 
+update_module_reference Demodulator_over_FSK_Block_correction_0_1
+INFO: [IP_Flow 19-5107] Inferred bus interface 'reset' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'clk': Added interface parameter 'ASSOCIATED_RESET' with value 'reset'.
+WARNING: [IP_Flow 19-5661] Bus Interface 'clk' does not have any bus interfaces associated with it.
+WARNING: [IP_Flow 19-11770] Clock interface 'clk' has no FREQ_HZ parameter.
+INFO: [IP_Flow 19-5107] Inferred bus interface 'reset' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'clk': Added interface parameter 'ASSOCIATED_RESET' with value 'reset'.
+WARNING: [IP_Flow 19-5661] Bus Interface 'clk' does not have any bus interfaces associated with it.
+WARNING: [IP_Flow 19-11770] Clock interface 'clk' has no FREQ_HZ parameter.
+Upgrading 'D:/Users/daanv/Documents/GitHub/Demodulator/Demodulator.srcs/sources_1/bd/Demodulator_over/Demodulator_over.bd'
+INFO: [IP_Flow 19-3420] Updated Demodulator_over_FSK_Block_correction_0_1 to use current project options
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'finish_calc'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'finish_error'
+WARNING: [IP_Flow 19-3298] Detected external port differences while upgrading 'Demodulator_over_FSK_Block_correction_0_1'. These changes may impact your design.
+CRITICAL WARNING: [Coretcl 2-1280] The upgrade of 'Demodulator_over_FSK_Block_correction_0_1' has identified issues that may require user intervention. Please verify that the instance is correctly configured, and review any upgrade messages.
+WARNING: [BD 41-597] NET <Net> has no source
+WARNING: [BD 41-597] NET <Net1> has no source
+Wrote  : <D:\Users\daanv\Documents\GitHub\Demodulator\Demodulator.srcs\sources_1\bd\Demodulator_over\Demodulator_over.bd> 
+delete_bd_objs [get_bd_nets FSK_Demodulator_Block_0_data_out] [get_bd_nets Net1] [get_bd_nets Net] [get_bd_cells FSK_Demodulator_Block_0]
+update_compile_order -fileset sources_1
+connect_bd_net [get_bd_pins Controller_0/ld_calc_c] [get_bd_pins FSK_Block_correction_0/ld_calc]
+connect_bd_net [get_bd_pins Controller_0/ld_error_c] [get_bd_pins FSK_Block_correction_0/ld_error]
+connect_bd_net [get_bd_pins Controller_0/ld_correct_error_c] [get_bd_pins FSK_Block_correction_0/ld_correct_error]
+connect_bd_net [get_bd_pins Controller_0/calc_finish] [get_bd_pins FSK_Block_correction_0/finish_calc]
+connect_bd_net [get_bd_pins Controller_0/error_finish] [get_bd_pins FSK_Block_correction_0/finish_error]
+connect_bd_net [get_bd_pins Controller_0/correct_error_finish] [get_bd_pins FSK_Block_correction_0/data_out]
+undo
+INFO: [Common 17-17] undo 'connect_bd_net [get_bd_pins Controller_0/correct_error_finish] [get_bd_pins FSK_Block_correction_0/data_out]'
+connect_bd_net [get_bd_pins Controller_0/correct_error_finish] [get_bd_pins FSK_Block_correction_0/finish_correct_error]
+regenerate_bd_layout
+connect_bd_net [get_bd_pins FSK_Block_correction_0/clk] [get_bd_pins Controller_0/clk]
+connect_bd_net [get_bd_pins FSK_Block_correction_0/reset] [get_bd_pins Controller_0/rst]
+regenerate_bd_layout
+update_module_reference Demodulator_over_FSK_Block_correction_0_1
+INFO: [IP_Flow 19-5107] Inferred bus interface 'reset' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'clk': Added interface parameter 'ASSOCIATED_RESET' with value 'reset'.
+WARNING: [IP_Flow 19-5661] Bus Interface 'clk' does not have any bus interfaces associated with it.
+WARNING: [IP_Flow 19-11770] Clock interface 'clk' has no FREQ_HZ parameter.
+INFO: [IP_Flow 19-5107] Inferred bus interface 'reset' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'clk': Added interface parameter 'ASSOCIATED_RESET' with value 'reset'.
+WARNING: [IP_Flow 19-5661] Bus Interface 'clk' does not have any bus interfaces associated with it.
+WARNING: [IP_Flow 19-11770] Clock interface 'clk' has no FREQ_HZ parameter.
+Upgrading 'D:/Users/daanv/Documents/GitHub/Demodulator/Demodulator.srcs/sources_1/bd/Demodulator_over/Demodulator_over.bd'
+INFO: [IP_Flow 19-3420] Updated Demodulator_over_FSK_Block_correction_0_1 to use current project options
+WARNING: [BD 41-597] NET <Net> has no source
+WARNING: [BD 41-597] NET <Net1> has no source
+Wrote  : <D:\Users\daanv\Documents\GitHub\Demodulator\Demodulator.srcs\sources_1\bd\Demodulator_over\Demodulator_over.bd> 
+Wrote  : <D:/Users/daanv/Documents/GitHub/Demodulator/Demodulator.srcs/sources_1/bd/Demodulator_over/ui/bd_42084125.ui> 
+create_bd_port -dir I -from 79 -to 0 data_in
+connect_bd_net [get_bd_ports data_in] [get_bd_pins FSK_Block_correction_0/data_in]
+regenerate_bd_layout
+create_bd_port -dir O -from 79 -to 0 data_out
+connect_bd_net [get_bd_ports data_out] [get_bd_pins FSK_Block_correction_0/data_out]
+regenerate_bd_layout
+delete_bd_objs [get_bd_nets FSK_Block_correction_0_data_out] [get_bd_ports data_out]
+create_bd_port -dir O -from 63 -to 0 data_out
+connect_bd_net [get_bd_ports data_out] [get_bd_pins FSK_Block_correction_0/data_out]
+regenerate_bd_layout
+save_bd_design
+WARNING: [BD 41-597] NET <Net> has no source
+WARNING: [BD 41-597] NET <Net1> has no source
+Wrote  : <D:\Users\daanv\Documents\GitHub\Demodulator\Demodulator.srcs\sources_1\bd\Demodulator_over\Demodulator_over.bd> 
+Wrote  : <D:/Users/daanv/Documents/GitHub/Demodulator/Demodulator.srcs/sources_1/bd/Demodulator_over/ui/bd_42084125.ui> 
 exit
-INFO: [Common 17-206] Exiting Vivado at Tue May 28 17:38:43 2024...
+INFO: [Common 17-206] Exiting Vivado at Mon Jun  3 13:57:59 2024...

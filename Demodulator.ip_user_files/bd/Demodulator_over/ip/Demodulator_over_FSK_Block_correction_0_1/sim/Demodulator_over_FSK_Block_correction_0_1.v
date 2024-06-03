@@ -54,11 +54,16 @@
 
 (* IP_DEFINITION_SOURCE = "module_ref" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
-module Demodulator_over_FSK_Block_correction_0_0 (
+module Demodulator_over_FSK_Block_correction_0_1 (
   clk,
   reset,
   data_in,
-  start,
+  ld_calc,
+  ld_error,
+  ld_correct_error,
+  finish_calc,
+  finish_error,
+  finish_correct_error,
   data_out
 );
 
@@ -69,14 +74,24 @@ input wire clk;
 (* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 reset RST" *)
 input wire reset;
 input wire [79 : 0] data_in;
-input wire start;
+input wire ld_calc;
+input wire ld_error;
+input wire ld_correct_error;
+output wire finish_calc;
+output wire finish_error;
+output wire finish_correct_error;
 output wire [63 : 0] data_out;
 
   FSK_Block_correction inst (
     .clk(clk),
     .reset(reset),
     .data_in(data_in),
-    .start(start),
+    .ld_calc(ld_calc),
+    .ld_error(ld_error),
+    .ld_correct_error(ld_correct_error),
+    .finish_calc(finish_calc),
+    .finish_error(finish_error),
+    .finish_correct_error(finish_correct_error),
     .data_out(data_out)
   );
 endmodule

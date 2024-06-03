@@ -28,7 +28,6 @@ architecture Behavioral of FSK_Demodulator_Block is
     signal modulating        : std_logic := '0';
 
 begin
-
     process(clk, reset)
     begin
         if reset = '1' then
@@ -68,5 +67,4 @@ begin
             end if;
         end if;
     end process;
-
 end Behavioral;

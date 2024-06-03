@@ -47,20 +47,24 @@
 // DO NOT MODIFY THIS FILE.
 
 
-// IP VLNV: xilinx.com:module_ref:FSK_Demodulator_Block:1.0
+// IP VLNV: xilinx.com:module_ref:FSK_Block_correction:1.0
 // IP Revision: 1
 
 `timescale 1ns/1ps
 
 (* IP_DEFINITION_SOURCE = "module_ref" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
-module Demodulator_over_FSK_Demodulator_Block_0_0 (
+module Demodulator_over_FSK_Block_correction_0_1 (
   clk,
   reset,
-  fsk_in,
-  data_out,
-  start,
-  done
+  data_in,
+  ld_calc,
+  ld_error,
+  ld_correct_error,
+  finish_calc,
+  finish_error,
+  finish_correct_error,
+  data_out
 );
 
 (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME clk, ASSOCIATED_RESET reset, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, INSERT_VIP 0" *)
@@ -69,17 +73,25 @@ input wire clk;
 (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME reset, POLARITY ACTIVE_LOW, INSERT_VIP 0" *)
 (* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 reset RST" *)
 input wire reset;
-input wire fsk_in;
-output wire [79 : 0] data_out;
-input wire start;
-output wire done;
+input wire [79 : 0] data_in;
+input wire ld_calc;
+input wire ld_error;
+input wire ld_correct_error;
+output wire finish_calc;
+output wire finish_error;
+output wire finish_correct_error;
+output wire [63 : 0] data_out;
 
-  FSK_Demodulator_Block inst (
+  FSK_Block_correction inst (
     .clk(clk),
     .reset(reset),
-    .fsk_in(fsk_in),
-    .data_out(data_out),
-    .start(start),
-    .done(done)
+    .data_in(data_in),
+    .ld_calc(ld_calc),
+    .ld_error(ld_error),
+    .ld_correct_error(ld_correct_error),
+    .finish_calc(finish_calc),
+    .finish_error(finish_error),
+    .finish_correct_error(finish_correct_error),
+    .data_out(data_out)
   );
 endmodule

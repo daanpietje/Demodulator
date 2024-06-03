@@ -1,10 +1,10 @@
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/daanv/Desktop/MO8/Demodulator/Demodulator.ip_user_files/bd/Demodulator_over/ip/Demodulator_over_FSK_Demodulator_Block_0_0/sim/Demodulator_over_FSK_Demodulator_Block_0_0.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Demodulator_over_FSK_Demodulator_Block_0_0
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/daanv/Desktop/MO8/Demodulator/Demodulator.ip_user_files/bd/Demodulator_over/ip/Demodulator_over_FSK_Block_correction_0_0/sim/Demodulator_over_FSK_Block_correction_0_0.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Demodulator_over_FSK_Block_correction_0_0
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/daanv/Desktop/MO8/Demodulator/Demodulator.ip_user_files/bd/Demodulator_over/sim/Demodulator_over.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Users/daanv/Documents/GitHub/Demodulator/Demodulator.ip_user_files/bd/Demodulator_over/ip/Demodulator_over_Controller_0_0/sim/Demodulator_over_Controller_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Demodulator_over_Controller_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Users/daanv/Documents/GitHub/Demodulator/Demodulator.ip_user_files/bd/Demodulator_over/ip/Demodulator_over_FSK_Block_correction_0_1/sim/Demodulator_over_FSK_Block_correction_0_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Demodulator_over_FSK_Block_correction_0_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Users/daanv/Documents/GitHub/Demodulator/Demodulator.ip_user_files/bd/Demodulator_over/sim/Demodulator_over.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module Demodulator_over
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/daanv/Desktop/MO8/Demodulator/Demodulator.gen/sources_1/bd/Demodulator_over/hdl/Demodulator_over_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Users/daanv/Documents/GitHub/Demodulator/Demodulator.gen/sources_1/bd/Demodulator_over/hdl/Demodulator_over_wrapper.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module Demodulator_over_wrapper
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/daanv/Desktop/MO8/Demodulator/Demodulator.sim/sim_blockcorrection/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Users/daanv/Documents/GitHub/Demodulator/Demodulator.sim/sim_blockcorrection/behav/xsim/glbl.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module glbl

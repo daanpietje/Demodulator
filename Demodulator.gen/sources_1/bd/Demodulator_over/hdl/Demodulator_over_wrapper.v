@@ -2,8 +2,8 @@
 //Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
-//Date        : Mon Jun  3 11:15:49 2024
-//Host        : DaanAsus running 64-bit major release  (build 9200)
+//Date        : Mon Jun  3 16:47:19 2024
+//Host        : Desktop_Daan running 64-bit major release  (build 9200)
 //Command     : generate_target Demodulator_over_wrapper.bd
 //Design      : Demodulator_over_wrapper
 //Purpose     : IP block netlist
@@ -11,27 +11,23 @@
 `timescale 1 ps / 1 ps
 
 module Demodulator_over_wrapper
-   (FSK_in,
-    clk,
+   (clk,
+    data_in,
     data_out,
-    reset,
-    start_demodulator);
-  input FSK_in;
+    rst);
   input clk;
+  input [79:0]data_in;
   output [63:0]data_out;
-  input reset;
-  input start_demodulator;
+  input rst;
 
-  wire FSK_in;
   wire clk;
+  wire [79:0]data_in;
   wire [63:0]data_out;
-  wire reset;
-  wire start_demodulator;
+  wire rst;
 
   Demodulator_over Demodulator_over_i
-       (.FSK_in(FSK_in),
-        .clk(clk),
+       (.clk(clk),
+        .data_in(data_in),
         .data_out(data_out),
-        .reset(reset),
-        .start_demodulator(start_demodulator));
+        .rst(rst));
 endmodule
