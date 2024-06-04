@@ -9,6 +9,7 @@ entity FSK_Block_correction is
 Port (
         clk : in STD_LOGIC;
         rst : in STD_LOGIC;
+        data_ready : STD_LOGIC
         data_in : in STD_LOGIC_VECTOR(79 downto 0);
         data_out : out STD_LOGIC_VECTOR(63 downto 0)
     );
@@ -42,25 +43,28 @@ begin
     for i in 0 to 7 loop
                 row_parity_calc(i) <= data_block(i + 0) xor data_block(i + 8) xor data_block(i + 16) xor
                                      data_block(i + 24) xor data_block(i + 32) xor data_block(i + 40) xor
-                                     data_block(i + 48) xor data_block(i + 56);
+                                     data_block(i + 48) xor data_block(i + 56) after 1 ns;
                                      
                 col_parity_calc(i) <= data_block(i*8 + 0) xor data_block(i*8 + 1) xor data_block(i*8 + 2) xor
                                      data_block(i*8 + 3) xor data_block(i*8 + 4) xor data_block(i*8 + 5) xor
-                                     data_block(i*8 + 6) xor data_block(i*8 + 7);           
+                                     data_block(i*8 + 6) xor data_block(i*8 + 7) after 1 ns;           
      end loop;
      -- error check
+         if row_parity_calc /= "UUUUUUUU" then
          for l in 0 to 7 loop
-                    if row_parity(l) = row_parity_calc(l) then
-                        row_error(l) <= '0';
-                    else
+                    if row_parity(l) /= row_parity_calc(l) then
                         row_error(l) <= '1';
-                    end if;
-                    if col_parity(l) = col_parity_calc(l) then
-                        col_error(l) <= '0';
                     else
+                        row_error(l) <= '0';
+                    end if;
+                    if col_parity(l) /= col_parity_calc(l) then
                         col_error(l) <= '1';
+                    else
+                        col_error(l) <= '0';
                     end if;
           end loop;
+          end if;
+      if row_parity_calc /= "UUUUUUUU" then
       for p in 0 to 7 loop
       if col_parity(p) = col_parity_calc(p) then
                     col_error(p) <= '0';
@@ -68,6 +72,7 @@ begin
                     col_error(p) <= '1';
                 end if;
       end loop;
+      end if;
       --error correcting
       for k in 0 to 7 loop
             if row_error(k) = '1' then

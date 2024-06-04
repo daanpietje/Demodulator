@@ -1,0 +1,260 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Wed Jun  5 10:40:19 2024" VIVADOVERSION="2023.1">
+
+  <SYSTEMINFO ARCH="zynq" DEVICE="7z020" NAME="block_correction" PACKAGE="clg400" SPEEDGRADE="-1"/>
+
+  <EXTERNALPORTS>
+    <PORT DIR="O" LEFT="63" NAME="Data_out_port" RIGHT="0" SIGIS="undef" SIGNAME="correct_error_0_data_out">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="correct_error_0" PORT="data_out"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="79" NAME="data_in_p" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_data_in_p">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="calc_parity_0" PORT="data_in"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="clk" SIGIS="undef" SIGNAME="External_Ports_clk">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="Controller_0" PORT="clk"/>
+        <CONNECTION INSTANCE="calc_parity_0" PORT="clk"/>
+        <CONNECTION INSTANCE="find_error_0" PORT="clk"/>
+        <CONNECTION INSTANCE="correct_error_0" PORT="clk"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="rst" SIGIS="undef" SIGNAME="External_Ports_rst">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="Controller_0" PORT="rst"/>
+        <CONNECTION INSTANCE="calc_parity_0" PORT="rst"/>
+        <CONNECTION INSTANCE="find_error_0" PORT="rst"/>
+        <CONNECTION INSTANCE="correct_error_0" PORT="rst"/>
+      </CONNECTIONS>
+    </PORT>
+  </EXTERNALPORTS>
+
+  <EXTERNALINTERFACES/>
+
+  <MODULES>
+    <MODULE COREREVISION="1" FULLNAME="/Controller_0" HWVERSION="1.0" INSTANCE="Controller_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="Controller" VLNV="xilinx.com:module_ref:Controller:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="block_correction_Controller_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="rst" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="External_Ports_rst">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="rst"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="calc_finish" SIGIS="undef" SIGNAME="calc_parity_0_Finish">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="calc_parity_0" PORT="Finish"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="error_finish" SIGIS="undef" SIGNAME="find_error_0_Finish">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="find_error_0" PORT="Finish"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="correct_error_finish" SIGIS="undef" SIGNAME="correct_error_0_Finish">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="correct_error_0" PORT="Finish"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="ld_calc_c" SIGIS="undef" SIGNAME="Controller_0_ld_calc_c">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="calc_parity_0" PORT="ld"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="ld_error_c" SIGIS="undef" SIGNAME="Controller_0_ld_error_c">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="find_error_0" PORT="ld"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="ld_correct_error_c" SIGIS="undef" SIGNAME="Controller_0_ld_correct_error_c">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="correct_error_0" PORT="ld"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/calc_parity_0" HWVERSION="1.0" INSTANCE="calc_parity_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="calc_parity" VLNV="xilinx.com:module_ref:calc_parity:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="block_correction_calc_parity_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="rst" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="External_Ports_rst">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="rst"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="ld" SIGIS="undef" SIGNAME="Controller_0_ld_calc_c">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Controller_0" PORT="ld_calc_c"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="79" NAME="data_in" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_data_in_p">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="data_in_p"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Finish" SIGIS="undef" SIGNAME="calc_parity_0_Finish">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Controller_0" PORT="calc_finish"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="63" NAME="data_out" RIGHT="0" SIGIS="undef" SIGNAME="calc_parity_0_data_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="correct_error_0" PORT="data_in"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="7" NAME="row_parity" RIGHT="0" SIGIS="undef" SIGNAME="calc_parity_0_row_parity">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="find_error_0" PORT="row_parity"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="7" NAME="col_parity" RIGHT="0" SIGIS="undef" SIGNAME="calc_parity_0_col_parity">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="find_error_0" PORT="col_parity"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="7" NAME="row_parity_calc" RIGHT="0" SIGIS="undef" SIGNAME="calc_parity_0_row_parity_calc">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="find_error_0" PORT="row_parity_calc"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="7" NAME="col_parity_calc" RIGHT="0" SIGIS="undef" SIGNAME="calc_parity_0_col_parity_calc">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="find_error_0" PORT="col_parity_calc"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/correct_error_0" HWVERSION="1.0" INSTANCE="correct_error_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="correct_error" VLNV="xilinx.com:module_ref:correct_error:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="block_correction_correct_error_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="rst" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="External_Ports_rst">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="rst"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="ld" SIGIS="undef" SIGNAME="Controller_0_ld_correct_error_c">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Controller_0" PORT="ld_correct_error_c"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="63" NAME="data_in" RIGHT="0" SIGIS="undef" SIGNAME="calc_parity_0_data_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="calc_parity_0" PORT="data_out"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="63" NAME="data_out" RIGHT="0" SIGIS="undef" SIGNAME="correct_error_0_data_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="Data_out_port"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="7" NAME="row_error" RIGHT="0" SIGIS="undef" SIGNAME="find_error_0_row_error">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="find_error_0" PORT="row_error"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Finish" SIGIS="undef" SIGNAME="correct_error_0_Finish">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Controller_0" PORT="correct_error_finish"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="7" NAME="col_error" RIGHT="0" SIGIS="undef" SIGNAME="find_error_0_col_error">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="find_error_0" PORT="col_error"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/find_error_0" HWVERSION="1.0" INSTANCE="find_error_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="find_error" VLNV="xilinx.com:module_ref:find_error:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="block_correction_find_error_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="rst" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="External_Ports_rst">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="rst"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="ld" SIGIS="undef" SIGNAME="Controller_0_ld_error_c">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Controller_0" PORT="ld_error_c"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="7" NAME="row_parity" RIGHT="0" SIGIS="undef" SIGNAME="calc_parity_0_row_parity">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="calc_parity_0" PORT="row_parity"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="7" NAME="col_parity" RIGHT="0" SIGIS="undef" SIGNAME="calc_parity_0_col_parity">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="calc_parity_0" PORT="col_parity"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="7" NAME="row_parity_calc" RIGHT="0" SIGIS="undef" SIGNAME="calc_parity_0_row_parity_calc">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="calc_parity_0" PORT="row_parity_calc"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="7" NAME="col_parity_calc" RIGHT="0" SIGIS="undef" SIGNAME="calc_parity_0_col_parity_calc">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="calc_parity_0" PORT="col_parity_calc"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="7" NAME="row_error" RIGHT="0" SIGIS="undef" SIGNAME="find_error_0_row_error">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="correct_error_0" PORT="row_error"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Finish" SIGIS="undef" SIGNAME="find_error_0_Finish">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Controller_0" PORT="error_finish"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="7" NAME="col_error" RIGHT="0" SIGIS="undef" SIGNAME="find_error_0_col_error">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="correct_error_0" PORT="col_error"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+  </MODULES>
+
+</EDKSYSTEM>
