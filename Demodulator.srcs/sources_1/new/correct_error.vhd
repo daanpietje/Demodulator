@@ -22,6 +22,7 @@ begin
 if rst = '1' then
         data_block <= (others => '0');
 elsif rising_edge(clk) then
+    Finish <= '0';
     data_block <= data_in;
     for k in 0 to 7 loop
             if row_error(k) = '1' then
