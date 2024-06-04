@@ -8,6 +8,7 @@ Port (
         rst : in STD_LOGIC;
         ld : in STD_LOGIC;
         data_in : in STD_LOGIC_VECTOR(79 downto 0);
+        Finish : out STD_LOGIC;
         data_out : out STD_LOGIC_VECTOR(63 downto 0);
         row_parity : out STD_LOGiC_VECTOR(7 downto 0);
         col_parity : out STD_LOGiC_VECTOR(7 downto 0);
@@ -46,8 +47,8 @@ begin
                                          data_block(i*8 + 3) xor data_block(i*8 + 4) xor data_block(i*8 + 5) xor
                                          data_block(i*8 + 6) xor data_block(i*8 + 7);           
          end loop;
+        end if;
     end if;
-    end if; 
     row_parity_calc <= row_parity_calc_t;
     col_parity_calc <= col_parity_calc_t;
     data_out <= data_block;

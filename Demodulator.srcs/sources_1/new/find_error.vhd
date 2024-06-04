@@ -41,8 +41,8 @@ Port (
     row_parity_calc : in STD_LOGIC_VECTOR(7 downto 0);
     col_parity_calc : in STD_LOGIC_VECTOR(7 downto 0);
     row_error : out STD_LOGIC_VECTOR(7 downto 0);
+    Finish : out STD_LOGIC;
     col_error : out STD_LOGIC_VECTOR(7 downto 0)
-    
 );
 end find_error;
 

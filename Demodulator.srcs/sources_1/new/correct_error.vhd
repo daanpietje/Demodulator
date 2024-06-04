@@ -9,6 +9,7 @@ entity correct_error is
         data_in : in STD_LOGIC_VECTOR(63 downto 0);
         data_out : out STD_LOGIC_VECTOR(63 downto 0);
         row_error : in STD_LOGIC_VECTOR(7 downto 0);
+        Finish : out STD_LOGIC;
         col_error : in STD_LOGIC_VECTOR(7 downto 0)
     );
 end correct_error;
