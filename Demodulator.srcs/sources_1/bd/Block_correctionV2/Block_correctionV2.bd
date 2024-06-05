@@ -1,0 +1,243 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x0",
+      "device": "xc7z020clg400-1",
+      "gen_directory": "../../../../Demodulator.gen/sources_1/bd/Block_correctionV2",
+      "name": "Block_correctionV2",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2023.1"
+    },
+    "design_tree": {
+      "calc_parity_0": "",
+      "find_error_0": "",
+      "correct_error_0": ""
+    },
+    "components": {
+      "calc_parity_0": {
+        "vlnv": "xilinx.com:module_ref:calc_parity:1.0",
+        "xci_name": "Block_correctionV2_calc_parity_0_0",
+        "xci_path": "ip\\Block_correctionV2_calc_parity_0_0\\Block_correctionV2_calc_parity_0_0.xci",
+        "inst_hier_path": "calc_parity_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "calc_parity",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "rst",
+                "value_src": "constant"
+              }
+            }
+          },
+          "rst": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "ld": {
+            "direction": "I"
+          },
+          "data_in": {
+            "direction": "I",
+            "left": "79",
+            "right": "0"
+          },
+          "Finish": {
+            "direction": "O"
+          },
+          "data_out": {
+            "direction": "O",
+            "left": "63",
+            "right": "0"
+          },
+          "row_parity": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          },
+          "col_parity": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          },
+          "row_parity_calc": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          },
+          "col_parity_calc": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          }
+        }
+      },
+      "find_error_0": {
+        "vlnv": "xilinx.com:module_ref:find_error:1.0",
+        "xci_name": "Block_correctionV2_find_error_0_0",
+        "xci_path": "ip\\Block_correctionV2_find_error_0_0\\Block_correctionV2_find_error_0_0.xci",
+        "inst_hier_path": "find_error_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "find_error",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "rst",
+                "value_src": "constant"
+              }
+            }
+          },
+          "rst": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "ld": {
+            "direction": "I"
+          },
+          "row_parity": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "col_parity": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "row_parity_calc": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "col_parity_calc": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "row_error": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          },
+          "Finish": {
+            "direction": "O"
+          },
+          "col_error": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          }
+        }
+      },
+      "correct_error_0": {
+        "vlnv": "xilinx.com:module_ref:correct_error:1.0",
+        "xci_name": "Block_correctionV2_correct_error_0_0",
+        "xci_path": "ip\\Block_correctionV2_correct_error_0_0\\Block_correctionV2_correct_error_0_0.xci",
+        "inst_hier_path": "correct_error_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "correct_error",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "rst",
+                "value_src": "constant"
+              }
+            }
+          },
+          "rst": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "ld": {
+            "direction": "I"
+          },
+          "data_in": {
+            "direction": "I",
+            "left": "63",
+            "right": "0"
+          },
+          "data_out": {
+            "direction": "O",
+            "left": "63",
+            "right": "0"
+          },
+          "row_error": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "Finish": {
+            "direction": "O"
+          },
+          "col_error": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          }
+        }
+      }
+    },
+    "nets": {
+      "calc_parity_0_col_parity": {
+        "ports": [
+          "calc_parity_0/col_parity",
+          "find_error_0/col_parity"
+        ]
+      },
+      "calc_parity_0_col_parity_calc": {
+        "ports": [
+          "calc_parity_0/col_parity_calc",
+          "find_error_0/col_parity_calc"
+        ]
+      },
+      "calc_parity_0_data_out": {
+        "ports": [
+          "calc_parity_0/data_out",
+          "correct_error_0/data_in"
+        ]
+      },
+      "calc_parity_0_row_parity": {
+        "ports": [
+          "calc_parity_0/row_parity",
+          "find_error_0/row_parity"
+        ]
+      },
+      "calc_parity_0_row_parity_calc": {
+        "ports": [
+          "calc_parity_0/row_parity_calc",
+          "find_error_0/row_parity_calc"
+        ]
+      },
+      "find_error_0_col_error": {
+        "ports": [
+          "find_error_0/col_error",
+          "correct_error_0/row_error"
+        ]
+      },
+      "find_error_0_row_error": {
+        "ports": [
+          "find_error_0/row_error",
+          "correct_error_0/col_error"
+        ]
+      }
+    }
+  }
+}

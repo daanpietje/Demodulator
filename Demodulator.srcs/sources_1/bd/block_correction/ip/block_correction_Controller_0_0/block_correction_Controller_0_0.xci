@@ -38,6 +38,7 @@
       "ports": {
         "clk": [ { "direction": "in" } ],
         "rst": [ { "direction": "in" } ],
+        "data_avaible": [ { "direction": "in" } ],
         "calc_finish": [ { "direction": "in" } ],
         "error_finish": [ { "direction": "in" } ],
         "correct_error_finish": [ { "direction": "in" } ],

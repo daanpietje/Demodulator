@@ -2,8 +2,8 @@
 //Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
-//Date        : Mon Jun  3 16:47:19 2024
-//Host        : Desktop_Daan running 64-bit major release  (build 9200)
+//Date        : Wed Jun  5 12:44:30 2024
+//Host        : DaanAsus running 64-bit major release  (build 9200)
 //Command     : generate_target Demodulator_over_wrapper.bd
 //Design      : Demodulator_over_wrapper
 //Purpose     : IP block netlist

@@ -14,6 +14,7 @@ entity Controller is
     Port (
         clk : in STD_LOGIC;
         rst : in STD_LOGIC;
+        data_avaible : in STD_LOGIC;
         calc_finish : in STD_LOGIC; 
         error_finish : in STD_LOGIC;
         correct_error_finish : in STD_LOGIC;
@@ -47,6 +48,7 @@ begin
         when S0 => if calc_finish = '1' then n_s := S0; else n_s := S1; end if;
         when S1 => if error_finish = '1' then n_s := S1; else n_s := S2; end if;
         when S2 => if correct_error_finish = '1' then n_s := S2; else n_s := S0; end if;
+        when S3 => if data_avaible = '1' then n_s := S0; else n_s := S3; end if;
         when others => n_s := SU;    
     end case;
     nextstate <= n_s after 1 ns;
@@ -60,6 +62,7 @@ begin
         when S0 => outbus := "001";
         when S1 => outbus := "010";
         when S2 => outbus := "100";
+        when S3 => outbus := "000";
         when others => outbus := "000";
     end case;
     ld_calc_c <= outbus(2) after 1 ns;

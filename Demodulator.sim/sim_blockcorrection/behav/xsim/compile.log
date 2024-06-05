@@ -1,5 +1,2 @@
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/daanv/Desktop/MO8/Demodulator/Demodulator.srcs/sources_1/new/FSK_Block_correction.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'FSK_Block_correction'
-ERROR: [VRFC 10-1471] type error near data_ready ; current type std_logic; expected type boolean [C:/Users/daanv/Desktop/MO8/Demodulator/Demodulator.srcs/sources_1/new/FSK_Block_correction.vhd:39]
-ERROR: [VRFC 10-9458] unit 'behavioral' is ignored due to previous errors [C:/Users/daanv/Desktop/MO8/Demodulator/Demodulator.srcs/sources_1/new/FSK_Block_correction.vhd:18]
-INFO: [VRFC 10-8704] VHDL file 'C:/Users/daanv/Desktop/MO8/Demodulator/Demodulator.srcs/sources_1/new/FSK_Block_correction.vhd' is ignored due to errors
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/daanv/Desktop/MO8/Demodulator/Demodulator.srcs/sources_1/new/ControllerV2.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ControllerV2'

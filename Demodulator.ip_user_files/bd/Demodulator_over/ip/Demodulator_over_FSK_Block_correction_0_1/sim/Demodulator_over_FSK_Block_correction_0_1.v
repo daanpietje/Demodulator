@@ -56,42 +56,27 @@
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module Demodulator_over_FSK_Block_correction_0_1 (
   clk,
-  reset,
+  rst,
+  data_ready,
   data_in,
-  ld_calc,
-  ld_error,
-  ld_correct_error,
-  finish_calc,
-  finish_error,
-  finish_correct_error,
   data_out
 );
 
-(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME clk, ASSOCIATED_RESET reset, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, INSERT_VIP 0" *)
+(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME clk, ASSOCIATED_RESET rst, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, INSERT_VIP 0" *)
 (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 clk CLK" *)
 input wire clk;
-(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME reset, POLARITY ACTIVE_LOW, INSERT_VIP 0" *)
-(* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 reset RST" *)
-input wire reset;
+(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME rst, POLARITY ACTIVE_LOW, INSERT_VIP 0" *)
+(* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 rst RST" *)
+input wire rst;
+input wire data_ready;
 input wire [79 : 0] data_in;
-input wire ld_calc;
-input wire ld_error;
-input wire ld_correct_error;
-output wire finish_calc;
-output wire finish_error;
-output wire finish_correct_error;
 output wire [63 : 0] data_out;
 
   FSK_Block_correction inst (
     .clk(clk),
-    .reset(reset),
+    .rst(rst),
+    .data_ready(data_ready),
     .data_in(data_in),
-    .ld_calc(ld_calc),
-    .ld_error(ld_error),
-    .ld_correct_error(ld_correct_error),
-    .finish_calc(finish_calc),
-    .finish_error(finish_error),
-    .finish_correct_error(finish_correct_error),
     .data_out(data_out)
   );
 endmodule

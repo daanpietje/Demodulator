@@ -1,21 +1,21 @@
 {
    "ActiveEmotionalView":"Default View",
-   "Default View_ScaleFactor":"1.03786",
-   "Default View_TopLeft":"-128,-79",
+   "Default View_ScaleFactor":"1.25",
+   "Default View_TopLeft":"-78,-46",
    "ExpandedHierarchyInLayout":"",
    "guistr":"# # String gsaved with Nlview 7.5.8 2022-09-21 7111 VDI=41 GEI=38 GUI=JA:10.0
 #  -string -flagsOSRD
-preplace port port-id_clk -pg 1 -lvl 0 -x 0 -y 140 -defaultsOSRD
-preplace port port-id_rst -pg 1 -lvl 0 -x 0 -y 210 -defaultsOSRD
-preplace portBus data_in -pg 1 -lvl 0 -x 0 -y 110 -defaultsOSRD
-preplace portBus data_out -pg 1 -lvl 2 -x 760 -y 160 -defaultsOSRD
-preplace inst FSK_Block_correction_0 -pg 1 -lvl 1 -x 570 -y 130 -defaultsOSRD
-preplace netloc FSK_Block_correction_0_data_out 1 1 1 710 130n
-preplace netloc Net 1 0 1 30 110n
-preplace netloc data_in_1 1 0 1 20J 110n
-preplace netloc rst_1 1 0 1 40 130n
-levelinfo -pg 1 0 570 760
-pagesize -pg 1 -db -bbox -sgen -150 0 910 330
+preplace inst Controller_0 -pg 1 -lvl 2 -x 500 -y 130 -defaultsOSRD
+preplace inst FSK_Block_correction_1 -pg 1 -lvl 1 -x 180 -y 150 -defaultsOSRD
+preplace netloc Controller_0_ld_calc_c 1 0 3 10 10 NJ 10 660
+preplace netloc FSK_Block_correction_1_error_check_fin 1 1 1 340 120n
+preplace netloc FSK_Block_correction_1_error_calc_fin 1 1 1 N 140
+preplace netloc FSK_Block_correction_1_error_correct_fin 1 1 1 330 160n
+preplace netloc Controller_0_ld_error_c 1 0 3 20 20 NJ 20 670
+preplace netloc Controller_0_ld_correct_error_c 1 0 3 30 260 NJ 260 660
+preplace netloc Net 1 0 2 30 40 340J
+levelinfo -pg 1 -10 180 500 690
+pagesize -pg 1 -db -bbox -sgen -10 0 690 270
 "
 }
 {

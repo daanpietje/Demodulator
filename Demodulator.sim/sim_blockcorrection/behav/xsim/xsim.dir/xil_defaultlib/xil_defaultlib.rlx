@@ -2,15 +2,4 @@
 2020.2
 May  7 2023
 15:24:31
-C:/Users/daanv/Desktop/MO8/Demodulator/Demodulator.gen/sources_1/bd/block_correction/hdl/block_correction_wrapper.v,1717576818,verilog,,,,block_correction_wrapper,,,,,,,,
-C:/Users/daanv/Desktop/MO8/Demodulator/Demodulator.ip_user_files/bd/block_correction/ip/block_correction_Controller_0_0/sim/block_correction_Controller_0_0.v,1717576819,verilog,,C:/Users/daanv/Desktop/MO8/Demodulator/Demodulator.ip_user_files/bd/block_correction/ip/block_correction_calc_parity_0_0/sim/block_correction_calc_parity_0_0.v,,block_correction_Controller_0_0,,,,,,,,
-C:/Users/daanv/Desktop/MO8/Demodulator/Demodulator.ip_user_files/bd/block_correction/ip/block_correction_calc_parity_0_0/sim/block_correction_calc_parity_0_0.v,1717576819,verilog,,C:/Users/daanv/Desktop/MO8/Demodulator/Demodulator.ip_user_files/bd/block_correction/ip/block_correction_find_error_0_0/sim/block_correction_find_error_0_0.v,,block_correction_calc_parity_0_0,,,,,,,,
-C:/Users/daanv/Desktop/MO8/Demodulator/Demodulator.ip_user_files/bd/block_correction/ip/block_correction_correct_error_0_0/sim/block_correction_correct_error_0_0.v,1717576819,verilog,,C:/Users/daanv/Desktop/MO8/Demodulator/Demodulator.ip_user_files/bd/block_correction/sim/block_correction.v,,block_correction_correct_error_0_0,,,,,,,,
-C:/Users/daanv/Desktop/MO8/Demodulator/Demodulator.ip_user_files/bd/block_correction/ip/block_correction_find_error_0_0/sim/block_correction_find_error_0_0.v,1717576819,verilog,,C:/Users/daanv/Desktop/MO8/Demodulator/Demodulator.ip_user_files/bd/block_correction/ip/block_correction_correct_error_0_0/sim/block_correction_correct_error_0_0.v,,block_correction_find_error_0_0,,,,,,,,
-C:/Users/daanv/Desktop/MO8/Demodulator/Demodulator.ip_user_files/bd/block_correction/sim/block_correction.v,1717576818,verilog,,C:/Users/daanv/Desktop/MO8/Demodulator/Demodulator.gen/sources_1/bd/block_correction/hdl/block_correction_wrapper.v,,block_correction,,,,,,,,
-C:/Users/daanv/Desktop/MO8/Demodulator/Demodulator.sim/sim_blockcorrection/behav/xsim/glbl.v,1683266558,verilog,,,,glbl,,,,,,,,
-C:/Users/daanv/Desktop/MO8/Demodulator/Demodulator.srcs/sources_1/new/Controller.vhd,1717573252,vhdl,,,,controller,,,,,,,,
-C:/Users/daanv/Desktop/MO8/Demodulator/Demodulator.srcs/sources_1/new/FSK_Block_correction.vhd,1717582664,vhdl,,,,fsk_block_correction,,,,,,,,
-C:/Users/daanv/Desktop/MO8/Demodulator/Demodulator.srcs/sources_1/new/calc_parity.vhd,1717573252,vhdl,,,,calc_parity,,,,,,,,
-C:/Users/daanv/Desktop/MO8/Demodulator/Demodulator.srcs/sources_1/new/correct_error.vhd,1717573252,vhdl,,,,correct_error,,,,,,,,
-C:/Users/daanv/Desktop/MO8/Demodulator/Demodulator.srcs/sources_1/new/find_error.vhd,1717573252,vhdl,,,,find_error,,,,,,,,
+C:/Users/daanv/Desktop/MO8/Demodulator/Demodulator.srcs/sources_1/new/ControllerV2.vhd,1717591513,vhdl,,,,controllerv2,,,,,,,,

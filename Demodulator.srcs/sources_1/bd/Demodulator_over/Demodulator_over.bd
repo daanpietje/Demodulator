@@ -10,32 +10,63 @@
       "tool_version": "2023.1"
     },
     "design_tree": {
-      "FSK_Block_correction_0": ""
-    },
-    "ports": {
-      "data_in": {
-        "direction": "I",
-        "left": "79",
-        "right": "0"
-      },
-      "data_out": {
-        "direction": "O",
-        "left": "63",
-        "right": "0"
-      },
-      "clk": {
-        "direction": "I"
-      },
-      "rst": {
-        "direction": "I"
-      }
+      "Controller_0": "",
+      "FSK_Block_correction_1": ""
     },
     "components": {
-      "FSK_Block_correction_0": {
+      "Controller_0": {
+        "vlnv": "xilinx.com:module_ref:Controller:1.0",
+        "xci_name": "Demodulator_over_Controller_0_0",
+        "xci_path": "ip\\Demodulator_over_Controller_0_0\\Demodulator_over_Controller_0_0.xci",
+        "inst_hier_path": "Controller_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "Controller",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "rst",
+                "value_src": "constant"
+              }
+            }
+          },
+          "rst": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "data_avaible": {
+            "direction": "I"
+          },
+          "calc_finish": {
+            "direction": "I"
+          },
+          "error_finish": {
+            "direction": "I"
+          },
+          "correct_error_finish": {
+            "direction": "I"
+          },
+          "ld_calc_c": {
+            "direction": "O"
+          },
+          "ld_error_c": {
+            "direction": "O"
+          },
+          "ld_correct_error_c": {
+            "direction": "O"
+          }
+        }
+      },
+      "FSK_Block_correction_1": {
         "vlnv": "xilinx.com:module_ref:FSK_Block_correction:1.0",
-        "xci_name": "Demodulator_over_FSK_Block_correction_0_1",
-        "xci_path": "ip\\Demodulator_over_FSK_Block_correction_0_1\\Demodulator_over_FSK_Block_correction_0_1.xci",
-        "inst_hier_path": "FSK_Block_correction_0",
+        "xci_name": "Demodulator_over_FSK_Block_correction_1_0",
+        "xci_path": "ip\\Demodulator_over_FSK_Block_correction_1_0\\Demodulator_over_FSK_Block_correction_1_0.xci",
+        "inst_hier_path": "FSK_Block_correction_1",
         "reference_info": {
           "ref_type": "hdl",
           "ref_name": "FSK_Block_correction",
@@ -56,6 +87,24 @@
             "type": "rst",
             "direction": "I"
           },
+          "error_check_ld": {
+            "direction": "I"
+          },
+          "error_calc_ld": {
+            "direction": "I"
+          },
+          "error_correct_ld": {
+            "direction": "I"
+          },
+          "error_check_fin": {
+            "direction": "O"
+          },
+          "error_calc_fin": {
+            "direction": "O"
+          },
+          "error_correct_fin": {
+            "direction": "O"
+          },
           "data_in": {
             "direction": "I",
             "left": "79",
@@ -70,28 +119,46 @@
       }
     },
     "nets": {
-      "FSK_Block_correction_0_data_out": {
+      "Controller_0_ld_calc_c": {
         "ports": [
-          "FSK_Block_correction_0/data_out",
-          "data_out"
+          "Controller_0/ld_calc_c",
+          "FSK_Block_correction_1/error_calc_ld"
+        ]
+      },
+      "Controller_0_ld_correct_error_c": {
+        "ports": [
+          "Controller_0/ld_correct_error_c",
+          "FSK_Block_correction_1/error_correct_ld"
+        ]
+      },
+      "Controller_0_ld_error_c": {
+        "ports": [
+          "Controller_0/ld_error_c",
+          "FSK_Block_correction_1/error_check_ld"
+        ]
+      },
+      "FSK_Block_correction_1_error_calc_fin": {
+        "ports": [
+          "FSK_Block_correction_1/error_calc_fin",
+          "Controller_0/calc_finish"
+        ]
+      },
+      "FSK_Block_correction_1_error_check_fin": {
+        "ports": [
+          "FSK_Block_correction_1/error_check_fin",
+          "Controller_0/error_finish"
+        ]
+      },
+      "FSK_Block_correction_1_error_correct_fin": {
+        "ports": [
+          "FSK_Block_correction_1/error_correct_fin",
+          "Controller_0/correct_error_finish"
         ]
       },
       "Net": {
         "ports": [
-          "clk",
-          "FSK_Block_correction_0/clk"
-        ]
-      },
-      "data_in_1": {
-        "ports": [
-          "data_in",
-          "FSK_Block_correction_0/data_in"
-        ]
-      },
-      "rst_1": {
-        "ports": [
-          "rst",
-          "FSK_Block_correction_0/rst"
+          "Controller_0/clk",
+          "FSK_Block_correction_1/clk"
         ]
       }
     }
