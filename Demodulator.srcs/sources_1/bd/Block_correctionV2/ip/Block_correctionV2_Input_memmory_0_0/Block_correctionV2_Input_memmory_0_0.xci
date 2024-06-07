@@ -1,14 +1,14 @@
 {
   "schema": "xilinx.com:schema:json_instance:1.0",
   "ip_inst": {
-    "xci_name": "Block_correctionV2_ControllerV2_0_0",
-    "cell_name": "ControllerV2_0",
-    "component_reference": "xilinx.com:module_ref:ControllerV2:1.0",
+    "xci_name": "Block_correctionV2_Input_memmory_0_0",
+    "cell_name": "Input_memmory_0",
+    "component_reference": "xilinx.com:module_ref:Input_memmory:1.0",
     "ip_revision": "1",
-    "gen_directory": "../../../../../../Demodulator.gen/sources_1/bd/Block_correctionV2/ip/Block_correctionV2_ControllerV2_0_0",
+    "gen_directory": "../../../../../../Demodulator.gen/sources_1/bd/Block_correctionV2/ip/Block_correctionV2_Input_memmory_0_0",
     "parameters": {
       "component_parameters": {
-        "Component_Name": [ { "value": "Block_correctionV2_ControllerV2_0_0", "resolve_type": "user", "usage": "all" } ]
+        "Component_Name": [ { "value": "Block_correctionV2_Input_memmory_0_0", "resolve_type": "user", "usage": "all" } ]
       },
       "project_parameters": {
         "ARCHITECTURE": [ { "value": "zynq" } ],
@@ -27,7 +27,7 @@
         "IPCONTEXT": [ { "value": "IP_Integrator" } ],
         "IPREVISION": [ { "value": "1" } ],
         "MANAGED": [ { "value": "TRUE" } ],
-        "OUTPUTDIR": [ { "value": "../../../../../../Demodulator.gen/sources_1/bd/Block_correctionV2/ip/Block_correctionV2_ControllerV2_0_0" } ],
+        "OUTPUTDIR": [ { "value": "../../../../../../Demodulator.gen/sources_1/bd/Block_correctionV2/ip/Block_correctionV2_Input_memmory_0_0" } ],
         "SELECTEDSIMMODEL": [ { "value": "" } ],
         "SHAREDDIR": [ { "value": "../../ipshared" } ],
         "SWVERSION": [ { "value": "2023.1" } ],
@@ -36,20 +36,11 @@
     },
     "boundary": {
       "ports": {
+        "data_in": [ { "direction": "in", "size_left": "79", "size_right": "0" } ],
         "clk": [ { "direction": "in" } ],
         "rst": [ { "direction": "in" } ],
-        "data_avaible": [ { "direction": "in" } ],
-        "calc_finish": [ { "direction": "in" } ],
-        "error_finish": [ { "direction": "in" } ],
-        "correct_error_finish": [ { "direction": "in" } ],
-        "data_send": [ { "direction": "in" } ],
-        "ready_recieve": [ { "direction": "out" } ],
-        "ready_send": [ { "direction": "out" } ],
-        "ld_calc_c": [ { "direction": "out" } ],
-        "ld_error_c": [ { "direction": "out" } ],
-        "ld_correct_error_c": [ { "direction": "out" } ],
-        "ld_input_memmory": [ { "direction": "out" } ],
-        "ld_output_memmory": [ { "direction": "out" } ]
+        "ld": [ { "direction": "in" } ],
+        "data_out": [ { "direction": "out", "size_left": "79", "size_right": "0" } ]
       },
       "interfaces": {
         "rst": {

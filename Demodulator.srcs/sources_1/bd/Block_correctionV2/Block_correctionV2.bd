@@ -10,10 +10,12 @@
       "tool_version": "2023.1"
     },
     "design_tree": {
-      "ControllerV2_0": "",
       "find_error_0": "",
       "correct_error_0": "",
-      "calc_parity_0": ""
+      "calc_parity_0": "",
+      "Input_memmory_0": "",
+      "Output_memmory_0": "",
+      "ControllerV2_0": ""
     },
     "ports": {
       "clk": {
@@ -34,57 +36,18 @@
         "direction": "O",
         "left": "63",
         "right": "0"
+      },
+      "ready": {
+        "direction": "O"
+      },
+      "data_send": {
+        "direction": "I"
+      },
+      "ready_send": {
+        "direction": "O"
       }
     },
     "components": {
-      "ControllerV2_0": {
-        "vlnv": "xilinx.com:module_ref:ControllerV2:1.0",
-        "xci_name": "Block_correctionV2_ControllerV2_0_0",
-        "xci_path": "ip\\Block_correctionV2_ControllerV2_0_0\\Block_correctionV2_ControllerV2_0_0.xci",
-        "inst_hier_path": "ControllerV2_0",
-        "reference_info": {
-          "ref_type": "hdl",
-          "ref_name": "ControllerV2",
-          "boundary_crc": "0x0"
-        },
-        "ports": {
-          "clk": {
-            "type": "clk",
-            "direction": "I",
-            "parameters": {
-              "ASSOCIATED_RESET": {
-                "value": "rst",
-                "value_src": "constant"
-              }
-            }
-          },
-          "rst": {
-            "type": "rst",
-            "direction": "I"
-          },
-          "data_avaible": {
-            "direction": "I"
-          },
-          "calc_finish": {
-            "direction": "I"
-          },
-          "error_finish": {
-            "direction": "I"
-          },
-          "correct_error_finish": {
-            "direction": "I"
-          },
-          "ld_calc_c": {
-            "direction": "O"
-          },
-          "ld_error_c": {
-            "direction": "O"
-          },
-          "ld_correct_error_c": {
-            "direction": "O"
-          }
-        }
-      },
       "find_error_0": {
         "vlnv": "xilinx.com:module_ref:find_error:1.0",
         "xci_name": "Block_correctionV2_find_error_0_0",
@@ -263,6 +226,149 @@
             "right": "0"
           }
         }
+      },
+      "Input_memmory_0": {
+        "vlnv": "xilinx.com:module_ref:Input_memmory:1.0",
+        "xci_name": "Block_correctionV2_Input_memmory_0_0",
+        "xci_path": "ip\\Block_correctionV2_Input_memmory_0_0\\Block_correctionV2_Input_memmory_0_0.xci",
+        "inst_hier_path": "Input_memmory_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "Input_memmory",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "data_in": {
+            "direction": "I",
+            "left": "79",
+            "right": "0"
+          },
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "rst",
+                "value_src": "constant"
+              }
+            }
+          },
+          "rst": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "ld": {
+            "direction": "I"
+          },
+          "data_out": {
+            "direction": "O",
+            "left": "79",
+            "right": "0"
+          }
+        }
+      },
+      "Output_memmory_0": {
+        "vlnv": "xilinx.com:module_ref:Output_memmory:1.0",
+        "xci_name": "Block_correctionV2_Output_memmory_0_0",
+        "xci_path": "ip\\Block_correctionV2_Output_memmory_0_0\\Block_correctionV2_Output_memmory_0_0.xci",
+        "inst_hier_path": "Output_memmory_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "Output_memmory",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "rst",
+                "value_src": "constant"
+              }
+            }
+          },
+          "rst": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "ld": {
+            "direction": "I"
+          },
+          "data_in": {
+            "direction": "I",
+            "left": "63",
+            "right": "0"
+          },
+          "data_out": {
+            "direction": "O",
+            "left": "63",
+            "right": "0"
+          }
+        }
+      },
+      "ControllerV2_0": {
+        "vlnv": "xilinx.com:module_ref:ControllerV2:1.0",
+        "xci_name": "Block_correctionV2_ControllerV2_0_0",
+        "xci_path": "ip\\Block_correctionV2_ControllerV2_0_0\\Block_correctionV2_ControllerV2_0_0.xci",
+        "inst_hier_path": "ControllerV2_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "ControllerV2",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "rst",
+                "value_src": "constant"
+              }
+            }
+          },
+          "rst": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "data_avaible": {
+            "direction": "I"
+          },
+          "calc_finish": {
+            "direction": "I"
+          },
+          "error_finish": {
+            "direction": "I"
+          },
+          "correct_error_finish": {
+            "direction": "I"
+          },
+          "data_send": {
+            "direction": "I"
+          },
+          "ready_recieve": {
+            "direction": "O"
+          },
+          "ready_send": {
+            "direction": "O"
+          },
+          "ld_calc_c": {
+            "direction": "O"
+          },
+          "ld_error_c": {
+            "direction": "O"
+          },
+          "ld_correct_error_c": {
+            "direction": "O"
+          },
+          "ld_input_memmory": {
+            "direction": "O"
+          },
+          "ld_output_memmory": {
+            "direction": "O"
+          }
+        }
       }
     },
     "nets": {
@@ -282,6 +388,42 @@
         "ports": [
           "ControllerV2_0/ld_error_c",
           "find_error_0/ld"
+        ]
+      },
+      "ControllerV2_0_ld_input_memmory": {
+        "ports": [
+          "ControllerV2_0/ld_input_memmory",
+          "Input_memmory_0/ld"
+        ]
+      },
+      "ControllerV2_0_ld_output_memmory": {
+        "ports": [
+          "ControllerV2_0/ld_output_memmory",
+          "Output_memmory_0/ld"
+        ]
+      },
+      "ControllerV2_0_ready": {
+        "ports": [
+          "ControllerV2_0/ready_recieve",
+          "ready"
+        ]
+      },
+      "ControllerV2_0_ready_send": {
+        "ports": [
+          "ControllerV2_0/ready_send",
+          "ready_send"
+        ]
+      },
+      "Input_memmory_0_data_out": {
+        "ports": [
+          "Input_memmory_0/data_out",
+          "calc_parity_0/data_in"
+        ]
+      },
+      "Output_memmory_0_data_out": {
+        "ports": [
+          "Output_memmory_0/data_out",
+          "data_out"
         ]
       },
       "calc_parity_0_Finish": {
@@ -323,10 +465,11 @@
       "clk_1": {
         "ports": [
           "clk",
-          "ControllerV2_0/clk",
           "find_error_0/clk",
           "correct_error_0/clk",
-          "calc_parity_0/clk"
+          "calc_parity_0/clk",
+          "Input_memmory_0/clk",
+          "ControllerV2_0/clk"
         ]
       },
       "correct_error_0_Finish": {
@@ -338,7 +481,7 @@
       "correct_error_0_data_out": {
         "ports": [
           "correct_error_0/data_out",
-          "data_out"
+          "Output_memmory_0/data_in"
         ]
       },
       "data_avaible_1": {
@@ -350,7 +493,13 @@
       "data_in_1": {
         "ports": [
           "data_in",
-          "calc_parity_0/data_in"
+          "Input_memmory_0/data_in"
+        ]
+      },
+      "data_send_1": {
+        "ports": [
+          "data_send",
+          "ControllerV2_0/data_send"
         ]
       },
       "find_error_0_Finish": {
@@ -374,10 +523,13 @@
       "rst_1": {
         "ports": [
           "rst",
-          "ControllerV2_0/rst",
           "find_error_0/rst",
           "correct_error_0/rst",
-          "calc_parity_0/rst"
+          "calc_parity_0/rst",
+          "Input_memmory_0/rst",
+          "Output_memmory_0/clk",
+          "Output_memmory_0/rst",
+          "ControllerV2_0/rst"
         ]
       }
     }
