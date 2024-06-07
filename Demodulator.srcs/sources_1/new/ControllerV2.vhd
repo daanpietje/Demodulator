@@ -33,7 +33,7 @@ begin
 end process;
 
 -- next state
-process(presentstate, data_avaible)   
+process(presentstate, data_avaible, calc_finish, error_finish, correct_error_finish)   
 variable n_s  : state;
   
 begin

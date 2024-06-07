@@ -1,0 +1,12 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/daanv/Desktop/MO8/Demodulator/Demodulator.ip_user_files/bd/Block_correctionV2/ip/Block_correctionV2_calc_parity_0_0/sim/Block_correctionV2_calc_parity_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Block_correctionV2_calc_parity_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/daanv/Desktop/MO8/Demodulator/Demodulator.ip_user_files/bd/Block_correctionV2/ip/Block_correctionV2_find_error_0_0/sim/Block_correctionV2_find_error_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Block_correctionV2_find_error_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/daanv/Desktop/MO8/Demodulator/Demodulator.ip_user_files/bd/Block_correctionV2/ip/Block_correctionV2_correct_error_0_0/sim/Block_correctionV2_correct_error_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Block_correctionV2_correct_error_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/daanv/Desktop/MO8/Demodulator/Demodulator.ip_user_files/bd/Block_correctionV2/ip/Block_correctionV2_ControllerV2_0_0/sim/Block_correctionV2_ControllerV2_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Block_correctionV2_ControllerV2_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/daanv/Desktop/MO8/Demodulator/Demodulator.ip_user_files/bd/Block_correctionV2/sim/Block_correctionV2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Block_correctionV2
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/daanv/Desktop/MO8/Demodulator/Demodulator.gen/sources_1/bd/Block_correctionV2/hdl/Block_correctionV2_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Block_correctionV2_wrapper

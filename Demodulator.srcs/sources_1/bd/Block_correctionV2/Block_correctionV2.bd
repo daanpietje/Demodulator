@@ -1,18 +1,41 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0x0",
+      "boundary_crc": "0x8F1F96E45E514549",
       "device": "xc7z020clg400-1",
       "gen_directory": "../../../../Demodulator.gen/sources_1/bd/Block_correctionV2",
       "name": "Block_correctionV2",
       "rev_ctrl_bd_flag": "RevCtrlBdOff",
       "synth_flow_mode": "Hierarchical",
-      "tool_version": "2023.1"
+      "tool_version": "2023.1",
+      "validated": "true"
     },
     "design_tree": {
       "calc_parity_0": "",
       "find_error_0": "",
-      "correct_error_0": ""
+      "correct_error_0": "",
+      "ControllerV2_0": ""
+    },
+    "ports": {
+      "clk": {
+        "direction": "I"
+      },
+      "rst": {
+        "direction": "I"
+      },
+      "data_avaible": {
+        "direction": "I"
+      },
+      "data_in": {
+        "direction": "I",
+        "left": "79",
+        "right": "0"
+      },
+      "data_out": {
+        "direction": "O",
+        "left": "63",
+        "right": "0"
+      }
     },
     "components": {
       "calc_parity_0": {
@@ -193,9 +216,81 @@
             "right": "0"
           }
         }
+      },
+      "ControllerV2_0": {
+        "vlnv": "xilinx.com:module_ref:ControllerV2:1.0",
+        "xci_name": "Block_correctionV2_ControllerV2_0_0",
+        "xci_path": "ip\\Block_correctionV2_ControllerV2_0_0\\Block_correctionV2_ControllerV2_0_0.xci",
+        "inst_hier_path": "ControllerV2_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "ControllerV2",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "rst",
+                "value_src": "constant"
+              }
+            }
+          },
+          "rst": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "data_avaible": {
+            "direction": "I"
+          },
+          "calc_finish": {
+            "direction": "I"
+          },
+          "error_finish": {
+            "direction": "I"
+          },
+          "correct_error_finish": {
+            "direction": "I"
+          },
+          "ld_calc_c": {
+            "direction": "O"
+          },
+          "ld_error_c": {
+            "direction": "O"
+          },
+          "ld_correct_error_c": {
+            "direction": "O"
+          }
+        }
       }
     },
     "nets": {
+      "ControllerV2_0_ld_calc_c": {
+        "ports": [
+          "ControllerV2_0/ld_calc_c",
+          "calc_parity_0/ld"
+        ]
+      },
+      "ControllerV2_0_ld_correct_error_c": {
+        "ports": [
+          "ControllerV2_0/ld_correct_error_c",
+          "correct_error_0/ld"
+        ]
+      },
+      "ControllerV2_0_ld_error_c": {
+        "ports": [
+          "ControllerV2_0/ld_error_c",
+          "find_error_0/ld"
+        ]
+      },
+      "calc_parity_0_Finish": {
+        "ports": [
+          "calc_parity_0/Finish",
+          "ControllerV2_0/calc_finish"
+        ]
+      },
       "calc_parity_0_col_parity": {
         "ports": [
           "calc_parity_0/col_parity",
@@ -226,6 +321,45 @@
           "find_error_0/row_parity_calc"
         ]
       },
+      "clk_1": {
+        "ports": [
+          "clk",
+          "calc_parity_0/clk",
+          "find_error_0/clk",
+          "correct_error_0/clk",
+          "ControllerV2_0/clk"
+        ]
+      },
+      "correct_error_0_Finish": {
+        "ports": [
+          "correct_error_0/Finish",
+          "ControllerV2_0/correct_error_finish"
+        ]
+      },
+      "correct_error_0_data_out": {
+        "ports": [
+          "correct_error_0/data_out",
+          "data_out"
+        ]
+      },
+      "data_avaible_1": {
+        "ports": [
+          "data_avaible",
+          "ControllerV2_0/data_avaible"
+        ]
+      },
+      "data_in_1": {
+        "ports": [
+          "data_in",
+          "calc_parity_0/data_in"
+        ]
+      },
+      "find_error_0_Finish": {
+        "ports": [
+          "find_error_0/Finish",
+          "ControllerV2_0/error_finish"
+        ]
+      },
       "find_error_0_col_error": {
         "ports": [
           "find_error_0/col_error",
@@ -236,6 +370,15 @@
         "ports": [
           "find_error_0/row_error",
           "correct_error_0/col_error"
+        ]
+      },
+      "rst_1": {
+        "ports": [
+          "rst",
+          "find_error_0/rst",
+          "correct_error_0/rst",
+          "calc_parity_0/rst",
+          "ControllerV2_0/rst"
         ]
       }
     }
