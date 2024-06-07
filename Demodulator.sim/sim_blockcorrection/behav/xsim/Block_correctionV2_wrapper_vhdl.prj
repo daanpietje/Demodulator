@@ -1,9 +1,0 @@
-# compile vhdl design source files
-vhdl xil_defaultlib  \
-"../../../../Demodulator.srcs/sources_1/new/calc_parity.vhd" \
-"../../../../Demodulator.srcs/sources_1/new/find_error.vhd" \
-"../../../../Demodulator.srcs/sources_1/new/correct_error.vhd" \
-"../../../../Demodulator.srcs/sources_1/new/ControllerV2.vhd" \
-
-# Do not sort compile order
-nosort

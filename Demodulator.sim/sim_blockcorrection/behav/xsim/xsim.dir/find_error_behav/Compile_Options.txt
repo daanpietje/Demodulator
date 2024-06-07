@@ -1,0 +1,1 @@
+--incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "secureip" -L "xpm" --snapshot "find_error_behav" "xil_defaultlib.find_error" -log "elaborate.log" 

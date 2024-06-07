@@ -58,9 +58,9 @@ begin
         when S3 => outbus := "100";
         when others => outbus := "000";
     end case;
-    ld_calc_c <= outbus(2) after 1 ns;
+    ld_calc_c <= outbus(0) after 1 ns;
     ld_error_c <= outbus(1) after 1 ns;
-    ld_correct_error_c <= outbus(0) after 1 ns;
+    ld_correct_error_c <= outbus(2) after 1 ns;
 end process;
 
 end Behavioral;

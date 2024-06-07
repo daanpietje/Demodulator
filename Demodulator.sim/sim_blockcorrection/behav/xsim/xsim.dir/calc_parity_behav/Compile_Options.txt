@@ -1,0 +1,1 @@
+--incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "secureip" -L "xpm" --snapshot "calc_parity_behav" "xil_defaultlib.calc_parity" -log "elaborate.log" 

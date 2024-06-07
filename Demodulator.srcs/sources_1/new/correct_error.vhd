@@ -9,7 +9,7 @@ entity correct_error is
         data_in : in STD_LOGIC_VECTOR(63 downto 0);
         data_out : out STD_LOGIC_VECTOR(63 downto 0);
         row_error : in STD_LOGIC_VECTOR(7 downto 0);
-        Finish : out STD_LOGIC;
+        finish : out STD_LOGIC;
         col_error : in STD_LOGIC_VECTOR(7 downto 0)
     );
 end correct_error;
@@ -22,7 +22,8 @@ begin
 if rst = '1' then
         data_block <= (others => '0');
 elsif rising_edge(clk) then
-    Finish <= '0';
+    finish <= '0';
+    if ld = '1' then
     data_block <= data_in;
     for k in 0 to 7 loop
             if row_error(k) = '1' then
@@ -37,6 +38,8 @@ elsif rising_edge(clk) then
                 end loop;
             end if;
         end loop;
+        finish <= '1';
+        end if;
 end if;
       data_out <= data_block;
 end process;

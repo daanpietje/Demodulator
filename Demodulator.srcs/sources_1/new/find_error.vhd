@@ -56,8 +56,8 @@ if rst = '1' then
     row_error_t <= (others => '0');
     col_error_t <= (others => '0');
 elsif rising_edge(clk) then
+     Finish <= '0';
 if ld = '1' then
-    Finish <= '0';
     for l in 0 to 7 loop
         if row_parity(l) = row_parity_calc(l) then
             row_error_t(l) <= '0';
@@ -73,7 +73,7 @@ if ld = '1' then
     Finish <= '1';
 end if;
 end if;
-row_error <= row_error_t;
-col_error <= col_error_t;
+    row_error <= row_error_t;
+    col_error <= col_error_t;
 end process;
 end Behavioral;

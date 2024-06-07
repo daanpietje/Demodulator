@@ -4,7 +4,7 @@ onerror {quit -force}
 transcript on
 
 vlib work
-vmap -link {C:/Users/daanv/Desktop/MO8/Demodulator/Demodulator.cache/compile_simlib/activehdl}
+vmap -link {D:/Users/daanv/Documents/GitHub/Demodulator/Demodulator.cache/compile_simlib/activehdl}
 vlib activehdl/xil_defaultlib
 
 vlog -work xil_defaultlib  -v2k5 -l xil_defaultlib \
