@@ -72,7 +72,7 @@ input wire clk;
 (* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 rst RST" *)
 input wire rst;
 input wire ld;
-input wire [63 : 0] data_in;
+input wire [79 : 0] data_in;
 output wire [63 : 0] data_out;
 input wire [7 : 0] row_error;
 output wire finish;

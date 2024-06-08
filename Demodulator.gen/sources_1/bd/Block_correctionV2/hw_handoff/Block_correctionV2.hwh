@@ -1,27 +1,27 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Sat Jun  8 10:35:01 2024" VIVADOVERSION="2023.1">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Sat Jun  8 11:14:19 2024" VIVADOVERSION="2023.1">
 
   <SYSTEMINFO ARCH="zynq" DEVICE="7z020" NAME="Block_correctionV2" PACKAGE="clg400" SPEEDGRADE="-1"/>
 
   <EXTERNALPORTS>
     <PORT DIR="I" NAME="clk" SIGIS="undef" SIGNAME="External_Ports_clk">
       <CONNECTIONS>
-        <CONNECTION INSTANCE="calc_parity_0" PORT="clk"/>
         <CONNECTION INSTANCE="Input_memmory_0" PORT="clk"/>
         <CONNECTION INSTANCE="find_error_0" PORT="clk"/>
         <CONNECTION INSTANCE="Output_memmory_0" PORT="clk"/>
-        <CONNECTION INSTANCE="correct_error_0" PORT="clk"/>
         <CONNECTION INSTANCE="ControllerV2_0" PORT="clk"/>
+        <CONNECTION INSTANCE="calc_parity_0" PORT="clk"/>
+        <CONNECTION INSTANCE="correct_error_0" PORT="clk"/>
       </CONNECTIONS>
     </PORT>
     <PORT DIR="I" NAME="rst" SIGIS="undef" SIGNAME="External_Ports_rst">
       <CONNECTIONS>
         <CONNECTION INSTANCE="Output_memmory_0" PORT="rst"/>
         <CONNECTION INSTANCE="Input_memmory_0" PORT="rst"/>
-        <CONNECTION INSTANCE="calc_parity_0" PORT="rst"/>
         <CONNECTION INSTANCE="find_error_0" PORT="rst"/>
-        <CONNECTION INSTANCE="correct_error_0" PORT="rst"/>
         <CONNECTION INSTANCE="ControllerV2_0" PORT="rst"/>
+        <CONNECTION INSTANCE="calc_parity_0" PORT="rst"/>
+        <CONNECTION INSTANCE="correct_error_0" PORT="rst"/>
       </CONNECTIONS>
     </PORT>
     <PORT DIR="I" NAME="data_avaible" SIGIS="undef" SIGNAME="External_Ports_data_avaible">
@@ -39,7 +39,7 @@
         <CONNECTION INSTANCE="Output_memmory_0" PORT="data_out"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="O" NAME="ready" SIGIS="undef" SIGNAME="ControllerV2_0_ready_recieve">
+    <PORT DIR="O" NAME="ready_recieve" SIGIS="undef" SIGNAME="ControllerV2_0_ready_recieve">
       <CONNECTIONS>
         <CONNECTION INSTANCE="ControllerV2_0" PORT="ready_recieve"/>
       </CONNECTIONS>
@@ -103,7 +103,7 @@
         </PORT>
         <PORT DIR="O" NAME="ready_recieve" SIGIS="undef" SIGNAME="ControllerV2_0_ready_recieve">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="External_Ports" PORT="ready"/>
+            <CONNECTION INSTANCE="External_Ports" PORT="ready_recieve"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" NAME="ready_send" SIGIS="undef" SIGNAME="ControllerV2_0_ready_send">
@@ -169,6 +169,7 @@
         <PORT DIR="O" LEFT="79" NAME="data_out" RIGHT="0" SIGIS="undef" SIGNAME="Input_memmory_0_data_out">
           <CONNECTIONS>
             <CONNECTION INSTANCE="calc_parity_0" PORT="data_in"/>
+            <CONNECTION INSTANCE="correct_error_0" PORT="data_in"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>
@@ -241,11 +242,6 @@
             <CONNECTION INSTANCE="ControllerV2_0" PORT="calc_finish"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="63" NAME="data_out" RIGHT="0" SIGIS="undef" SIGNAME="calc_parity_0_data_out">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="correct_error_0" PORT="data_in"/>
-          </CONNECTIONS>
-        </PORT>
         <PORT DIR="O" LEFT="7" NAME="row_parity" RIGHT="0" SIGIS="undef" SIGNAME="calc_parity_0_row_parity">
           <CONNECTIONS>
             <CONNECTION INSTANCE="find_error_0" PORT="row_parity"/>
@@ -291,9 +287,9 @@
             <CONNECTION INSTANCE="ControllerV2_0" PORT="ld_correct_error_c"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="63" NAME="data_in" RIGHT="0" SIGIS="undef" SIGNAME="calc_parity_0_data_out">
+        <PORT DIR="I" LEFT="79" NAME="data_in" RIGHT="0" SIGIS="undef" SIGNAME="Input_memmory_0_data_out">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="calc_parity_0" PORT="data_out"/>
+            <CONNECTION INSTANCE="Input_memmory_0" PORT="data_out"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" LEFT="63" NAME="data_out" RIGHT="0" SIGIS="undef" SIGNAME="correct_error_0_data_out">

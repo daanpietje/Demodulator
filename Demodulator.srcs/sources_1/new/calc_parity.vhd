@@ -9,7 +9,6 @@ Port (
         ld : in STD_LOGIC;
         data_in : in STD_LOGIC_VECTOR(79 downto 0);
         finish : out STD_LOGIC;
-        data_out : out STD_LOGIC_VECTOR(63 downto 0);
         row_parity : out STD_LOGiC_VECTOR(7 downto 0);
         col_parity : out STD_LOGiC_VECTOR(7 downto 0);
         row_parity_calc : out STD_LOGiC_VECTOR(7 downto 0);
@@ -54,6 +53,5 @@ begin
     end if;
     row_parity_calc <= row_parity_calc_t;
     col_parity_calc <= col_parity_calc_t;
-    data_out <= data_block;
 end process;
 end Behavioral;
