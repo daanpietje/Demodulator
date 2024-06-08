@@ -61,7 +61,7 @@ module Block_correctionV2_correct_error_0_0 (
   data_in,
   data_out,
   row_error,
-  Finish,
+  finish,
   col_error
 );
 
@@ -75,7 +75,7 @@ input wire ld;
 input wire [63 : 0] data_in;
 output wire [63 : 0] data_out;
 input wire [7 : 0] row_error;
-output wire Finish;
+output wire finish;
 input wire [7 : 0] col_error;
 
   correct_error inst (
@@ -85,7 +85,7 @@ input wire [7 : 0] col_error;
     .data_in(data_in),
     .data_out(data_out),
     .row_error(row_error),
-    .Finish(Finish),
+    .finish(finish),
     .col_error(col_error)
   );
 endmodule

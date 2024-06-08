@@ -1,35 +1,5 @@
-----------------------------------------------------------------------------------
--- Company:
--- Engineer:
---
--- Create Date: 04.06.2024 10:29:33
--- Design Name:
--- Module Name: find_error - Behavioral
--- Project Name:
--- Target Devices:
--- Tool Versions:
--- Description:
---
--- Dependencies:
---
--- Revision:
--- Revision 0.01 - File Created
--- Additional Comments:
---
-----------------------------------------------------------------------------------
-
-
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
-
--- Uncomment the following library declaration if using
--- arithmetic functions with Signed or Unsigned values
---use IEEE.NUMERIC_STD.ALL;
-
--- Uncomment the following library declaration if instantiating
--- any Xilinx leaf cells in this code.
---library UNISIM;
---use UNISIM.VComponents.all;
 
 entity find_error is
 Port (
@@ -41,7 +11,7 @@ Port (
     row_parity_calc : in STD_LOGIC_VECTOR(7 downto 0);
     col_parity_calc : in STD_LOGIC_VECTOR(7 downto 0);
     row_error : out STD_LOGIC_VECTOR(7 downto 0);
-    Finish : out STD_LOGIC;
+    finish : out STD_LOGIC;
     col_error : out STD_LOGIC_VECTOR(7 downto 0)
 );
 end find_error;
@@ -56,7 +26,7 @@ if rst = '1' then
     row_error_t <= (others => '0');
     col_error_t <= (others => '0');
 elsif rising_edge(clk) then
-     Finish <= '0';
+     finish <= '0';
 if ld = '1' then
     for l in 0 to 7 loop
         if row_parity(l) = row_parity_calc(l) then
@@ -70,7 +40,7 @@ if ld = '1' then
             col_error_t(l) <= '1';
         end if;
     end loop;
-    Finish <= '1';
+    finish <= '1';
 end if;
 end if;
     row_error <= row_error_t;

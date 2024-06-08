@@ -59,7 +59,7 @@ module Block_correctionV2_calc_parity_0_0 (
   rst,
   ld,
   data_in,
-  Finish,
+  finish,
   data_out,
   row_parity,
   col_parity,
@@ -75,7 +75,7 @@ input wire clk;
 input wire rst;
 input wire ld;
 input wire [79 : 0] data_in;
-output wire Finish;
+output wire finish;
 output wire [63 : 0] data_out;
 output wire [7 : 0] row_parity;
 output wire [7 : 0] col_parity;
@@ -87,7 +87,7 @@ output wire [7 : 0] col_parity_calc;
     .rst(rst),
     .ld(ld),
     .data_in(data_in),
-    .Finish(Finish),
+    .finish(finish),
     .data_out(data_out),
     .row_parity(row_parity),
     .col_parity(col_parity),

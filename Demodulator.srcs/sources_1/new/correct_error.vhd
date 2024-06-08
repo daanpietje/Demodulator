@@ -21,11 +21,13 @@ process(clk, rst)
 begin
 if rst = '1' then
         data_block <= (others => '0');
+        finish <= '0';
 elsif rising_edge(clk) then
     finish <= '0';
-    if ld = '1' then
     data_block <= data_in;
-    for k in 0 to 7 loop
+    if ld = '1' then
+        data_block <= data_in;
+        for k in 0 to 7 loop
             if row_error(k) = '1' then
                 for l in 0 to 7 loop
                     if col_error(l) = '1' then
@@ -39,8 +41,8 @@ elsif rising_edge(clk) then
             end if;
         end loop;
         finish <= '1';
+        data_out <= data_block;
         end if;
 end if;
-      data_out <= data_block;
 end process;
 end Behavioral;

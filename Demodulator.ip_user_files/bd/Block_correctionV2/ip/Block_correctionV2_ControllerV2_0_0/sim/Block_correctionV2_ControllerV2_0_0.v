@@ -61,9 +61,14 @@ module Block_correctionV2_ControllerV2_0_0 (
   calc_finish,
   error_finish,
   correct_error_finish,
+  data_send,
+  ready_recieve,
+  ready_send,
   ld_calc_c,
   ld_error_c,
-  ld_correct_error_c
+  ld_correct_error_c,
+  ld_input_memmory,
+  ld_output_memmory
 );
 
 (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME clk, ASSOCIATED_RESET rst, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, INSERT_VIP 0" *)
@@ -76,9 +81,14 @@ input wire data_avaible;
 input wire calc_finish;
 input wire error_finish;
 input wire correct_error_finish;
+input wire data_send;
+output wire ready_recieve;
+output wire ready_send;
 output wire ld_calc_c;
 output wire ld_error_c;
 output wire ld_correct_error_c;
+output wire ld_input_memmory;
+output wire ld_output_memmory;
 
   ControllerV2 inst (
     .clk(clk),
@@ -87,8 +97,13 @@ output wire ld_correct_error_c;
     .calc_finish(calc_finish),
     .error_finish(error_finish),
     .correct_error_finish(correct_error_finish),
+    .data_send(data_send),
+    .ready_recieve(ready_recieve),
+    .ready_send(ready_send),
     .ld_calc_c(ld_calc_c),
     .ld_error_c(ld_error_c),
-    .ld_correct_error_c(ld_correct_error_c)
+    .ld_correct_error_c(ld_correct_error_c),
+    .ld_input_memmory(ld_input_memmory),
+    .ld_output_memmory(ld_output_memmory)
   );
 endmodule

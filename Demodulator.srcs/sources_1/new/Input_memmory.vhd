@@ -46,7 +46,7 @@ begin
 process(clk, rst)
 begin
     if rst = '1' then
-        data_out <= "0000000000000000000000000000000000000000000000000000000000000000000000000000000";
+        data_out <= "00000000000000000000000000000000000000000000000000000000000000000000000000000000";
     elsif rising_edge(clk) then
         if ld = '1' then
             data_out <= data_in;

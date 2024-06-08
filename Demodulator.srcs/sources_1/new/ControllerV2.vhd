@@ -64,10 +64,10 @@ begin
         when S1 => outbus := "00100000"; -- data opslaan
         when S2 => outbus := "00000001"; -- parity berekenen
         when S3 => outbus := "00000010"; -- parity vergelijken
-        when S4 => outbus := "00001000"; -- fout corrigeren
+        when S4 => outbus := "00000100"; -- fout corrigeren
         when S5 => outbus := "01000000"; -- dataopslaan
         when S6 => outbus := "10000000"; -- wachten tot data ontvangen is
-        when others => outbus := "0000000";
+        when others => outbus := "00000000";
     end case;
     ld_calc_c <= outbus(0) after 1 ns;
     ld_error_c <= outbus(1) after 1 ns;

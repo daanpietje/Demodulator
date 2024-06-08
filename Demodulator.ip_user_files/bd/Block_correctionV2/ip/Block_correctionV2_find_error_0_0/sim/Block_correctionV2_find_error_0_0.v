@@ -63,7 +63,7 @@ module Block_correctionV2_find_error_0_0 (
   row_parity_calc,
   col_parity_calc,
   row_error,
-  Finish,
+  finish,
   col_error
 );
 
@@ -79,7 +79,7 @@ input wire [7 : 0] col_parity;
 input wire [7 : 0] row_parity_calc;
 input wire [7 : 0] col_parity_calc;
 output wire [7 : 0] row_error;
-output wire Finish;
+output wire finish;
 output wire [7 : 0] col_error;
 
   find_error inst (
@@ -91,7 +91,7 @@ output wire [7 : 0] col_error;
     .row_parity_calc(row_parity_calc),
     .col_parity_calc(col_parity_calc),
     .row_error(row_error),
-    .Finish(Finish),
+    .finish(finish),
     .col_error(col_error)
   );
 endmodule

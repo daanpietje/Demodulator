@@ -246,7 +246,7 @@
         </spirit:wire>
       </spirit:port>
       <spirit:port>
-        <spirit:name>Finish</spirit:name>
+        <spirit:name>finish</spirit:name>
         <spirit:wire>
           <spirit:direction>out</spirit:direction>
           <spirit:wireTypeDefs>
