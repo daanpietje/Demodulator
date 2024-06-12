@@ -2,10 +2,10 @@
 // Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
-// Date        : Sat Jun  8 10:56:21 2024
-// Host        : Desktop_Daan running 64-bit major release  (build 9200)
+// Date        : Wed Jun 12 13:58:44 2024
+// Host        : DaanAsus running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode funcsim
-//               d:/Users/daanv/Documents/GitHub/Demodulator/Demodulator.gen/sources_1/bd/Block_correctionV2/ip/Block_correctionV2_find_error_0_0/Block_correctionV2_find_error_0_0_sim_netlist.v
+//               c:/Users/daanv/Desktop/MO8/Demodulator/Demodulator.gen/sources_1/bd/Block_correctionV2/ip/Block_correctionV2_find_error_0_0/Block_correctionV2_find_error_0_0_sim_netlist.v
 // Design      : Block_correctionV2_find_error_0_0
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -100,6 +100,7 @@ module Block_correctionV2_find_error_0_0_find_error
   wire finish;
   wire finish_i_1_n_0;
   wire ld;
+  wire p_0_in;
   wire [7:0]row_error;
   wire \row_error_t[0]_i_1_n_0 ;
   wire \row_error_t[1]_i_1_n_0 ;
@@ -164,57 +165,57 @@ module Block_correctionV2_find_error_0_0_find_error
   FDCE \col_error_t_reg[0] 
        (.C(clk),
         .CE(ld),
-        .CLR(rst),
+        .CLR(p_0_in),
         .D(\col_error_t[0]_i_1_n_0 ),
         .Q(col_error[0]));
   FDCE \col_error_t_reg[1] 
        (.C(clk),
         .CE(ld),
-        .CLR(rst),
+        .CLR(p_0_in),
         .D(\col_error_t[1]_i_1_n_0 ),
         .Q(col_error[1]));
   FDCE \col_error_t_reg[2] 
        (.C(clk),
         .CE(ld),
-        .CLR(rst),
+        .CLR(p_0_in),
         .D(\col_error_t[2]_i_1_n_0 ),
         .Q(col_error[2]));
   FDCE \col_error_t_reg[3] 
        (.C(clk),
         .CE(ld),
-        .CLR(rst),
+        .CLR(p_0_in),
         .D(\col_error_t[3]_i_1_n_0 ),
         .Q(col_error[3]));
   FDCE \col_error_t_reg[4] 
        (.C(clk),
         .CE(ld),
-        .CLR(rst),
+        .CLR(p_0_in),
         .D(\col_error_t[4]_i_1_n_0 ),
         .Q(col_error[4]));
   FDCE \col_error_t_reg[5] 
        (.C(clk),
         .CE(ld),
-        .CLR(rst),
+        .CLR(p_0_in),
         .D(\col_error_t[5]_i_1_n_0 ),
         .Q(col_error[5]));
   FDCE \col_error_t_reg[6] 
        (.C(clk),
         .CE(ld),
-        .CLR(rst),
+        .CLR(p_0_in),
         .D(\col_error_t[6]_i_1_n_0 ),
         .Q(col_error[6]));
   FDCE \col_error_t_reg[7] 
        (.C(clk),
         .CE(ld),
-        .CLR(rst),
+        .CLR(p_0_in),
         .D(\col_error_t[7]_i_1_n_0 ),
         .Q(col_error[7]));
   LUT3 #(
     .INIT(8'hB8)) 
     finish_i_1
-       (.I0(finish),
+       (.I0(ld),
         .I1(rst),
-        .I2(ld),
+        .I2(finish),
         .O(finish_i_1_n_0));
   FDRE finish_reg
        (.C(clk),
@@ -270,52 +271,57 @@ module Block_correctionV2_find_error_0_0_find_error
        (.I0(row_parity_calc[7]),
         .I1(row_parity[7]),
         .O(\row_error_t[7]_i_1_n_0 ));
+  LUT1 #(
+    .INIT(2'h1)) 
+    \row_error_t[7]_i_2 
+       (.I0(rst),
+        .O(p_0_in));
   FDCE \row_error_t_reg[0] 
        (.C(clk),
         .CE(ld),
-        .CLR(rst),
+        .CLR(p_0_in),
         .D(\row_error_t[0]_i_1_n_0 ),
         .Q(row_error[0]));
   FDCE \row_error_t_reg[1] 
        (.C(clk),
         .CE(ld),
-        .CLR(rst),
+        .CLR(p_0_in),
         .D(\row_error_t[1]_i_1_n_0 ),
         .Q(row_error[1]));
   FDCE \row_error_t_reg[2] 
        (.C(clk),
         .CE(ld),
-        .CLR(rst),
+        .CLR(p_0_in),
         .D(\row_error_t[2]_i_1_n_0 ),
         .Q(row_error[2]));
   FDCE \row_error_t_reg[3] 
        (.C(clk),
         .CE(ld),
-        .CLR(rst),
+        .CLR(p_0_in),
         .D(\row_error_t[3]_i_1_n_0 ),
         .Q(row_error[3]));
   FDCE \row_error_t_reg[4] 
        (.C(clk),
         .CE(ld),
-        .CLR(rst),
+        .CLR(p_0_in),
         .D(\row_error_t[4]_i_1_n_0 ),
         .Q(row_error[4]));
   FDCE \row_error_t_reg[5] 
        (.C(clk),
         .CE(ld),
-        .CLR(rst),
+        .CLR(p_0_in),
         .D(\row_error_t[5]_i_1_n_0 ),
         .Q(row_error[5]));
   FDCE \row_error_t_reg[6] 
        (.C(clk),
         .CE(ld),
-        .CLR(rst),
+        .CLR(p_0_in),
         .D(\row_error_t[6]_i_1_n_0 ),
         .Q(row_error[6]));
   FDCE \row_error_t_reg[7] 
        (.C(clk),
         .CE(ld),
-        .CLR(rst),
+        .CLR(p_0_in),
         .D(\row_error_t[7]_i_1_n_0 ),
         .Q(row_error[7]));
 endmodule

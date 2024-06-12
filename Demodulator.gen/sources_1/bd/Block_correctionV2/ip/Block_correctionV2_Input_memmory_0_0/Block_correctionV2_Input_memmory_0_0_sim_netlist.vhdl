@@ -2,10 +2,10 @@
 -- Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
--- Date        : Sat Jun  8 10:48:55 2024
--- Host        : Desktop_Daan running 64-bit major release  (build 9200)
+-- Date        : Wed Jun 12 13:55:21 2024
+-- Host        : DaanAsus running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode funcsim
---               d:/Users/daanv/Documents/GitHub/Demodulator/Demodulator.gen/sources_1/bd/Block_correctionV2/ip/Block_correctionV2_Input_memmory_0_0/Block_correctionV2_Input_memmory_0_0_sim_netlist.vhdl
+--               c:/Users/daanv/Desktop/MO8/Demodulator/Demodulator.gen/sources_1/bd/Block_correctionV2/ip/Block_correctionV2_Input_memmory_0_0/Block_correctionV2_Input_memmory_0_0_sim_netlist.vhdl
 -- Design      : Block_correctionV2_Input_memmory_0_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -28,12 +28,21 @@ entity Block_correctionV2_Input_memmory_0_0_Input_memmory is
 end Block_correctionV2_Input_memmory_0_0_Input_memmory;
 
 architecture STRUCTURE of Block_correctionV2_Input_memmory_0_0_Input_memmory is
+  signal \data_out[79]_i_1_n_0\ : STD_LOGIC;
 begin
+\data_out[79]_i_1\: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"1"
+    )
+        port map (
+      I0 => rst,
+      O => \data_out[79]_i_1_n_0\
+    );
 \data_out_reg[0]\: unisim.vcomponents.FDCE
      port map (
       C => clk,
       CE => ld,
-      CLR => rst,
+      CLR => \data_out[79]_i_1_n_0\,
       D => data_in(0),
       Q => data_out(0)
     );
@@ -41,7 +50,7 @@ begin
      port map (
       C => clk,
       CE => ld,
-      CLR => rst,
+      CLR => \data_out[79]_i_1_n_0\,
       D => data_in(10),
       Q => data_out(10)
     );
@@ -49,7 +58,7 @@ begin
      port map (
       C => clk,
       CE => ld,
-      CLR => rst,
+      CLR => \data_out[79]_i_1_n_0\,
       D => data_in(11),
       Q => data_out(11)
     );
@@ -57,7 +66,7 @@ begin
      port map (
       C => clk,
       CE => ld,
-      CLR => rst,
+      CLR => \data_out[79]_i_1_n_0\,
       D => data_in(12),
       Q => data_out(12)
     );
@@ -65,7 +74,7 @@ begin
      port map (
       C => clk,
       CE => ld,
-      CLR => rst,
+      CLR => \data_out[79]_i_1_n_0\,
       D => data_in(13),
       Q => data_out(13)
     );
@@ -73,7 +82,7 @@ begin
      port map (
       C => clk,
       CE => ld,
-      CLR => rst,
+      CLR => \data_out[79]_i_1_n_0\,
       D => data_in(14),
       Q => data_out(14)
     );
@@ -81,7 +90,7 @@ begin
      port map (
       C => clk,
       CE => ld,
-      CLR => rst,
+      CLR => \data_out[79]_i_1_n_0\,
       D => data_in(15),
       Q => data_out(15)
     );
@@ -89,7 +98,7 @@ begin
      port map (
       C => clk,
       CE => ld,
-      CLR => rst,
+      CLR => \data_out[79]_i_1_n_0\,
       D => data_in(16),
       Q => data_out(16)
     );
@@ -97,7 +106,7 @@ begin
      port map (
       C => clk,
       CE => ld,
-      CLR => rst,
+      CLR => \data_out[79]_i_1_n_0\,
       D => data_in(17),
       Q => data_out(17)
     );
@@ -105,7 +114,7 @@ begin
      port map (
       C => clk,
       CE => ld,
-      CLR => rst,
+      CLR => \data_out[79]_i_1_n_0\,
       D => data_in(18),
       Q => data_out(18)
     );
@@ -113,7 +122,7 @@ begin
      port map (
       C => clk,
       CE => ld,
-      CLR => rst,
+      CLR => \data_out[79]_i_1_n_0\,
       D => data_in(19),
       Q => data_out(19)
     );
@@ -121,7 +130,7 @@ begin
      port map (
       C => clk,
       CE => ld,
-      CLR => rst,
+      CLR => \data_out[79]_i_1_n_0\,
       D => data_in(1),
       Q => data_out(1)
     );
@@ -129,7 +138,7 @@ begin
      port map (
       C => clk,
       CE => ld,
-      CLR => rst,
+      CLR => \data_out[79]_i_1_n_0\,
       D => data_in(20),
       Q => data_out(20)
     );
@@ -137,7 +146,7 @@ begin
      port map (
       C => clk,
       CE => ld,
-      CLR => rst,
+      CLR => \data_out[79]_i_1_n_0\,
       D => data_in(21),
       Q => data_out(21)
     );
@@ -145,7 +154,7 @@ begin
      port map (
       C => clk,
       CE => ld,
-      CLR => rst,
+      CLR => \data_out[79]_i_1_n_0\,
       D => data_in(22),
       Q => data_out(22)
     );
@@ -153,7 +162,7 @@ begin
      port map (
       C => clk,
       CE => ld,
-      CLR => rst,
+      CLR => \data_out[79]_i_1_n_0\,
       D => data_in(23),
       Q => data_out(23)
     );
@@ -161,7 +170,7 @@ begin
      port map (
       C => clk,
       CE => ld,
-      CLR => rst,
+      CLR => \data_out[79]_i_1_n_0\,
       D => data_in(24),
       Q => data_out(24)
     );
@@ -169,7 +178,7 @@ begin
      port map (
       C => clk,
       CE => ld,
-      CLR => rst,
+      CLR => \data_out[79]_i_1_n_0\,
       D => data_in(25),
       Q => data_out(25)
     );
@@ -177,7 +186,7 @@ begin
      port map (
       C => clk,
       CE => ld,
-      CLR => rst,
+      CLR => \data_out[79]_i_1_n_0\,
       D => data_in(26),
       Q => data_out(26)
     );
@@ -185,7 +194,7 @@ begin
      port map (
       C => clk,
       CE => ld,
-      CLR => rst,
+      CLR => \data_out[79]_i_1_n_0\,
       D => data_in(27),
       Q => data_out(27)
     );
@@ -193,7 +202,7 @@ begin
      port map (
       C => clk,
       CE => ld,
-      CLR => rst,
+      CLR => \data_out[79]_i_1_n_0\,
       D => data_in(28),
       Q => data_out(28)
     );
@@ -201,7 +210,7 @@ begin
      port map (
       C => clk,
       CE => ld,
-      CLR => rst,
+      CLR => \data_out[79]_i_1_n_0\,
       D => data_in(29),
       Q => data_out(29)
     );
@@ -209,7 +218,7 @@ begin
      port map (
       C => clk,
       CE => ld,
-      CLR => rst,
+      CLR => \data_out[79]_i_1_n_0\,
       D => data_in(2),
       Q => data_out(2)
     );
@@ -217,7 +226,7 @@ begin
      port map (
       C => clk,
       CE => ld,
-      CLR => rst,
+      CLR => \data_out[79]_i_1_n_0\,
       D => data_in(30),
       Q => data_out(30)
     );
@@ -225,7 +234,7 @@ begin
      port map (
       C => clk,
       CE => ld,
-      CLR => rst,
+      CLR => \data_out[79]_i_1_n_0\,
       D => data_in(31),
       Q => data_out(31)
     );
@@ -233,7 +242,7 @@ begin
      port map (
       C => clk,
       CE => ld,
-      CLR => rst,
+      CLR => \data_out[79]_i_1_n_0\,
       D => data_in(32),
       Q => data_out(32)
     );
@@ -241,7 +250,7 @@ begin
      port map (
       C => clk,
       CE => ld,
-      CLR => rst,
+      CLR => \data_out[79]_i_1_n_0\,
       D => data_in(33),
       Q => data_out(33)
     );
@@ -249,7 +258,7 @@ begin
      port map (
       C => clk,
       CE => ld,
-      CLR => rst,
+      CLR => \data_out[79]_i_1_n_0\,
       D => data_in(34),
       Q => data_out(34)
     );
@@ -257,7 +266,7 @@ begin
      port map (
       C => clk,
       CE => ld,
-      CLR => rst,
+      CLR => \data_out[79]_i_1_n_0\,
       D => data_in(35),
       Q => data_out(35)
     );
@@ -265,7 +274,7 @@ begin
      port map (
       C => clk,
       CE => ld,
-      CLR => rst,
+      CLR => \data_out[79]_i_1_n_0\,
       D => data_in(36),
       Q => data_out(36)
     );
@@ -273,7 +282,7 @@ begin
      port map (
       C => clk,
       CE => ld,
-      CLR => rst,
+      CLR => \data_out[79]_i_1_n_0\,
       D => data_in(37),
       Q => data_out(37)
     );
@@ -281,7 +290,7 @@ begin
      port map (
       C => clk,
       CE => ld,
-      CLR => rst,
+      CLR => \data_out[79]_i_1_n_0\,
       D => data_in(38),
       Q => data_out(38)
     );
@@ -289,7 +298,7 @@ begin
      port map (
       C => clk,
       CE => ld,
-      CLR => rst,
+      CLR => \data_out[79]_i_1_n_0\,
       D => data_in(39),
       Q => data_out(39)
     );
@@ -297,7 +306,7 @@ begin
      port map (
       C => clk,
       CE => ld,
-      CLR => rst,
+      CLR => \data_out[79]_i_1_n_0\,
       D => data_in(3),
       Q => data_out(3)
     );
@@ -305,7 +314,7 @@ begin
      port map (
       C => clk,
       CE => ld,
-      CLR => rst,
+      CLR => \data_out[79]_i_1_n_0\,
       D => data_in(40),
       Q => data_out(40)
     );
@@ -313,7 +322,7 @@ begin
      port map (
       C => clk,
       CE => ld,
-      CLR => rst,
+      CLR => \data_out[79]_i_1_n_0\,
       D => data_in(41),
       Q => data_out(41)
     );
@@ -321,7 +330,7 @@ begin
      port map (
       C => clk,
       CE => ld,
-      CLR => rst,
+      CLR => \data_out[79]_i_1_n_0\,
       D => data_in(42),
       Q => data_out(42)
     );
@@ -329,7 +338,7 @@ begin
      port map (
       C => clk,
       CE => ld,
-      CLR => rst,
+      CLR => \data_out[79]_i_1_n_0\,
       D => data_in(43),
       Q => data_out(43)
     );
@@ -337,7 +346,7 @@ begin
      port map (
       C => clk,
       CE => ld,
-      CLR => rst,
+      CLR => \data_out[79]_i_1_n_0\,
       D => data_in(44),
       Q => data_out(44)
     );
@@ -345,7 +354,7 @@ begin
      port map (
       C => clk,
       CE => ld,
-      CLR => rst,
+      CLR => \data_out[79]_i_1_n_0\,
       D => data_in(45),
       Q => data_out(45)
     );
@@ -353,7 +362,7 @@ begin
      port map (
       C => clk,
       CE => ld,
-      CLR => rst,
+      CLR => \data_out[79]_i_1_n_0\,
       D => data_in(46),
       Q => data_out(46)
     );
@@ -361,7 +370,7 @@ begin
      port map (
       C => clk,
       CE => ld,
-      CLR => rst,
+      CLR => \data_out[79]_i_1_n_0\,
       D => data_in(47),
       Q => data_out(47)
     );
@@ -369,7 +378,7 @@ begin
      port map (
       C => clk,
       CE => ld,
-      CLR => rst,
+      CLR => \data_out[79]_i_1_n_0\,
       D => data_in(48),
       Q => data_out(48)
     );
@@ -377,7 +386,7 @@ begin
      port map (
       C => clk,
       CE => ld,
-      CLR => rst,
+      CLR => \data_out[79]_i_1_n_0\,
       D => data_in(49),
       Q => data_out(49)
     );
@@ -385,7 +394,7 @@ begin
      port map (
       C => clk,
       CE => ld,
-      CLR => rst,
+      CLR => \data_out[79]_i_1_n_0\,
       D => data_in(4),
       Q => data_out(4)
     );
@@ -393,7 +402,7 @@ begin
      port map (
       C => clk,
       CE => ld,
-      CLR => rst,
+      CLR => \data_out[79]_i_1_n_0\,
       D => data_in(50),
       Q => data_out(50)
     );
@@ -401,7 +410,7 @@ begin
      port map (
       C => clk,
       CE => ld,
-      CLR => rst,
+      CLR => \data_out[79]_i_1_n_0\,
       D => data_in(51),
       Q => data_out(51)
     );
@@ -409,7 +418,7 @@ begin
      port map (
       C => clk,
       CE => ld,
-      CLR => rst,
+      CLR => \data_out[79]_i_1_n_0\,
       D => data_in(52),
       Q => data_out(52)
     );
@@ -417,7 +426,7 @@ begin
      port map (
       C => clk,
       CE => ld,
-      CLR => rst,
+      CLR => \data_out[79]_i_1_n_0\,
       D => data_in(53),
       Q => data_out(53)
     );
@@ -425,7 +434,7 @@ begin
      port map (
       C => clk,
       CE => ld,
-      CLR => rst,
+      CLR => \data_out[79]_i_1_n_0\,
       D => data_in(54),
       Q => data_out(54)
     );
@@ -433,7 +442,7 @@ begin
      port map (
       C => clk,
       CE => ld,
-      CLR => rst,
+      CLR => \data_out[79]_i_1_n_0\,
       D => data_in(55),
       Q => data_out(55)
     );
@@ -441,7 +450,7 @@ begin
      port map (
       C => clk,
       CE => ld,
-      CLR => rst,
+      CLR => \data_out[79]_i_1_n_0\,
       D => data_in(56),
       Q => data_out(56)
     );
@@ -449,7 +458,7 @@ begin
      port map (
       C => clk,
       CE => ld,
-      CLR => rst,
+      CLR => \data_out[79]_i_1_n_0\,
       D => data_in(57),
       Q => data_out(57)
     );
@@ -457,7 +466,7 @@ begin
      port map (
       C => clk,
       CE => ld,
-      CLR => rst,
+      CLR => \data_out[79]_i_1_n_0\,
       D => data_in(58),
       Q => data_out(58)
     );
@@ -465,7 +474,7 @@ begin
      port map (
       C => clk,
       CE => ld,
-      CLR => rst,
+      CLR => \data_out[79]_i_1_n_0\,
       D => data_in(59),
       Q => data_out(59)
     );
@@ -473,7 +482,7 @@ begin
      port map (
       C => clk,
       CE => ld,
-      CLR => rst,
+      CLR => \data_out[79]_i_1_n_0\,
       D => data_in(5),
       Q => data_out(5)
     );
@@ -481,7 +490,7 @@ begin
      port map (
       C => clk,
       CE => ld,
-      CLR => rst,
+      CLR => \data_out[79]_i_1_n_0\,
       D => data_in(60),
       Q => data_out(60)
     );
@@ -489,7 +498,7 @@ begin
      port map (
       C => clk,
       CE => ld,
-      CLR => rst,
+      CLR => \data_out[79]_i_1_n_0\,
       D => data_in(61),
       Q => data_out(61)
     );
@@ -497,7 +506,7 @@ begin
      port map (
       C => clk,
       CE => ld,
-      CLR => rst,
+      CLR => \data_out[79]_i_1_n_0\,
       D => data_in(62),
       Q => data_out(62)
     );
@@ -505,7 +514,7 @@ begin
      port map (
       C => clk,
       CE => ld,
-      CLR => rst,
+      CLR => \data_out[79]_i_1_n_0\,
       D => data_in(63),
       Q => data_out(63)
     );
@@ -513,7 +522,7 @@ begin
      port map (
       C => clk,
       CE => ld,
-      CLR => rst,
+      CLR => \data_out[79]_i_1_n_0\,
       D => data_in(64),
       Q => data_out(64)
     );
@@ -521,7 +530,7 @@ begin
      port map (
       C => clk,
       CE => ld,
-      CLR => rst,
+      CLR => \data_out[79]_i_1_n_0\,
       D => data_in(65),
       Q => data_out(65)
     );
@@ -529,7 +538,7 @@ begin
      port map (
       C => clk,
       CE => ld,
-      CLR => rst,
+      CLR => \data_out[79]_i_1_n_0\,
       D => data_in(66),
       Q => data_out(66)
     );
@@ -537,7 +546,7 @@ begin
      port map (
       C => clk,
       CE => ld,
-      CLR => rst,
+      CLR => \data_out[79]_i_1_n_0\,
       D => data_in(67),
       Q => data_out(67)
     );
@@ -545,7 +554,7 @@ begin
      port map (
       C => clk,
       CE => ld,
-      CLR => rst,
+      CLR => \data_out[79]_i_1_n_0\,
       D => data_in(68),
       Q => data_out(68)
     );
@@ -553,7 +562,7 @@ begin
      port map (
       C => clk,
       CE => ld,
-      CLR => rst,
+      CLR => \data_out[79]_i_1_n_0\,
       D => data_in(69),
       Q => data_out(69)
     );
@@ -561,7 +570,7 @@ begin
      port map (
       C => clk,
       CE => ld,
-      CLR => rst,
+      CLR => \data_out[79]_i_1_n_0\,
       D => data_in(6),
       Q => data_out(6)
     );
@@ -569,7 +578,7 @@ begin
      port map (
       C => clk,
       CE => ld,
-      CLR => rst,
+      CLR => \data_out[79]_i_1_n_0\,
       D => data_in(70),
       Q => data_out(70)
     );
@@ -577,7 +586,7 @@ begin
      port map (
       C => clk,
       CE => ld,
-      CLR => rst,
+      CLR => \data_out[79]_i_1_n_0\,
       D => data_in(71),
       Q => data_out(71)
     );
@@ -585,7 +594,7 @@ begin
      port map (
       C => clk,
       CE => ld,
-      CLR => rst,
+      CLR => \data_out[79]_i_1_n_0\,
       D => data_in(72),
       Q => data_out(72)
     );
@@ -593,7 +602,7 @@ begin
      port map (
       C => clk,
       CE => ld,
-      CLR => rst,
+      CLR => \data_out[79]_i_1_n_0\,
       D => data_in(73),
       Q => data_out(73)
     );
@@ -601,7 +610,7 @@ begin
      port map (
       C => clk,
       CE => ld,
-      CLR => rst,
+      CLR => \data_out[79]_i_1_n_0\,
       D => data_in(74),
       Q => data_out(74)
     );
@@ -609,7 +618,7 @@ begin
      port map (
       C => clk,
       CE => ld,
-      CLR => rst,
+      CLR => \data_out[79]_i_1_n_0\,
       D => data_in(75),
       Q => data_out(75)
     );
@@ -617,7 +626,7 @@ begin
      port map (
       C => clk,
       CE => ld,
-      CLR => rst,
+      CLR => \data_out[79]_i_1_n_0\,
       D => data_in(76),
       Q => data_out(76)
     );
@@ -625,7 +634,7 @@ begin
      port map (
       C => clk,
       CE => ld,
-      CLR => rst,
+      CLR => \data_out[79]_i_1_n_0\,
       D => data_in(77),
       Q => data_out(77)
     );
@@ -633,7 +642,7 @@ begin
      port map (
       C => clk,
       CE => ld,
-      CLR => rst,
+      CLR => \data_out[79]_i_1_n_0\,
       D => data_in(78),
       Q => data_out(78)
     );
@@ -641,7 +650,7 @@ begin
      port map (
       C => clk,
       CE => ld,
-      CLR => rst,
+      CLR => \data_out[79]_i_1_n_0\,
       D => data_in(79),
       Q => data_out(79)
     );
@@ -649,7 +658,7 @@ begin
      port map (
       C => clk,
       CE => ld,
-      CLR => rst,
+      CLR => \data_out[79]_i_1_n_0\,
       D => data_in(7),
       Q => data_out(7)
     );
@@ -657,7 +666,7 @@ begin
      port map (
       C => clk,
       CE => ld,
-      CLR => rst,
+      CLR => \data_out[79]_i_1_n_0\,
       D => data_in(8),
       Q => data_out(8)
     );
@@ -665,7 +674,7 @@ begin
      port map (
       C => clk,
       CE => ld,
-      CLR => rst,
+      CLR => \data_out[79]_i_1_n_0\,
       D => data_in(9),
       Q => data_out(9)
     );

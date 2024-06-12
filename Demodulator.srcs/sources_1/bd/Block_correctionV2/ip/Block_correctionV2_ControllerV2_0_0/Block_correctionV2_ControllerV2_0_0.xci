@@ -49,6 +49,8 @@
         "ld_error_c": [ { "direction": "out" } ],
         "ld_correct_error_c": [ { "direction": "out" } ],
         "ld_input_memmory": [ { "direction": "out" } ],
+        "ld_adder": [ { "direction": "out" } ],
+        "sel_adder": [ { "direction": "out" } ],
         "ld_output_memmory": [ { "direction": "out" } ]
       },
       "interfaces": {

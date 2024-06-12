@@ -36,8 +36,8 @@ port(
         clk : in STD_LOGIC;
         rst : in STD_LOGIC;
         ld : in STD_LOGIC;
-        data_in : in STD_LOGIC_VECTOR(63 downto 0);
-        data_out : out STD_LOGIC_VECTOR(63 downto 0)
+        data_in : in STD_LOGIC_VECTOR(127 downto 0);
+        data_out : out STD_LOGIC_VECTOR(127 downto 0)
     );
 
 end Output_memmory;
@@ -47,8 +47,8 @@ architecture Behavioral of Output_memmory is
 begin
 process(clk, rst)
 begin
-    if rst = '1' then
-        data_out <= "0000000000000000000000000000000000000000000000000000000000000000";
+    if rst = '0' then
+        data_out <= (others => '0');
     elsif rising_edge(clk) then
         if ld = '1' then
             data_out <= data_in;

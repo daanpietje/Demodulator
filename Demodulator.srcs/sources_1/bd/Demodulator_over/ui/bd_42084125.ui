@@ -5,15 +5,15 @@
    "ExpandedHierarchyInLayout":"",
    "guistr":"# # String gsaved with Nlview 7.5.8 2022-09-21 7111 VDI=41 GEI=38 GUI=JA:10.0
 #  -string -flagsOSRD
-preplace inst Controller_0 -pg 1 -lvl 2 -x 540 -y 130 -defaultsOSRD
 preplace inst FSK_Block_correction_1 -pg 1 -lvl 1 -x 180 -y 150 -defaultsOSRD
-preplace netloc Controller_0_ld_calc_c 1 0 3 -10 10 NJ 10 720
-preplace netloc Controller_0_ld_correct_error_c 1 0 3 10 260 NJ 260 720
-preplace netloc Controller_0_ld_error_c 1 0 3 0 20 NJ 20 730
+preplace inst Controller_0 -pg 1 -lvl 2 -x 540 -y 130 -defaultsOSRD
+preplace netloc Controller_0_ld_calc_c 1 0 3 10 10 NJ 10 700
+preplace netloc Controller_0_ld_correct_error_c 1 0 3 30 260 NJ 260 700
+preplace netloc Controller_0_ld_error_c 1 0 3 20 20 NJ 20 710
 preplace netloc FSK_Block_correction_1_error_calc_fin 1 1 1 N 140
-preplace netloc FSK_Block_correction_1_error_check_fin 1 1 1 360 120n
-preplace netloc FSK_Block_correction_1_error_correct_fin 1 1 1 350 160n
-preplace netloc Net 1 0 2 10 40 360J
+preplace netloc FSK_Block_correction_1_error_check_fin 1 1 1 340 120n
+preplace netloc FSK_Block_correction_1_error_correct_fin 1 1 1 330 160n
+preplace netloc Net 1 0 2 30 40 340J
 levelinfo -pg 1 -30 180 540 750
 pagesize -pg 1 -db -bbox -sgen -30 0 750 270
 "

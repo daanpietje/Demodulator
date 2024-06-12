@@ -2,10 +2,10 @@
 -- Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
--- Date        : Sat Jun  8 11:08:36 2024
--- Host        : Desktop_Daan running 64-bit major release  (build 9200)
+-- Date        : Wed Jun 12 13:57:18 2024
+-- Host        : DaanAsus running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode synth_stub
---               d:/Users/daanv/Documents/GitHub/Demodulator/Demodulator.gen/sources_1/bd/Block_correctionV2/ip/Block_correctionV2_calc_parity_0_0/Block_correctionV2_calc_parity_0_0_stub.vhdl
+--               c:/Users/daanv/Desktop/MO8/Demodulator/Demodulator.gen/sources_1/bd/Block_correctionV2/ip/Block_correctionV2_calc_parity_0_0/Block_correctionV2_calc_parity_0_0_stub.vhdl
 -- Design      : Block_correctionV2_calc_parity_0_0
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xc7z020clg400-1

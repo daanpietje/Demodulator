@@ -19,7 +19,7 @@ architecture Behavioral of correct_error is
 begin
 process(clk, rst)
 begin
-if rst = '1' then
+if rst = '0' then
         data_block <= (others => '0');
         finish <= '0';
 elsif rising_edge(clk) then

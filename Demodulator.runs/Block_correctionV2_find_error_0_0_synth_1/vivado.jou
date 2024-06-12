@@ -3,12 +3,12 @@
 # SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
 # IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
 # SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
-# Start of session at: Sat Jun  8 10:55:41 2024
-# Process ID: 6080
-# Current directory: D:/Users/daanv/Documents/GitHub/Demodulator/Demodulator.runs/Block_correctionV2_find_error_0_0_synth_1
+# Start of session at: Wed Jun 12 13:58:07 2024
+# Process ID: 7196
+# Current directory: C:/Users/daanv/Desktop/MO8/Demodulator/Demodulator.runs/Block_correctionV2_find_error_0_0_synth_1
 # Command line: vivado.exe -log Block_correctionV2_find_error_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Block_correctionV2_find_error_0_0.tcl
-# Log file: D:/Users/daanv/Documents/GitHub/Demodulator/Demodulator.runs/Block_correctionV2_find_error_0_0_synth_1/Block_correctionV2_find_error_0_0.vds
-# Journal file: D:/Users/daanv/Documents/GitHub/Demodulator/Demodulator.runs/Block_correctionV2_find_error_0_0_synth_1\vivado.jou
-# Running On: Desktop_Daan, OS: Windows, CPU Frequency: 3593 MHz, CPU Physical cores: 12, Host memory: 17077 MB
+# Log file: C:/Users/daanv/Desktop/MO8/Demodulator/Demodulator.runs/Block_correctionV2_find_error_0_0_synth_1/Block_correctionV2_find_error_0_0.vds
+# Journal file: C:/Users/daanv/Desktop/MO8/Demodulator/Demodulator.runs/Block_correctionV2_find_error_0_0_synth_1\vivado.jou
+# Running On: DaanAsus, OS: Windows, CPU Frequency: 2419 MHz, CPU Physical cores: 4, Host memory: 16859 MB
 #-----------------------------------------------------------
 source Block_correctionV2_find_error_0_0.tcl -notrace

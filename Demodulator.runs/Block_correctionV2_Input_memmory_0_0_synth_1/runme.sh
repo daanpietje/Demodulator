@@ -12,9 +12,9 @@ echo "Please update the PATH and LD_LIBRARY_PATH variables below, before executi
 exit
 
 if [ -z "$PATH" ]; then
-  PATH=D:/xilinx/Vitis/2023.1/bin;D:/xilinx/Vivado/2023.1/ids_lite/ISE/bin/nt64;D:/xilinx/Vivado/2023.1/ids_lite/ISE/lib/nt64:D:/xilinx/Vivado/2023.1/bin
+  PATH=C:/Xilinx/Vitis/2023.1/bin;C:/Xilinx/Vivado/2023.1/ids_lite/ISE/bin/nt64;C:/Xilinx/Vivado/2023.1/ids_lite/ISE/lib/nt64:C:/Xilinx/Vivado/2023.1/bin
 else
-  PATH=D:/xilinx/Vitis/2023.1/bin;D:/xilinx/Vivado/2023.1/ids_lite/ISE/bin/nt64;D:/xilinx/Vivado/2023.1/ids_lite/ISE/lib/nt64:D:/xilinx/Vivado/2023.1/bin:$PATH
+  PATH=C:/Xilinx/Vitis/2023.1/bin;C:/Xilinx/Vivado/2023.1/ids_lite/ISE/bin/nt64;C:/Xilinx/Vivado/2023.1/ids_lite/ISE/lib/nt64:C:/Xilinx/Vivado/2023.1/bin:$PATH
 fi
 export PATH
 
@@ -25,7 +25,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='D:/Users/daanv/Documents/GitHub/Demodulator/Demodulator.runs/Block_correctionV2_Input_memmory_0_0_synth_1'
+HD_PWD='C:/Users/daanv/Desktop/MO8/Demodulator/Demodulator.runs/Block_correctionV2_Input_memmory_0_0_synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

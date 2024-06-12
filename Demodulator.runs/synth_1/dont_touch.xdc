@@ -4,6 +4,12 @@
 # Block Designs: bd/Block_correctionV2/Block_correctionV2.bd
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Block_correctionV2 || ORIG_REF_NAME==Block_correctionV2} -quiet] -quiet
 
+# IP: bd/Block_correctionV2/ip/Block_correctionV2_Adder_0_0/Block_correctionV2_Adder_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Block_correctionV2_Adder_0_0 || ORIG_REF_NAME==Block_correctionV2_Adder_0_0} -quiet] -quiet
+
+# IP: bd/Block_correctionV2/ip/Block_correctionV2_ControllerV2_0_0/Block_correctionV2_ControllerV2_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Block_correctionV2_ControllerV2_0_0 || ORIG_REF_NAME==Block_correctionV2_ControllerV2_0_0} -quiet] -quiet
+
 # IP: bd/Block_correctionV2/ip/Block_correctionV2_find_error_0_0/Block_correctionV2_find_error_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Block_correctionV2_find_error_0_0 || ORIG_REF_NAME==Block_correctionV2_find_error_0_0} -quiet] -quiet
 
@@ -13,13 +19,10 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Block_corre
 # IP: bd/Block_correctionV2/ip/Block_correctionV2_calc_parity_0_0/Block_correctionV2_calc_parity_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Block_correctionV2_calc_parity_0_0 || ORIG_REF_NAME==Block_correctionV2_calc_parity_0_0} -quiet] -quiet
 
-# IP: bd/Block_correctionV2/ip/Block_correctionV2_Input_memmory_0_0/Block_correctionV2_Input_memmory_0_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Block_correctionV2_Input_memmory_0_0 || ORIG_REF_NAME==Block_correctionV2_Input_memmory_0_0} -quiet] -quiet
-
 # IP: bd/Block_correctionV2/ip/Block_correctionV2_Output_memmory_0_0/Block_correctionV2_Output_memmory_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Block_correctionV2_Output_memmory_0_0 || ORIG_REF_NAME==Block_correctionV2_Output_memmory_0_0} -quiet] -quiet
 
-# IP: bd/Block_correctionV2/ip/Block_correctionV2_ControllerV2_0_0/Block_correctionV2_ControllerV2_0_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Block_correctionV2_ControllerV2_0_0 || ORIG_REF_NAME==Block_correctionV2_ControllerV2_0_0} -quiet] -quiet
+# IP: bd/Block_correctionV2/ip/Block_correctionV2_Input_memmory_0_0/Block_correctionV2_Input_memmory_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Block_correctionV2_Input_memmory_0_0 || ORIG_REF_NAME==Block_correctionV2_Input_memmory_0_0} -quiet] -quiet
 
-# XDC: d:/Users/daanv/Documents/GitHub/Demodulator/Demodulator.gen/sources_1/bd/Block_correctionV2/Block_correctionV2_ooc.xdc
+# XDC: c:/Users/daanv/Desktop/MO8/Demodulator/Demodulator.gen/sources_1/bd/Block_correctionV2/Block_correctionV2_ooc.xdc

@@ -3,19 +3,19 @@
 # SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
 # IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
 # SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
-# Start of session at: Sat Jun  8 10:49:03 2024
-# Process ID: 4680
-# Current directory: D:/Users/daanv/Documents/GitHub/Demodulator/Demodulator.runs/Block_correctionV2_Output_memmory_0_0_synth_1
+# Start of session at: Wed Jun 12 13:55:30 2024
+# Process ID: 6760
+# Current directory: C:/Users/daanv/Desktop/MO8/Demodulator/Demodulator.runs/Block_correctionV2_Output_memmory_0_0_synth_1
 # Command line: vivado.exe -log Block_correctionV2_Output_memmory_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Block_correctionV2_Output_memmory_0_0.tcl
-# Log file: D:/Users/daanv/Documents/GitHub/Demodulator/Demodulator.runs/Block_correctionV2_Output_memmory_0_0_synth_1/Block_correctionV2_Output_memmory_0_0.vds
-# Journal file: D:/Users/daanv/Documents/GitHub/Demodulator/Demodulator.runs/Block_correctionV2_Output_memmory_0_0_synth_1\vivado.jou
-# Running On: Desktop_Daan, OS: Windows, CPU Frequency: 3593 MHz, CPU Physical cores: 12, Host memory: 17077 MB
+# Log file: C:/Users/daanv/Desktop/MO8/Demodulator/Demodulator.runs/Block_correctionV2_Output_memmory_0_0_synth_1/Block_correctionV2_Output_memmory_0_0.vds
+# Journal file: C:/Users/daanv/Desktop/MO8/Demodulator/Demodulator.runs/Block_correctionV2_Output_memmory_0_0_synth_1\vivado.jou
+# Running On: DaanAsus, OS: Windows, CPU Frequency: 2419 MHz, CPU Physical cores: 4, Host memory: 16859 MB
 #-----------------------------------------------------------
 source Block_correctionV2_Output_memmory_0_0.tcl -notrace
-create_project: Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1462.887 ; gain = 161.172
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1461.703 ; gain = 160.426
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
-INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/xilinx/Vivado/2023.1/data/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2023.1/data/ip'.
 INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: Block_correctionV2_Output_memmory_0_0
 Command: synth_design -top Block_correctionV2_Output_memmory_0_0 -part xc7z020clg400-1 -incremental_mode off -mode out_of_context
 Starting synth_design
@@ -24,30 +24,30 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020
 INFO: [Designutils 20-5008] Incremental synthesis strategy off
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 24568
+INFO: [Synth 8-7075] Helper process launched with PID 9820
 ---------------------------------------------------------------------------------
-Starting Synthesize : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 1911.070 ; gain = 409.086
+Starting Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1910.047 ; gain = 408.867
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'Block_correctionV2_Output_memmory_0_0' [d:/Users/daanv/Documents/GitHub/Demodulator/Demodulator.gen/sources_1/bd/Block_correctionV2/ip/Block_correctionV2_Output_memmory_0_0/synth/Block_correctionV2_Output_memmory_0_0.v:53]
-INFO: [Synth 8-638] synthesizing module 'Output_memmory' [D:/Users/daanv/Documents/GitHub/Demodulator/Demodulator.srcs/sources_1/new/Output_memmory.vhd:45]
-INFO: [Synth 8-256] done synthesizing module 'Output_memmory' (0#1) [D:/Users/daanv/Documents/GitHub/Demodulator/Demodulator.srcs/sources_1/new/Output_memmory.vhd:45]
-INFO: [Synth 8-6155] done synthesizing module 'Block_correctionV2_Output_memmory_0_0' (0#1) [d:/Users/daanv/Documents/GitHub/Demodulator/Demodulator.gen/sources_1/bd/Block_correctionV2/ip/Block_correctionV2_Output_memmory_0_0/synth/Block_correctionV2_Output_memmory_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'Block_correctionV2_Output_memmory_0_0' [c:/Users/daanv/Desktop/MO8/Demodulator/Demodulator.gen/sources_1/bd/Block_correctionV2/ip/Block_correctionV2_Output_memmory_0_0/synth/Block_correctionV2_Output_memmory_0_0.v:53]
+INFO: [Synth 8-638] synthesizing module 'Output_memmory' [C:/Users/daanv/Desktop/MO8/Demodulator/Demodulator.srcs/sources_1/new/Output_memmory.vhd:45]
+INFO: [Synth 8-256] done synthesizing module 'Output_memmory' (0#1) [C:/Users/daanv/Desktop/MO8/Demodulator/Demodulator.srcs/sources_1/new/Output_memmory.vhd:45]
+INFO: [Synth 8-6155] done synthesizing module 'Block_correctionV2_Output_memmory_0_0' (0#1) [c:/Users/daanv/Desktop/MO8/Demodulator/Demodulator.gen/sources_1/bd/Block_correctionV2/ip/Block_correctionV2_Output_memmory_0_0/synth/Block_correctionV2_Output_memmory_0_0.v:53]
 ---------------------------------------------------------------------------------
-Finished Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 2001.699 ; gain = 499.715
+Finished Synthesize : Time (s): cpu = 00:00:07 ; elapsed = 00:00:10 . Memory (MB): peak = 2000.602 ; gain = 499.422
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 2001.699 ; gain = 499.715
+Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:11 . Memory (MB): peak = 2000.602 ; gain = 499.422
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 2001.699 ; gain = 499.715
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:11 . Memory (MB): peak = 2000.602 ; gain = 499.422
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7z020clg400-1
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 2001.699 ; gain = 499.715
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:11 . Memory (MB): peak = 2000.602 ; gain = 499.422
 ---------------------------------------------------------------------------------
 No constraint files found.
 ---------------------------------------------------------------------------------
@@ -55,7 +55,7 @@ Start RTL Component Statistics
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
 +---Registers : 
-	               64 Bit    Registers := 1     
+	              128 Bit    Registers := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -74,20 +74,20 @@ Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:14 . Memory (MB): peak = 2204.969 ; gain = 702.984
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:20 . Memory (MB): peak = 2208.941 ; gain = 707.762
 ---------------------------------------------------------------------------------
 No constraint files found.
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:14 . Memory (MB): peak = 2204.969 ; gain = 702.984
+Finished Timing Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:20 . Memory (MB): peak = 2208.941 ; gain = 707.762
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:08 ; elapsed = 00:00:14 . Memory (MB): peak = 2204.969 ; gain = 702.984
+Finished Technology Mapping : Time (s): cpu = 00:00:13 ; elapsed = 00:00:20 . Memory (MB): peak = 2208.941 ; gain = 707.762
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -105,37 +105,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:11 ; elapsed = 00:00:18 . Memory (MB): peak = 2204.969 ; gain = 702.984
+Finished IO Insertion : Time (s): cpu = 00:00:19 ; elapsed = 00:00:27 . Memory (MB): peak = 2208.941 ; gain = 707.762
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:11 ; elapsed = 00:00:18 . Memory (MB): peak = 2204.969 ; gain = 702.984
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:19 ; elapsed = 00:00:27 . Memory (MB): peak = 2208.941 ; gain = 707.762
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:11 ; elapsed = 00:00:18 . Memory (MB): peak = 2204.969 ; gain = 702.984
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:19 ; elapsed = 00:00:27 . Memory (MB): peak = 2208.941 ; gain = 707.762
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:11 ; elapsed = 00:00:18 . Memory (MB): peak = 2204.969 ; gain = 702.984
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:19 ; elapsed = 00:00:27 . Memory (MB): peak = 2208.941 ; gain = 707.762
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:00:18 . Memory (MB): peak = 2204.969 ; gain = 702.984
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:19 ; elapsed = 00:00:27 . Memory (MB): peak = 2208.941 ; gain = 707.762
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:11 ; elapsed = 00:00:18 . Memory (MB): peak = 2204.969 ; gain = 702.984
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:19 ; elapsed = 00:00:27 . Memory (MB): peak = 2208.941 ; gain = 707.762
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -151,39 +151,40 @@ Report Cell Usage:
 +------+-----+------+
 |      |Cell |Count |
 +------+-----+------+
-|1     |FDCE |    64|
+|1     |LUT1 |     1|
+|2     |FDCE |   128|
 +------+-----+------+
 
 Report Instance Areas: 
 +------+---------+---------------+------+
 |      |Instance |Module         |Cells |
 +------+---------+---------------+------+
-|1     |top      |               |    64|
-|2     |  inst   |Output_memmory |    64|
+|1     |top      |               |   129|
+|2     |  inst   |Output_memmory |   129|
 +------+---------+---------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:11 ; elapsed = 00:00:18 . Memory (MB): peak = 2204.969 ; gain = 702.984
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:19 ; elapsed = 00:00:27 . Memory (MB): peak = 2208.941 ; gain = 707.762
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:11 ; elapsed = 00:00:18 . Memory (MB): peak = 2204.969 ; gain = 702.984
-Synthesis Optimization Complete : Time (s): cpu = 00:00:11 ; elapsed = 00:00:18 . Memory (MB): peak = 2204.969 ; gain = 702.984
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:19 ; elapsed = 00:00:27 . Memory (MB): peak = 2208.941 ; gain = 707.762
+Synthesis Optimization Complete : Time (s): cpu = 00:00:19 ; elapsed = 00:00:27 . Memory (MB): peak = 2208.941 ; gain = 707.762
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 2208.844 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 2210.922 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2316.184 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2316.777 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Synth Design complete | Checksum: 794d0254
+Synth Design complete | Checksum: eee9c94e
 INFO: [Common 17-83] Releasing license: Synthesis
 19 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:12 ; elapsed = 00:00:20 . Memory (MB): peak = 2316.184 ; gain = 816.152
+synth_design: Time (s): cpu = 00:00:21 ; elapsed = 00:00:30 . Memory (MB): peak = 2316.777 ; gain = 816.586
 INFO: [Timing 38-35] Done setting XDC timing constraints.
-INFO: [Common 17-1381] The checkpoint 'D:/Users/daanv/Documents/GitHub/Demodulator/Demodulator.runs/Block_correctionV2_Output_memmory_0_0_synth_1/Block_correctionV2_Output_memmory_0_0.dcp' has been generated.
-write_checkpoint: Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 2652.406 ; gain = 336.223
-INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP Block_correctionV2_Output_memmory_0_0, cache-ID = 4c11f9f8dbff2263
-INFO: [Common 17-1381] The checkpoint 'D:/Users/daanv/Documents/GitHub/Demodulator/Demodulator.runs/Block_correctionV2_Output_memmory_0_0_synth_1/Block_correctionV2_Output_memmory_0_0.dcp' has been generated.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/daanv/Desktop/MO8/Demodulator/Demodulator.runs/Block_correctionV2_Output_memmory_0_0_synth_1/Block_correctionV2_Output_memmory_0_0.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 2659.871 ; gain = 343.094
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP Block_correctionV2_Output_memmory_0_0, cache-ID = d9fc265ca4351c6e
+INFO: [Common 17-1381] The checkpoint 'C:/Users/daanv/Desktop/MO8/Demodulator/Demodulator.runs/Block_correctionV2_Output_memmory_0_0_synth_1/Block_correctionV2_Output_memmory_0_0.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file Block_correctionV2_Output_memmory_0_0_utilization_synth.rpt -pb Block_correctionV2_Output_memmory_0_0_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Sat Jun  8 10:49:43 2024...
+INFO: [Common 17-206] Exiting Vivado at Wed Jun 12 13:56:25 2024...

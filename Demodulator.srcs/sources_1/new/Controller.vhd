@@ -33,7 +33,7 @@ begin
 -- memmory
 process(clk, rst)
 begin   
-       if rst ='0' then
+       if rst ='1' then
         presentstate <= S0 after 1 ns;
     elsif rising_edge(clk) then
         presentstate <= nextstate after 1 ns;

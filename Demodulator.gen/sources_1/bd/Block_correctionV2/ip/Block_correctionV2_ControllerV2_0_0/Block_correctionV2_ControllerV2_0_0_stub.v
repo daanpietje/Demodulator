@@ -2,10 +2,10 @@
 // Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
-// Date        : Sat Jun  8 10:48:05 2024
-// Host        : Desktop_Daan running 64-bit major release  (build 9200)
+// Date        : Wed Jun 12 13:54:18 2024
+// Host        : DaanAsus running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode synth_stub
-//               d:/Users/daanv/Documents/GitHub/Demodulator/Demodulator.gen/sources_1/bd/Block_correctionV2/ip/Block_correctionV2_ControllerV2_0_0/Block_correctionV2_ControllerV2_0_0_stub.v
+//               c:/Users/daanv/Desktop/MO8/Demodulator/Demodulator.gen/sources_1/bd/Block_correctionV2/ip/Block_correctionV2_ControllerV2_0_0/Block_correctionV2_ControllerV2_0_0_stub.v
 // Design      : Block_correctionV2_ControllerV2_0_0
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xc7z020clg400-1
@@ -17,9 +17,10 @@
 (* X_CORE_INFO = "ControllerV2,Vivado 2023.1" *)
 module Block_correctionV2_ControllerV2_0_0(clk, rst, data_avaible, calc_finish, 
   error_finish, correct_error_finish, data_send, ready_recieve, ready_send, ld_calc_c, 
-  ld_error_c, ld_correct_error_c, ld_input_memmory, ld_output_memmory)
-/* synthesis syn_black_box black_box_pad_pin="rst,data_avaible,calc_finish,error_finish,correct_error_finish,data_send,ready_recieve,ready_send,ld_calc_c,ld_error_c,ld_correct_error_c,ld_input_memmory,ld_output_memmory" */
-/* synthesis syn_force_seq_prim="clk" */;
+  ld_error_c, ld_correct_error_c, ld_input_memmory, ld_adder, sel_adder, ld_output_memmory)
+/* synthesis syn_black_box black_box_pad_pin="rst,data_avaible,calc_finish,error_finish,correct_error_finish,data_send,ready_recieve,ready_send,ld_calc_c,ld_error_c,ld_correct_error_c,ld_input_memmory,sel_adder,ld_output_memmory" */
+/* synthesis syn_force_seq_prim="clk" */
+/* synthesis syn_force_seq_prim="ld_adder" */;
   input clk /* synthesis syn_isclock = 1 */;
   input rst;
   input data_avaible;
@@ -33,5 +34,7 @@ module Block_correctionV2_ControllerV2_0_0(clk, rst, data_avaible, calc_finish,
   output ld_error_c;
   output ld_correct_error_c;
   output ld_input_memmory;
+  output ld_adder /* synthesis syn_isclock = 1 */;
+  output sel_adder;
   output ld_output_memmory;
 endmodule

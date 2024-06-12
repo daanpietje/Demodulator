@@ -2,10 +2,10 @@
 -- Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
--- Date        : Sat Jun  8 11:08:36 2024
--- Host        : Desktop_Daan running 64-bit major release  (build 9200)
+-- Date        : Wed Jun 12 13:57:18 2024
+-- Host        : DaanAsus running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode funcsim
---               d:/Users/daanv/Documents/GitHub/Demodulator/Demodulator.gen/sources_1/bd/Block_correctionV2/ip/Block_correctionV2_calc_parity_0_0/Block_correctionV2_calc_parity_0_0_sim_netlist.vhdl
+--               c:/Users/daanv/Desktop/MO8/Demodulator/Demodulator.gen/sources_1/bd/Block_correctionV2/ip/Block_correctionV2_calc_parity_0_0/Block_correctionV2_calc_parity_0_0_sim_netlist.vhdl
 -- Design      : Block_correctionV2_calc_parity_0_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -24,8 +24,8 @@ entity Block_correctionV2_calc_parity_0_0_calc_parity is
     finish : out STD_LOGIC;
     data_in : in STD_LOGIC_VECTOR ( 79 downto 0 );
     clk : in STD_LOGIC;
-    rst : in STD_LOGIC;
-    ld : in STD_LOGIC
+    ld : in STD_LOGIC;
+    rst : in STD_LOGIC
   );
   attribute ORIG_REF_NAME : string;
   attribute ORIG_REF_NAME of Block_correctionV2_calc_parity_0_0_calc_parity : entity is "calc_parity";
@@ -115,6 +115,7 @@ architecture STRUCTURE of Block_correctionV2_calc_parity_0_0_calc_parity is
   signal p_7_in : STD_LOGIC;
   signal p_8_in : STD_LOGIC;
   signal p_9_in : STD_LOGIC;
+  signal \row_parity[7]_i_1_n_0\ : STD_LOGIC;
   signal row_parity_calc_t0 : STD_LOGIC;
   signal row_parity_calc_t023_out : STD_LOGIC;
   signal \row_parity_calc_t[0]_i_2_n_0\ : STD_LOGIC;
@@ -315,7 +316,7 @@ begin
      port map (
       C => clk,
       CE => ld,
-      CLR => rst,
+      CLR => \row_parity[7]_i_1_n_0\,
       D => col_parity_calc_t0,
       Q => col_parity_calc(0)
     );
@@ -323,7 +324,7 @@ begin
      port map (
       C => clk,
       CE => ld,
-      CLR => rst,
+      CLR => \row_parity[7]_i_1_n_0\,
       D => col_parity_calc_t06_out,
       Q => col_parity_calc(1)
     );
@@ -331,7 +332,7 @@ begin
      port map (
       C => clk,
       CE => ld,
-      CLR => rst,
+      CLR => \row_parity[7]_i_1_n_0\,
       D => \col_parity_calc_t[2]_i_1_n_0\,
       Q => col_parity_calc(2)
     );
@@ -339,7 +340,7 @@ begin
      port map (
       C => clk,
       CE => ld,
-      CLR => rst,
+      CLR => \row_parity[7]_i_1_n_0\,
       D => \col_parity_calc_t[3]_i_1_n_0\,
       Q => col_parity_calc(3)
     );
@@ -347,7 +348,7 @@ begin
      port map (
       C => clk,
       CE => ld,
-      CLR => rst,
+      CLR => \row_parity[7]_i_1_n_0\,
       D => \col_parity_calc_t[4]_i_1_n_0\,
       Q => col_parity_calc(4)
     );
@@ -355,7 +356,7 @@ begin
      port map (
       C => clk,
       CE => ld,
-      CLR => rst,
+      CLR => \row_parity[7]_i_1_n_0\,
       D => \col_parity_calc_t[5]_i_1_n_0\,
       Q => col_parity_calc(5)
     );
@@ -363,7 +364,7 @@ begin
      port map (
       C => clk,
       CE => ld,
-      CLR => rst,
+      CLR => \row_parity[7]_i_1_n_0\,
       D => \col_parity_calc_t[6]_i_1_n_0\,
       Q => col_parity_calc(6)
     );
@@ -371,7 +372,7 @@ begin
      port map (
       C => clk,
       CE => ld,
-      CLR => rst,
+      CLR => \row_parity[7]_i_1_n_0\,
       D => \col_parity_calc_t[7]_i_1_n_0\,
       Q => col_parity_calc(7)
     );
@@ -379,7 +380,7 @@ begin
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \row_parity[7]_i_1_n_0\,
       D => data_in(0),
       Q => col_parity(0)
     );
@@ -387,7 +388,7 @@ begin
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \row_parity[7]_i_1_n_0\,
       D => data_in(1),
       Q => col_parity(1)
     );
@@ -395,7 +396,7 @@ begin
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \row_parity[7]_i_1_n_0\,
       D => data_in(2),
       Q => col_parity(2)
     );
@@ -403,7 +404,7 @@ begin
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \row_parity[7]_i_1_n_0\,
       D => data_in(3),
       Q => col_parity(3)
     );
@@ -411,7 +412,7 @@ begin
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \row_parity[7]_i_1_n_0\,
       D => data_in(4),
       Q => col_parity(4)
     );
@@ -419,7 +420,7 @@ begin
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \row_parity[7]_i_1_n_0\,
       D => data_in(5),
       Q => col_parity(5)
     );
@@ -427,7 +428,7 @@ begin
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \row_parity[7]_i_1_n_0\,
       D => data_in(6),
       Q => col_parity(6)
     );
@@ -435,7 +436,7 @@ begin
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \row_parity[7]_i_1_n_0\,
       D => data_in(7),
       Q => col_parity(7)
     );
@@ -443,7 +444,7 @@ begin
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \row_parity[7]_i_1_n_0\,
       D => data_in(16),
       Q => \data_block_reg_n_0_[0]\
     );
@@ -451,7 +452,7 @@ begin
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \row_parity[7]_i_1_n_0\,
       D => data_in(26),
       Q => p_2_in1_in
     );
@@ -459,7 +460,7 @@ begin
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \row_parity[7]_i_1_n_0\,
       D => data_in(27),
       Q => p_3_in2_in
     );
@@ -467,7 +468,7 @@ begin
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \row_parity[7]_i_1_n_0\,
       D => data_in(28),
       Q => p_4_in3_in
     );
@@ -475,7 +476,7 @@ begin
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \row_parity[7]_i_1_n_0\,
       D => data_in(29),
       Q => p_5_in4_in
     );
@@ -483,7 +484,7 @@ begin
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \row_parity[7]_i_1_n_0\,
       D => data_in(30),
       Q => p_6_in
     );
@@ -491,7 +492,7 @@ begin
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \row_parity[7]_i_1_n_0\,
       D => data_in(31),
       Q => p_40_in
     );
@@ -499,7 +500,7 @@ begin
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \row_parity[7]_i_1_n_0\,
       D => data_in(32),
       Q => p_1_in13_in
     );
@@ -507,7 +508,7 @@ begin
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \row_parity[7]_i_1_n_0\,
       D => data_in(33),
       Q => p_0_in7_in
     );
@@ -515,7 +516,7 @@ begin
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \row_parity[7]_i_1_n_0\,
       D => data_in(34),
       Q => p_2_in8_in
     );
@@ -523,7 +524,7 @@ begin
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \row_parity[7]_i_1_n_0\,
       D => data_in(35),
       Q => p_0_in9_in
     );
@@ -531,7 +532,7 @@ begin
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \row_parity[7]_i_1_n_0\,
       D => data_in(17),
       Q => p_0_in
     );
@@ -539,7 +540,7 @@ begin
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \row_parity[7]_i_1_n_0\,
       D => data_in(36),
       Q => p_1_in10_in
     );
@@ -547,7 +548,7 @@ begin
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \row_parity[7]_i_1_n_0\,
       D => data_in(37),
       Q => p_2_in11_in
     );
@@ -555,7 +556,7 @@ begin
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \row_parity[7]_i_1_n_0\,
       D => data_in(38),
       Q => p_3_in12_in
     );
@@ -563,7 +564,7 @@ begin
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \row_parity[7]_i_1_n_0\,
       D => data_in(39),
       Q => p_42_in
     );
@@ -571,7 +572,7 @@ begin
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \row_parity[7]_i_1_n_0\,
       D => data_in(40),
       Q => p_5_in17_in
     );
@@ -579,7 +580,7 @@ begin
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \row_parity[7]_i_1_n_0\,
       D => data_in(41),
       Q => p_4_in15_in
     );
@@ -587,7 +588,7 @@ begin
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \row_parity[7]_i_1_n_0\,
       D => data_in(42),
       Q => p_6_in16_in
     );
@@ -595,7 +596,7 @@ begin
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \row_parity[7]_i_1_n_0\,
       D => data_in(43),
       Q => p_7_in
     );
@@ -603,7 +604,7 @@ begin
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \row_parity[7]_i_1_n_0\,
       D => data_in(44),
       Q => p_8_in
     );
@@ -611,7 +612,7 @@ begin
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \row_parity[7]_i_1_n_0\,
       D => data_in(45),
       Q => p_9_in
     );
@@ -619,7 +620,7 @@ begin
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \row_parity[7]_i_1_n_0\,
       D => data_in(18),
       Q => p_1_in
     );
@@ -627,7 +628,7 @@ begin
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \row_parity[7]_i_1_n_0\,
       D => data_in(46),
       Q => p_10_in
     );
@@ -635,7 +636,7 @@ begin
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \row_parity[7]_i_1_n_0\,
       D => data_in(47),
       Q => p_43_in
     );
@@ -643,7 +644,7 @@ begin
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \row_parity[7]_i_1_n_0\,
       D => data_in(48),
       Q => p_12_in
     );
@@ -651,7 +652,7 @@ begin
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \row_parity[7]_i_1_n_0\,
       D => data_in(49),
       Q => p_11_in
     );
@@ -659,7 +660,7 @@ begin
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \row_parity[7]_i_1_n_0\,
       D => data_in(50),
       Q => p_13_in
     );
@@ -667,7 +668,7 @@ begin
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \row_parity[7]_i_1_n_0\,
       D => data_in(51),
       Q => p_14_in
     );
@@ -675,7 +676,7 @@ begin
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \row_parity[7]_i_1_n_0\,
       D => data_in(52),
       Q => p_15_in
     );
@@ -683,7 +684,7 @@ begin
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \row_parity[7]_i_1_n_0\,
       D => data_in(53),
       Q => p_16_in
     );
@@ -691,7 +692,7 @@ begin
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \row_parity[7]_i_1_n_0\,
       D => data_in(54),
       Q => p_17_in
     );
@@ -699,7 +700,7 @@ begin
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \row_parity[7]_i_1_n_0\,
       D => data_in(55),
       Q => p_44_in
     );
@@ -707,7 +708,7 @@ begin
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \row_parity[7]_i_1_n_0\,
       D => data_in(19),
       Q => p_2_in
     );
@@ -715,7 +716,7 @@ begin
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \row_parity[7]_i_1_n_0\,
       D => data_in(56),
       Q => p_19_in
     );
@@ -723,7 +724,7 @@ begin
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \row_parity[7]_i_1_n_0\,
       D => data_in(57),
       Q => p_18_in
     );
@@ -731,7 +732,7 @@ begin
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \row_parity[7]_i_1_n_0\,
       D => data_in(58),
       Q => p_20_in
     );
@@ -739,7 +740,7 @@ begin
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \row_parity[7]_i_1_n_0\,
       D => data_in(59),
       Q => p_21_in
     );
@@ -747,7 +748,7 @@ begin
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \row_parity[7]_i_1_n_0\,
       D => data_in(60),
       Q => p_22_in
     );
@@ -755,7 +756,7 @@ begin
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \row_parity[7]_i_1_n_0\,
       D => data_in(61),
       Q => p_23_in
     );
@@ -763,7 +764,7 @@ begin
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \row_parity[7]_i_1_n_0\,
       D => data_in(62),
       Q => p_24_in
     );
@@ -771,7 +772,7 @@ begin
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \row_parity[7]_i_1_n_0\,
       D => data_in(63),
       Q => p_45_in
     );
@@ -779,7 +780,7 @@ begin
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \row_parity[7]_i_1_n_0\,
       D => data_in(64),
       Q => p_26_in
     );
@@ -787,7 +788,7 @@ begin
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \row_parity[7]_i_1_n_0\,
       D => data_in(65),
       Q => p_25_in
     );
@@ -795,7 +796,7 @@ begin
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \row_parity[7]_i_1_n_0\,
       D => data_in(20),
       Q => p_3_in
     );
@@ -803,7 +804,7 @@ begin
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \row_parity[7]_i_1_n_0\,
       D => data_in(66),
       Q => p_27_in
     );
@@ -811,7 +812,7 @@ begin
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \row_parity[7]_i_1_n_0\,
       D => data_in(67),
       Q => p_28_in
     );
@@ -819,7 +820,7 @@ begin
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \row_parity[7]_i_1_n_0\,
       D => data_in(68),
       Q => p_29_in
     );
@@ -827,7 +828,7 @@ begin
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \row_parity[7]_i_1_n_0\,
       D => data_in(69),
       Q => p_30_in
     );
@@ -835,7 +836,7 @@ begin
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \row_parity[7]_i_1_n_0\,
       D => data_in(70),
       Q => p_31_in
     );
@@ -843,7 +844,7 @@ begin
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \row_parity[7]_i_1_n_0\,
       D => data_in(71),
       Q => p_46_in
     );
@@ -851,7 +852,7 @@ begin
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \row_parity[7]_i_1_n_0\,
       D => data_in(72),
       Q => p_33_in
     );
@@ -859,7 +860,7 @@ begin
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \row_parity[7]_i_1_n_0\,
       D => data_in(73),
       Q => p_32_in
     );
@@ -867,7 +868,7 @@ begin
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \row_parity[7]_i_1_n_0\,
       D => data_in(74),
       Q => p_34_in
     );
@@ -875,7 +876,7 @@ begin
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \row_parity[7]_i_1_n_0\,
       D => data_in(75),
       Q => p_35_in
     );
@@ -883,7 +884,7 @@ begin
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \row_parity[7]_i_1_n_0\,
       D => data_in(21),
       Q => p_4_in
     );
@@ -891,7 +892,7 @@ begin
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \row_parity[7]_i_1_n_0\,
       D => data_in(76),
       Q => p_36_in
     );
@@ -899,7 +900,7 @@ begin
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \row_parity[7]_i_1_n_0\,
       D => data_in(77),
       Q => p_37_in
     );
@@ -907,7 +908,7 @@ begin
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \row_parity[7]_i_1_n_0\,
       D => data_in(78),
       Q => p_38_in
     );
@@ -915,7 +916,7 @@ begin
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \row_parity[7]_i_1_n_0\,
       D => data_in(79),
       Q => p_47_in
     );
@@ -923,7 +924,7 @@ begin
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \row_parity[7]_i_1_n_0\,
       D => data_in(22),
       Q => p_5_in
     );
@@ -931,7 +932,7 @@ begin
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \row_parity[7]_i_1_n_0\,
       D => data_in(23),
       Q => p_39_in
     );
@@ -939,7 +940,7 @@ begin
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \row_parity[7]_i_1_n_0\,
       D => data_in(24),
       Q => p_1_in5_in
     );
@@ -947,7 +948,7 @@ begin
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \row_parity[7]_i_1_n_0\,
       D => data_in(25),
       Q => p_0_in0_in
     );
@@ -956,9 +957,9 @@ finish_i_1: unisim.vcomponents.LUT3
       INIT => X"B8"
     )
         port map (
-      I0 => \^finish\,
+      I0 => ld,
       I1 => rst,
-      I2 => ld,
+      I2 => \^finish\,
       O => finish_i_1_n_0
     );
 finish_reg: unisim.vcomponents.FDRE
@@ -968,6 +969,14 @@ finish_reg: unisim.vcomponents.FDRE
       D => finish_i_1_n_0,
       Q => \^finish\,
       R => '0'
+    );
+\row_parity[7]_i_1\: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"1"
+    )
+        port map (
+      I0 => rst,
+      O => \row_parity[7]_i_1_n_0\
     );
 \row_parity_calc_t[0]_i_1\: unisim.vcomponents.LUT5
     generic map(
@@ -1157,7 +1166,7 @@ finish_reg: unisim.vcomponents.FDRE
      port map (
       C => clk,
       CE => ld,
-      CLR => rst,
+      CLR => \row_parity[7]_i_1_n_0\,
       D => row_parity_calc_t0,
       Q => row_parity_calc(0)
     );
@@ -1165,7 +1174,7 @@ finish_reg: unisim.vcomponents.FDRE
      port map (
       C => clk,
       CE => ld,
-      CLR => rst,
+      CLR => \row_parity[7]_i_1_n_0\,
       D => row_parity_calc_t023_out,
       Q => row_parity_calc(1)
     );
@@ -1173,7 +1182,7 @@ finish_reg: unisim.vcomponents.FDRE
      port map (
       C => clk,
       CE => ld,
-      CLR => rst,
+      CLR => \row_parity[7]_i_1_n_0\,
       D => p_48_out(2),
       Q => row_parity_calc(2)
     );
@@ -1181,7 +1190,7 @@ finish_reg: unisim.vcomponents.FDRE
      port map (
       C => clk,
       CE => ld,
-      CLR => rst,
+      CLR => \row_parity[7]_i_1_n_0\,
       D => p_48_out(3),
       Q => row_parity_calc(3)
     );
@@ -1189,7 +1198,7 @@ finish_reg: unisim.vcomponents.FDRE
      port map (
       C => clk,
       CE => ld,
-      CLR => rst,
+      CLR => \row_parity[7]_i_1_n_0\,
       D => p_48_out(4),
       Q => row_parity_calc(4)
     );
@@ -1197,7 +1206,7 @@ finish_reg: unisim.vcomponents.FDRE
      port map (
       C => clk,
       CE => ld,
-      CLR => rst,
+      CLR => \row_parity[7]_i_1_n_0\,
       D => p_48_out(5),
       Q => row_parity_calc(5)
     );
@@ -1205,7 +1214,7 @@ finish_reg: unisim.vcomponents.FDRE
      port map (
       C => clk,
       CE => ld,
-      CLR => rst,
+      CLR => \row_parity[7]_i_1_n_0\,
       D => p_48_out(6),
       Q => row_parity_calc(6)
     );
@@ -1213,7 +1222,7 @@ finish_reg: unisim.vcomponents.FDRE
      port map (
       C => clk,
       CE => ld,
-      CLR => rst,
+      CLR => \row_parity[7]_i_1_n_0\,
       D => p_48_out(7),
       Q => row_parity_calc(7)
     );
@@ -1221,7 +1230,7 @@ finish_reg: unisim.vcomponents.FDRE
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \row_parity[7]_i_1_n_0\,
       D => data_in(8),
       Q => row_parity(0)
     );
@@ -1229,7 +1238,7 @@ finish_reg: unisim.vcomponents.FDRE
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \row_parity[7]_i_1_n_0\,
       D => data_in(9),
       Q => row_parity(1)
     );
@@ -1237,7 +1246,7 @@ finish_reg: unisim.vcomponents.FDRE
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \row_parity[7]_i_1_n_0\,
       D => data_in(10),
       Q => row_parity(2)
     );
@@ -1245,7 +1254,7 @@ finish_reg: unisim.vcomponents.FDRE
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \row_parity[7]_i_1_n_0\,
       D => data_in(11),
       Q => row_parity(3)
     );
@@ -1253,7 +1262,7 @@ finish_reg: unisim.vcomponents.FDRE
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \row_parity[7]_i_1_n_0\,
       D => data_in(12),
       Q => row_parity(4)
     );
@@ -1261,7 +1270,7 @@ finish_reg: unisim.vcomponents.FDRE
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \row_parity[7]_i_1_n_0\,
       D => data_in(13),
       Q => row_parity(5)
     );
@@ -1269,7 +1278,7 @@ finish_reg: unisim.vcomponents.FDRE
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \row_parity[7]_i_1_n_0\,
       D => data_in(14),
       Q => row_parity(6)
     );
@@ -1277,7 +1286,7 @@ finish_reg: unisim.vcomponents.FDRE
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \row_parity[7]_i_1_n_0\,
       D => data_in(15),
       Q => row_parity(7)
     );

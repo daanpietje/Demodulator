@@ -24,7 +24,7 @@ architecture Behavioral of calc_parity is
 begin
 process(clk, rst)
 begin
-    if rst = '1' then
+    if rst = '0' then
         data_block <= (others => '0');
         row_parity <= (others => '0');
         col_parity <= (others => '0');

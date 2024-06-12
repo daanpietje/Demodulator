@@ -2,10 +2,10 @@
 -- Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
--- Date        : Sat Jun  8 10:49:43 2024
--- Host        : Desktop_Daan running 64-bit major release  (build 9200)
+-- Date        : Wed Jun 12 13:56:25 2024
+-- Host        : DaanAsus running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode funcsim
---               d:/Users/daanv/Documents/GitHub/Demodulator/Demodulator.gen/sources_1/bd/Block_correctionV2/ip/Block_correctionV2_Output_memmory_0_0/Block_correctionV2_Output_memmory_0_0_sim_netlist.vhdl
+--               c:/Users/daanv/Desktop/MO8/Demodulator/Demodulator.gen/sources_1/bd/Block_correctionV2/ip/Block_correctionV2_Output_memmory_0_0/Block_correctionV2_Output_memmory_0_0_sim_netlist.vhdl
 -- Design      : Block_correctionV2_Output_memmory_0_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -17,9 +17,9 @@ library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
 entity Block_correctionV2_Output_memmory_0_0_Output_memmory is
   port (
-    data_out : out STD_LOGIC_VECTOR ( 63 downto 0 );
+    data_out : out STD_LOGIC_VECTOR ( 127 downto 0 );
     ld : in STD_LOGIC;
-    data_in : in STD_LOGIC_VECTOR ( 63 downto 0 );
+    data_in : in STD_LOGIC_VECTOR ( 127 downto 0 );
     clk : in STD_LOGIC;
     rst : in STD_LOGIC
   );
@@ -28,36 +28,269 @@ entity Block_correctionV2_Output_memmory_0_0_Output_memmory is
 end Block_correctionV2_Output_memmory_0_0_Output_memmory;
 
 architecture STRUCTURE of Block_correctionV2_Output_memmory_0_0_Output_memmory is
+  signal \data_out[127]_i_1_n_0\ : STD_LOGIC;
 begin
+\data_out[127]_i_1\: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"1"
+    )
+        port map (
+      I0 => rst,
+      O => \data_out[127]_i_1_n_0\
+    );
 \data_out_reg[0]\: unisim.vcomponents.FDCE
      port map (
       C => clk,
       CE => ld,
-      CLR => rst,
+      CLR => \data_out[127]_i_1_n_0\,
       D => data_in(0),
       Q => data_out(0)
+    );
+\data_out_reg[100]\: unisim.vcomponents.FDCE
+     port map (
+      C => clk,
+      CE => ld,
+      CLR => \data_out[127]_i_1_n_0\,
+      D => data_in(100),
+      Q => data_out(100)
+    );
+\data_out_reg[101]\: unisim.vcomponents.FDCE
+     port map (
+      C => clk,
+      CE => ld,
+      CLR => \data_out[127]_i_1_n_0\,
+      D => data_in(101),
+      Q => data_out(101)
+    );
+\data_out_reg[102]\: unisim.vcomponents.FDCE
+     port map (
+      C => clk,
+      CE => ld,
+      CLR => \data_out[127]_i_1_n_0\,
+      D => data_in(102),
+      Q => data_out(102)
+    );
+\data_out_reg[103]\: unisim.vcomponents.FDCE
+     port map (
+      C => clk,
+      CE => ld,
+      CLR => \data_out[127]_i_1_n_0\,
+      D => data_in(103),
+      Q => data_out(103)
+    );
+\data_out_reg[104]\: unisim.vcomponents.FDCE
+     port map (
+      C => clk,
+      CE => ld,
+      CLR => \data_out[127]_i_1_n_0\,
+      D => data_in(104),
+      Q => data_out(104)
+    );
+\data_out_reg[105]\: unisim.vcomponents.FDCE
+     port map (
+      C => clk,
+      CE => ld,
+      CLR => \data_out[127]_i_1_n_0\,
+      D => data_in(105),
+      Q => data_out(105)
+    );
+\data_out_reg[106]\: unisim.vcomponents.FDCE
+     port map (
+      C => clk,
+      CE => ld,
+      CLR => \data_out[127]_i_1_n_0\,
+      D => data_in(106),
+      Q => data_out(106)
+    );
+\data_out_reg[107]\: unisim.vcomponents.FDCE
+     port map (
+      C => clk,
+      CE => ld,
+      CLR => \data_out[127]_i_1_n_0\,
+      D => data_in(107),
+      Q => data_out(107)
+    );
+\data_out_reg[108]\: unisim.vcomponents.FDCE
+     port map (
+      C => clk,
+      CE => ld,
+      CLR => \data_out[127]_i_1_n_0\,
+      D => data_in(108),
+      Q => data_out(108)
+    );
+\data_out_reg[109]\: unisim.vcomponents.FDCE
+     port map (
+      C => clk,
+      CE => ld,
+      CLR => \data_out[127]_i_1_n_0\,
+      D => data_in(109),
+      Q => data_out(109)
     );
 \data_out_reg[10]\: unisim.vcomponents.FDCE
      port map (
       C => clk,
       CE => ld,
-      CLR => rst,
+      CLR => \data_out[127]_i_1_n_0\,
       D => data_in(10),
       Q => data_out(10)
+    );
+\data_out_reg[110]\: unisim.vcomponents.FDCE
+     port map (
+      C => clk,
+      CE => ld,
+      CLR => \data_out[127]_i_1_n_0\,
+      D => data_in(110),
+      Q => data_out(110)
+    );
+\data_out_reg[111]\: unisim.vcomponents.FDCE
+     port map (
+      C => clk,
+      CE => ld,
+      CLR => \data_out[127]_i_1_n_0\,
+      D => data_in(111),
+      Q => data_out(111)
+    );
+\data_out_reg[112]\: unisim.vcomponents.FDCE
+     port map (
+      C => clk,
+      CE => ld,
+      CLR => \data_out[127]_i_1_n_0\,
+      D => data_in(112),
+      Q => data_out(112)
+    );
+\data_out_reg[113]\: unisim.vcomponents.FDCE
+     port map (
+      C => clk,
+      CE => ld,
+      CLR => \data_out[127]_i_1_n_0\,
+      D => data_in(113),
+      Q => data_out(113)
+    );
+\data_out_reg[114]\: unisim.vcomponents.FDCE
+     port map (
+      C => clk,
+      CE => ld,
+      CLR => \data_out[127]_i_1_n_0\,
+      D => data_in(114),
+      Q => data_out(114)
+    );
+\data_out_reg[115]\: unisim.vcomponents.FDCE
+     port map (
+      C => clk,
+      CE => ld,
+      CLR => \data_out[127]_i_1_n_0\,
+      D => data_in(115),
+      Q => data_out(115)
+    );
+\data_out_reg[116]\: unisim.vcomponents.FDCE
+     port map (
+      C => clk,
+      CE => ld,
+      CLR => \data_out[127]_i_1_n_0\,
+      D => data_in(116),
+      Q => data_out(116)
+    );
+\data_out_reg[117]\: unisim.vcomponents.FDCE
+     port map (
+      C => clk,
+      CE => ld,
+      CLR => \data_out[127]_i_1_n_0\,
+      D => data_in(117),
+      Q => data_out(117)
+    );
+\data_out_reg[118]\: unisim.vcomponents.FDCE
+     port map (
+      C => clk,
+      CE => ld,
+      CLR => \data_out[127]_i_1_n_0\,
+      D => data_in(118),
+      Q => data_out(118)
+    );
+\data_out_reg[119]\: unisim.vcomponents.FDCE
+     port map (
+      C => clk,
+      CE => ld,
+      CLR => \data_out[127]_i_1_n_0\,
+      D => data_in(119),
+      Q => data_out(119)
     );
 \data_out_reg[11]\: unisim.vcomponents.FDCE
      port map (
       C => clk,
       CE => ld,
-      CLR => rst,
+      CLR => \data_out[127]_i_1_n_0\,
       D => data_in(11),
       Q => data_out(11)
+    );
+\data_out_reg[120]\: unisim.vcomponents.FDCE
+     port map (
+      C => clk,
+      CE => ld,
+      CLR => \data_out[127]_i_1_n_0\,
+      D => data_in(120),
+      Q => data_out(120)
+    );
+\data_out_reg[121]\: unisim.vcomponents.FDCE
+     port map (
+      C => clk,
+      CE => ld,
+      CLR => \data_out[127]_i_1_n_0\,
+      D => data_in(121),
+      Q => data_out(121)
+    );
+\data_out_reg[122]\: unisim.vcomponents.FDCE
+     port map (
+      C => clk,
+      CE => ld,
+      CLR => \data_out[127]_i_1_n_0\,
+      D => data_in(122),
+      Q => data_out(122)
+    );
+\data_out_reg[123]\: unisim.vcomponents.FDCE
+     port map (
+      C => clk,
+      CE => ld,
+      CLR => \data_out[127]_i_1_n_0\,
+      D => data_in(123),
+      Q => data_out(123)
+    );
+\data_out_reg[124]\: unisim.vcomponents.FDCE
+     port map (
+      C => clk,
+      CE => ld,
+      CLR => \data_out[127]_i_1_n_0\,
+      D => data_in(124),
+      Q => data_out(124)
+    );
+\data_out_reg[125]\: unisim.vcomponents.FDCE
+     port map (
+      C => clk,
+      CE => ld,
+      CLR => \data_out[127]_i_1_n_0\,
+      D => data_in(125),
+      Q => data_out(125)
+    );
+\data_out_reg[126]\: unisim.vcomponents.FDCE
+     port map (
+      C => clk,
+      CE => ld,
+      CLR => \data_out[127]_i_1_n_0\,
+      D => data_in(126),
+      Q => data_out(126)
+    );
+\data_out_reg[127]\: unisim.vcomponents.FDCE
+     port map (
+      C => clk,
+      CE => ld,
+      CLR => \data_out[127]_i_1_n_0\,
+      D => data_in(127),
+      Q => data_out(127)
     );
 \data_out_reg[12]\: unisim.vcomponents.FDCE
      port map (
       C => clk,
       CE => ld,
-      CLR => rst,
+      CLR => \data_out[127]_i_1_n_0\,
       D => data_in(12),
       Q => data_out(12)
     );
@@ -65,7 +298,7 @@ begin
      port map (
       C => clk,
       CE => ld,
-      CLR => rst,
+      CLR => \data_out[127]_i_1_n_0\,
       D => data_in(13),
       Q => data_out(13)
     );
@@ -73,7 +306,7 @@ begin
      port map (
       C => clk,
       CE => ld,
-      CLR => rst,
+      CLR => \data_out[127]_i_1_n_0\,
       D => data_in(14),
       Q => data_out(14)
     );
@@ -81,7 +314,7 @@ begin
      port map (
       C => clk,
       CE => ld,
-      CLR => rst,
+      CLR => \data_out[127]_i_1_n_0\,
       D => data_in(15),
       Q => data_out(15)
     );
@@ -89,7 +322,7 @@ begin
      port map (
       C => clk,
       CE => ld,
-      CLR => rst,
+      CLR => \data_out[127]_i_1_n_0\,
       D => data_in(16),
       Q => data_out(16)
     );
@@ -97,7 +330,7 @@ begin
      port map (
       C => clk,
       CE => ld,
-      CLR => rst,
+      CLR => \data_out[127]_i_1_n_0\,
       D => data_in(17),
       Q => data_out(17)
     );
@@ -105,7 +338,7 @@ begin
      port map (
       C => clk,
       CE => ld,
-      CLR => rst,
+      CLR => \data_out[127]_i_1_n_0\,
       D => data_in(18),
       Q => data_out(18)
     );
@@ -113,7 +346,7 @@ begin
      port map (
       C => clk,
       CE => ld,
-      CLR => rst,
+      CLR => \data_out[127]_i_1_n_0\,
       D => data_in(19),
       Q => data_out(19)
     );
@@ -121,7 +354,7 @@ begin
      port map (
       C => clk,
       CE => ld,
-      CLR => rst,
+      CLR => \data_out[127]_i_1_n_0\,
       D => data_in(1),
       Q => data_out(1)
     );
@@ -129,7 +362,7 @@ begin
      port map (
       C => clk,
       CE => ld,
-      CLR => rst,
+      CLR => \data_out[127]_i_1_n_0\,
       D => data_in(20),
       Q => data_out(20)
     );
@@ -137,7 +370,7 @@ begin
      port map (
       C => clk,
       CE => ld,
-      CLR => rst,
+      CLR => \data_out[127]_i_1_n_0\,
       D => data_in(21),
       Q => data_out(21)
     );
@@ -145,7 +378,7 @@ begin
      port map (
       C => clk,
       CE => ld,
-      CLR => rst,
+      CLR => \data_out[127]_i_1_n_0\,
       D => data_in(22),
       Q => data_out(22)
     );
@@ -153,7 +386,7 @@ begin
      port map (
       C => clk,
       CE => ld,
-      CLR => rst,
+      CLR => \data_out[127]_i_1_n_0\,
       D => data_in(23),
       Q => data_out(23)
     );
@@ -161,7 +394,7 @@ begin
      port map (
       C => clk,
       CE => ld,
-      CLR => rst,
+      CLR => \data_out[127]_i_1_n_0\,
       D => data_in(24),
       Q => data_out(24)
     );
@@ -169,7 +402,7 @@ begin
      port map (
       C => clk,
       CE => ld,
-      CLR => rst,
+      CLR => \data_out[127]_i_1_n_0\,
       D => data_in(25),
       Q => data_out(25)
     );
@@ -177,7 +410,7 @@ begin
      port map (
       C => clk,
       CE => ld,
-      CLR => rst,
+      CLR => \data_out[127]_i_1_n_0\,
       D => data_in(26),
       Q => data_out(26)
     );
@@ -185,7 +418,7 @@ begin
      port map (
       C => clk,
       CE => ld,
-      CLR => rst,
+      CLR => \data_out[127]_i_1_n_0\,
       D => data_in(27),
       Q => data_out(27)
     );
@@ -193,7 +426,7 @@ begin
      port map (
       C => clk,
       CE => ld,
-      CLR => rst,
+      CLR => \data_out[127]_i_1_n_0\,
       D => data_in(28),
       Q => data_out(28)
     );
@@ -201,7 +434,7 @@ begin
      port map (
       C => clk,
       CE => ld,
-      CLR => rst,
+      CLR => \data_out[127]_i_1_n_0\,
       D => data_in(29),
       Q => data_out(29)
     );
@@ -209,7 +442,7 @@ begin
      port map (
       C => clk,
       CE => ld,
-      CLR => rst,
+      CLR => \data_out[127]_i_1_n_0\,
       D => data_in(2),
       Q => data_out(2)
     );
@@ -217,7 +450,7 @@ begin
      port map (
       C => clk,
       CE => ld,
-      CLR => rst,
+      CLR => \data_out[127]_i_1_n_0\,
       D => data_in(30),
       Q => data_out(30)
     );
@@ -225,7 +458,7 @@ begin
      port map (
       C => clk,
       CE => ld,
-      CLR => rst,
+      CLR => \data_out[127]_i_1_n_0\,
       D => data_in(31),
       Q => data_out(31)
     );
@@ -233,7 +466,7 @@ begin
      port map (
       C => clk,
       CE => ld,
-      CLR => rst,
+      CLR => \data_out[127]_i_1_n_0\,
       D => data_in(32),
       Q => data_out(32)
     );
@@ -241,7 +474,7 @@ begin
      port map (
       C => clk,
       CE => ld,
-      CLR => rst,
+      CLR => \data_out[127]_i_1_n_0\,
       D => data_in(33),
       Q => data_out(33)
     );
@@ -249,7 +482,7 @@ begin
      port map (
       C => clk,
       CE => ld,
-      CLR => rst,
+      CLR => \data_out[127]_i_1_n_0\,
       D => data_in(34),
       Q => data_out(34)
     );
@@ -257,7 +490,7 @@ begin
      port map (
       C => clk,
       CE => ld,
-      CLR => rst,
+      CLR => \data_out[127]_i_1_n_0\,
       D => data_in(35),
       Q => data_out(35)
     );
@@ -265,7 +498,7 @@ begin
      port map (
       C => clk,
       CE => ld,
-      CLR => rst,
+      CLR => \data_out[127]_i_1_n_0\,
       D => data_in(36),
       Q => data_out(36)
     );
@@ -273,7 +506,7 @@ begin
      port map (
       C => clk,
       CE => ld,
-      CLR => rst,
+      CLR => \data_out[127]_i_1_n_0\,
       D => data_in(37),
       Q => data_out(37)
     );
@@ -281,7 +514,7 @@ begin
      port map (
       C => clk,
       CE => ld,
-      CLR => rst,
+      CLR => \data_out[127]_i_1_n_0\,
       D => data_in(38),
       Q => data_out(38)
     );
@@ -289,7 +522,7 @@ begin
      port map (
       C => clk,
       CE => ld,
-      CLR => rst,
+      CLR => \data_out[127]_i_1_n_0\,
       D => data_in(39),
       Q => data_out(39)
     );
@@ -297,7 +530,7 @@ begin
      port map (
       C => clk,
       CE => ld,
-      CLR => rst,
+      CLR => \data_out[127]_i_1_n_0\,
       D => data_in(3),
       Q => data_out(3)
     );
@@ -305,7 +538,7 @@ begin
      port map (
       C => clk,
       CE => ld,
-      CLR => rst,
+      CLR => \data_out[127]_i_1_n_0\,
       D => data_in(40),
       Q => data_out(40)
     );
@@ -313,7 +546,7 @@ begin
      port map (
       C => clk,
       CE => ld,
-      CLR => rst,
+      CLR => \data_out[127]_i_1_n_0\,
       D => data_in(41),
       Q => data_out(41)
     );
@@ -321,7 +554,7 @@ begin
      port map (
       C => clk,
       CE => ld,
-      CLR => rst,
+      CLR => \data_out[127]_i_1_n_0\,
       D => data_in(42),
       Q => data_out(42)
     );
@@ -329,7 +562,7 @@ begin
      port map (
       C => clk,
       CE => ld,
-      CLR => rst,
+      CLR => \data_out[127]_i_1_n_0\,
       D => data_in(43),
       Q => data_out(43)
     );
@@ -337,7 +570,7 @@ begin
      port map (
       C => clk,
       CE => ld,
-      CLR => rst,
+      CLR => \data_out[127]_i_1_n_0\,
       D => data_in(44),
       Q => data_out(44)
     );
@@ -345,7 +578,7 @@ begin
      port map (
       C => clk,
       CE => ld,
-      CLR => rst,
+      CLR => \data_out[127]_i_1_n_0\,
       D => data_in(45),
       Q => data_out(45)
     );
@@ -353,7 +586,7 @@ begin
      port map (
       C => clk,
       CE => ld,
-      CLR => rst,
+      CLR => \data_out[127]_i_1_n_0\,
       D => data_in(46),
       Q => data_out(46)
     );
@@ -361,7 +594,7 @@ begin
      port map (
       C => clk,
       CE => ld,
-      CLR => rst,
+      CLR => \data_out[127]_i_1_n_0\,
       D => data_in(47),
       Q => data_out(47)
     );
@@ -369,7 +602,7 @@ begin
      port map (
       C => clk,
       CE => ld,
-      CLR => rst,
+      CLR => \data_out[127]_i_1_n_0\,
       D => data_in(48),
       Q => data_out(48)
     );
@@ -377,7 +610,7 @@ begin
      port map (
       C => clk,
       CE => ld,
-      CLR => rst,
+      CLR => \data_out[127]_i_1_n_0\,
       D => data_in(49),
       Q => data_out(49)
     );
@@ -385,7 +618,7 @@ begin
      port map (
       C => clk,
       CE => ld,
-      CLR => rst,
+      CLR => \data_out[127]_i_1_n_0\,
       D => data_in(4),
       Q => data_out(4)
     );
@@ -393,7 +626,7 @@ begin
      port map (
       C => clk,
       CE => ld,
-      CLR => rst,
+      CLR => \data_out[127]_i_1_n_0\,
       D => data_in(50),
       Q => data_out(50)
     );
@@ -401,7 +634,7 @@ begin
      port map (
       C => clk,
       CE => ld,
-      CLR => rst,
+      CLR => \data_out[127]_i_1_n_0\,
       D => data_in(51),
       Q => data_out(51)
     );
@@ -409,7 +642,7 @@ begin
      port map (
       C => clk,
       CE => ld,
-      CLR => rst,
+      CLR => \data_out[127]_i_1_n_0\,
       D => data_in(52),
       Q => data_out(52)
     );
@@ -417,7 +650,7 @@ begin
      port map (
       C => clk,
       CE => ld,
-      CLR => rst,
+      CLR => \data_out[127]_i_1_n_0\,
       D => data_in(53),
       Q => data_out(53)
     );
@@ -425,7 +658,7 @@ begin
      port map (
       C => clk,
       CE => ld,
-      CLR => rst,
+      CLR => \data_out[127]_i_1_n_0\,
       D => data_in(54),
       Q => data_out(54)
     );
@@ -433,7 +666,7 @@ begin
      port map (
       C => clk,
       CE => ld,
-      CLR => rst,
+      CLR => \data_out[127]_i_1_n_0\,
       D => data_in(55),
       Q => data_out(55)
     );
@@ -441,7 +674,7 @@ begin
      port map (
       C => clk,
       CE => ld,
-      CLR => rst,
+      CLR => \data_out[127]_i_1_n_0\,
       D => data_in(56),
       Q => data_out(56)
     );
@@ -449,7 +682,7 @@ begin
      port map (
       C => clk,
       CE => ld,
-      CLR => rst,
+      CLR => \data_out[127]_i_1_n_0\,
       D => data_in(57),
       Q => data_out(57)
     );
@@ -457,7 +690,7 @@ begin
      port map (
       C => clk,
       CE => ld,
-      CLR => rst,
+      CLR => \data_out[127]_i_1_n_0\,
       D => data_in(58),
       Q => data_out(58)
     );
@@ -465,7 +698,7 @@ begin
      port map (
       C => clk,
       CE => ld,
-      CLR => rst,
+      CLR => \data_out[127]_i_1_n_0\,
       D => data_in(59),
       Q => data_out(59)
     );
@@ -473,7 +706,7 @@ begin
      port map (
       C => clk,
       CE => ld,
-      CLR => rst,
+      CLR => \data_out[127]_i_1_n_0\,
       D => data_in(5),
       Q => data_out(5)
     );
@@ -481,7 +714,7 @@ begin
      port map (
       C => clk,
       CE => ld,
-      CLR => rst,
+      CLR => \data_out[127]_i_1_n_0\,
       D => data_in(60),
       Q => data_out(60)
     );
@@ -489,7 +722,7 @@ begin
      port map (
       C => clk,
       CE => ld,
-      CLR => rst,
+      CLR => \data_out[127]_i_1_n_0\,
       D => data_in(61),
       Q => data_out(61)
     );
@@ -497,7 +730,7 @@ begin
      port map (
       C => clk,
       CE => ld,
-      CLR => rst,
+      CLR => \data_out[127]_i_1_n_0\,
       D => data_in(62),
       Q => data_out(62)
     );
@@ -505,39 +738,327 @@ begin
      port map (
       C => clk,
       CE => ld,
-      CLR => rst,
+      CLR => \data_out[127]_i_1_n_0\,
       D => data_in(63),
       Q => data_out(63)
+    );
+\data_out_reg[64]\: unisim.vcomponents.FDCE
+     port map (
+      C => clk,
+      CE => ld,
+      CLR => \data_out[127]_i_1_n_0\,
+      D => data_in(64),
+      Q => data_out(64)
+    );
+\data_out_reg[65]\: unisim.vcomponents.FDCE
+     port map (
+      C => clk,
+      CE => ld,
+      CLR => \data_out[127]_i_1_n_0\,
+      D => data_in(65),
+      Q => data_out(65)
+    );
+\data_out_reg[66]\: unisim.vcomponents.FDCE
+     port map (
+      C => clk,
+      CE => ld,
+      CLR => \data_out[127]_i_1_n_0\,
+      D => data_in(66),
+      Q => data_out(66)
+    );
+\data_out_reg[67]\: unisim.vcomponents.FDCE
+     port map (
+      C => clk,
+      CE => ld,
+      CLR => \data_out[127]_i_1_n_0\,
+      D => data_in(67),
+      Q => data_out(67)
+    );
+\data_out_reg[68]\: unisim.vcomponents.FDCE
+     port map (
+      C => clk,
+      CE => ld,
+      CLR => \data_out[127]_i_1_n_0\,
+      D => data_in(68),
+      Q => data_out(68)
+    );
+\data_out_reg[69]\: unisim.vcomponents.FDCE
+     port map (
+      C => clk,
+      CE => ld,
+      CLR => \data_out[127]_i_1_n_0\,
+      D => data_in(69),
+      Q => data_out(69)
     );
 \data_out_reg[6]\: unisim.vcomponents.FDCE
      port map (
       C => clk,
       CE => ld,
-      CLR => rst,
+      CLR => \data_out[127]_i_1_n_0\,
       D => data_in(6),
       Q => data_out(6)
+    );
+\data_out_reg[70]\: unisim.vcomponents.FDCE
+     port map (
+      C => clk,
+      CE => ld,
+      CLR => \data_out[127]_i_1_n_0\,
+      D => data_in(70),
+      Q => data_out(70)
+    );
+\data_out_reg[71]\: unisim.vcomponents.FDCE
+     port map (
+      C => clk,
+      CE => ld,
+      CLR => \data_out[127]_i_1_n_0\,
+      D => data_in(71),
+      Q => data_out(71)
+    );
+\data_out_reg[72]\: unisim.vcomponents.FDCE
+     port map (
+      C => clk,
+      CE => ld,
+      CLR => \data_out[127]_i_1_n_0\,
+      D => data_in(72),
+      Q => data_out(72)
+    );
+\data_out_reg[73]\: unisim.vcomponents.FDCE
+     port map (
+      C => clk,
+      CE => ld,
+      CLR => \data_out[127]_i_1_n_0\,
+      D => data_in(73),
+      Q => data_out(73)
+    );
+\data_out_reg[74]\: unisim.vcomponents.FDCE
+     port map (
+      C => clk,
+      CE => ld,
+      CLR => \data_out[127]_i_1_n_0\,
+      D => data_in(74),
+      Q => data_out(74)
+    );
+\data_out_reg[75]\: unisim.vcomponents.FDCE
+     port map (
+      C => clk,
+      CE => ld,
+      CLR => \data_out[127]_i_1_n_0\,
+      D => data_in(75),
+      Q => data_out(75)
+    );
+\data_out_reg[76]\: unisim.vcomponents.FDCE
+     port map (
+      C => clk,
+      CE => ld,
+      CLR => \data_out[127]_i_1_n_0\,
+      D => data_in(76),
+      Q => data_out(76)
+    );
+\data_out_reg[77]\: unisim.vcomponents.FDCE
+     port map (
+      C => clk,
+      CE => ld,
+      CLR => \data_out[127]_i_1_n_0\,
+      D => data_in(77),
+      Q => data_out(77)
+    );
+\data_out_reg[78]\: unisim.vcomponents.FDCE
+     port map (
+      C => clk,
+      CE => ld,
+      CLR => \data_out[127]_i_1_n_0\,
+      D => data_in(78),
+      Q => data_out(78)
+    );
+\data_out_reg[79]\: unisim.vcomponents.FDCE
+     port map (
+      C => clk,
+      CE => ld,
+      CLR => \data_out[127]_i_1_n_0\,
+      D => data_in(79),
+      Q => data_out(79)
     );
 \data_out_reg[7]\: unisim.vcomponents.FDCE
      port map (
       C => clk,
       CE => ld,
-      CLR => rst,
+      CLR => \data_out[127]_i_1_n_0\,
       D => data_in(7),
       Q => data_out(7)
+    );
+\data_out_reg[80]\: unisim.vcomponents.FDCE
+     port map (
+      C => clk,
+      CE => ld,
+      CLR => \data_out[127]_i_1_n_0\,
+      D => data_in(80),
+      Q => data_out(80)
+    );
+\data_out_reg[81]\: unisim.vcomponents.FDCE
+     port map (
+      C => clk,
+      CE => ld,
+      CLR => \data_out[127]_i_1_n_0\,
+      D => data_in(81),
+      Q => data_out(81)
+    );
+\data_out_reg[82]\: unisim.vcomponents.FDCE
+     port map (
+      C => clk,
+      CE => ld,
+      CLR => \data_out[127]_i_1_n_0\,
+      D => data_in(82),
+      Q => data_out(82)
+    );
+\data_out_reg[83]\: unisim.vcomponents.FDCE
+     port map (
+      C => clk,
+      CE => ld,
+      CLR => \data_out[127]_i_1_n_0\,
+      D => data_in(83),
+      Q => data_out(83)
+    );
+\data_out_reg[84]\: unisim.vcomponents.FDCE
+     port map (
+      C => clk,
+      CE => ld,
+      CLR => \data_out[127]_i_1_n_0\,
+      D => data_in(84),
+      Q => data_out(84)
+    );
+\data_out_reg[85]\: unisim.vcomponents.FDCE
+     port map (
+      C => clk,
+      CE => ld,
+      CLR => \data_out[127]_i_1_n_0\,
+      D => data_in(85),
+      Q => data_out(85)
+    );
+\data_out_reg[86]\: unisim.vcomponents.FDCE
+     port map (
+      C => clk,
+      CE => ld,
+      CLR => \data_out[127]_i_1_n_0\,
+      D => data_in(86),
+      Q => data_out(86)
+    );
+\data_out_reg[87]\: unisim.vcomponents.FDCE
+     port map (
+      C => clk,
+      CE => ld,
+      CLR => \data_out[127]_i_1_n_0\,
+      D => data_in(87),
+      Q => data_out(87)
+    );
+\data_out_reg[88]\: unisim.vcomponents.FDCE
+     port map (
+      C => clk,
+      CE => ld,
+      CLR => \data_out[127]_i_1_n_0\,
+      D => data_in(88),
+      Q => data_out(88)
+    );
+\data_out_reg[89]\: unisim.vcomponents.FDCE
+     port map (
+      C => clk,
+      CE => ld,
+      CLR => \data_out[127]_i_1_n_0\,
+      D => data_in(89),
+      Q => data_out(89)
     );
 \data_out_reg[8]\: unisim.vcomponents.FDCE
      port map (
       C => clk,
       CE => ld,
-      CLR => rst,
+      CLR => \data_out[127]_i_1_n_0\,
       D => data_in(8),
       Q => data_out(8)
+    );
+\data_out_reg[90]\: unisim.vcomponents.FDCE
+     port map (
+      C => clk,
+      CE => ld,
+      CLR => \data_out[127]_i_1_n_0\,
+      D => data_in(90),
+      Q => data_out(90)
+    );
+\data_out_reg[91]\: unisim.vcomponents.FDCE
+     port map (
+      C => clk,
+      CE => ld,
+      CLR => \data_out[127]_i_1_n_0\,
+      D => data_in(91),
+      Q => data_out(91)
+    );
+\data_out_reg[92]\: unisim.vcomponents.FDCE
+     port map (
+      C => clk,
+      CE => ld,
+      CLR => \data_out[127]_i_1_n_0\,
+      D => data_in(92),
+      Q => data_out(92)
+    );
+\data_out_reg[93]\: unisim.vcomponents.FDCE
+     port map (
+      C => clk,
+      CE => ld,
+      CLR => \data_out[127]_i_1_n_0\,
+      D => data_in(93),
+      Q => data_out(93)
+    );
+\data_out_reg[94]\: unisim.vcomponents.FDCE
+     port map (
+      C => clk,
+      CE => ld,
+      CLR => \data_out[127]_i_1_n_0\,
+      D => data_in(94),
+      Q => data_out(94)
+    );
+\data_out_reg[95]\: unisim.vcomponents.FDCE
+     port map (
+      C => clk,
+      CE => ld,
+      CLR => \data_out[127]_i_1_n_0\,
+      D => data_in(95),
+      Q => data_out(95)
+    );
+\data_out_reg[96]\: unisim.vcomponents.FDCE
+     port map (
+      C => clk,
+      CE => ld,
+      CLR => \data_out[127]_i_1_n_0\,
+      D => data_in(96),
+      Q => data_out(96)
+    );
+\data_out_reg[97]\: unisim.vcomponents.FDCE
+     port map (
+      C => clk,
+      CE => ld,
+      CLR => \data_out[127]_i_1_n_0\,
+      D => data_in(97),
+      Q => data_out(97)
+    );
+\data_out_reg[98]\: unisim.vcomponents.FDCE
+     port map (
+      C => clk,
+      CE => ld,
+      CLR => \data_out[127]_i_1_n_0\,
+      D => data_in(98),
+      Q => data_out(98)
+    );
+\data_out_reg[99]\: unisim.vcomponents.FDCE
+     port map (
+      C => clk,
+      CE => ld,
+      CLR => \data_out[127]_i_1_n_0\,
+      D => data_in(99),
+      Q => data_out(99)
     );
 \data_out_reg[9]\: unisim.vcomponents.FDCE
      port map (
       C => clk,
       CE => ld,
-      CLR => rst,
+      CLR => \data_out[127]_i_1_n_0\,
       D => data_in(9),
       Q => data_out(9)
     );
@@ -551,8 +1072,8 @@ entity Block_correctionV2_Output_memmory_0_0 is
     clk : in STD_LOGIC;
     rst : in STD_LOGIC;
     ld : in STD_LOGIC;
-    data_in : in STD_LOGIC_VECTOR ( 63 downto 0 );
-    data_out : out STD_LOGIC_VECTOR ( 63 downto 0 )
+    data_in : in STD_LOGIC_VECTOR ( 127 downto 0 );
+    data_out : out STD_LOGIC_VECTOR ( 127 downto 0 )
   );
   attribute NotValidForBitStream : boolean;
   attribute NotValidForBitStream of Block_correctionV2_Output_memmory_0_0 : entity is true;
@@ -577,8 +1098,8 @@ begin
 inst: entity work.Block_correctionV2_Output_memmory_0_0_Output_memmory
      port map (
       clk => clk,
-      data_in(63 downto 0) => data_in(63 downto 0),
-      data_out(63 downto 0) => data_out(63 downto 0),
+      data_in(127 downto 0) => data_in(127 downto 0),
+      data_out(127 downto 0) => data_out(127 downto 0),
       ld => ld,
       rst => rst
     );

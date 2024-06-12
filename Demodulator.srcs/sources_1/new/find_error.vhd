@@ -22,7 +22,7 @@ architecture Behavioral of find_error is
 begin
 process(clk, rst)
 begin
-if rst = '1' then
+if rst = '0' then
     row_error_t <= (others => '0');
     col_error_t <= (others => '0');
 elsif rising_edge(clk) then

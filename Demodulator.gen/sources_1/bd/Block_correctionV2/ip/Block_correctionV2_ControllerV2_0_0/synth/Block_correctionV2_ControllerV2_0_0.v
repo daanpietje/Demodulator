@@ -69,6 +69,8 @@ module Block_correctionV2_ControllerV2_0_0 (
   ld_error_c,
   ld_correct_error_c,
   ld_input_memmory,
+  ld_adder,
+  sel_adder,
   ld_output_memmory
 );
 
@@ -89,6 +91,8 @@ output wire ld_calc_c;
 output wire ld_error_c;
 output wire ld_correct_error_c;
 output wire ld_input_memmory;
+output wire ld_adder;
+output wire sel_adder;
 output wire ld_output_memmory;
 
   ControllerV2 inst (
@@ -105,6 +109,8 @@ output wire ld_output_memmory;
     .ld_error_c(ld_error_c),
     .ld_correct_error_c(ld_correct_error_c),
     .ld_input_memmory(ld_input_memmory),
+    .ld_adder(ld_adder),
+    .sel_adder(sel_adder),
     .ld_output_memmory(ld_output_memmory)
   );
 endmodule

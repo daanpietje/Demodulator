@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7z020clg400-1" LaunchTime="1717838062" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/Block_correctionV2_wrapper.dcp">
+<GenRun Id="synth_1" LaunchPart="xc7z020clg400-1" LaunchTime="1718193562" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/Block_correctionV2_wrapper.dcp">
   <File Type="PA-TCL" Name="Block_correctionV2_wrapper.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="Block_correctionV2_wrapper_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="Block_correctionV2_wrapper_reports.tcl"/>
@@ -11,6 +11,18 @@
   <File Type="VDS-TIMING-PB" Name="Block_correctionV2_wrapper_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/Adder.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/ControllerV2.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <File Path="$PSRCDIR/sources_1/new/find_error.vhd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -29,19 +41,13 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/new/Input_memmory.vhd">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
     <File Path="$PSRCDIR/sources_1/new/Output_memmory.vhd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/new/ControllerV2.vhd">
+    <File Path="$PSRCDIR/sources_1/new/Input_memmory.vhd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -128,14 +134,6 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/bd/Complete_module/Complete_module.bd">
-      <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
       <Option Name="TopModule" Val="Block_correctionV2_wrapper"/>
@@ -162,15 +160,14 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023">
-      <Desc>Vivado Synthesis Defaults</Desc>
-    </StratHandle>
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023"/>
     <Step Id="synth_design"/>
   </Strategy>
-  <BlockFileSet Type="BlockSrcs" Name="Block_correctionV2_find_error_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="Block_correctionV2_Input_memmory_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="Block_correctionV2_ControllerV2_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="Block_correctionV2_Output_memmory_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="Block_correctionV2_calc_parity_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="Block_correctionV2_ControllerV2_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="Block_correctionV2_Adder_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="Block_correctionV2_find_error_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="Block_correctionV2_correct_error_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="Block_correctionV2_calc_parity_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="Block_correctionV2_Input_memmory_0_0"/>
 </GenRun>

@@ -2,8 +2,8 @@
 //Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
-//Date        : Sat Jun  8 11:14:17 2024
-//Host        : Desktop_Daan running 64-bit major release  (build 9200)
+//Date        : Wed Jun 12 13:53:09 2024
+//Host        : DaanAsus running 64-bit major release  (build 9200)
 //Command     : generate_target Block_correctionV2_wrapper.bd
 //Design      : Block_correctionV2_wrapper
 //Purpose     : IP block netlist
@@ -22,7 +22,7 @@ module Block_correctionV2_wrapper
   input clk;
   input data_avaible;
   input [79:0]data_in;
-  output [63:0]data_out;
+  output [127:0]data_out;
   input data_send;
   output ready_recieve;
   output ready_send;
@@ -31,7 +31,7 @@ module Block_correctionV2_wrapper
   wire clk;
   wire data_avaible;
   wire [79:0]data_in;
-  wire [63:0]data_out;
+  wire [127:0]data_out;
   wire data_send;
   wire ready_recieve;
   wire ready_send;

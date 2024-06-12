@@ -45,7 +45,7 @@ architecture Behavioral of Input_memmory is
 begin
 process(clk, rst)
 begin
-    if rst = '1' then
+    if rst = '0' then
         data_out <= "00000000000000000000000000000000000000000000000000000000000000000000000000000000";
     elsif rising_edge(clk) then
         if ld = '1' then
