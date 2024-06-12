@@ -1,21 +1,18 @@
 {
    "ActiveEmotionalView":"Default View",
-   "Default View_ScaleFactor":"1.25",
-   "Default View_TopLeft":"-78,-46",
+   "Default View_ScaleFactor":"1.00817",
+   "Default View_TopLeft":"-428,-289",
    "ExpandedHierarchyInLayout":"",
    "guistr":"# # String gsaved with Nlview 7.5.8 2022-09-21 7111 VDI=41 GEI=38 GUI=JA:10.0
 #  -string -flagsOSRD
-preplace inst FSK_Block_correction_1 -pg 1 -lvl 1 -x 180 -y 150 -defaultsOSRD
-preplace inst Controller_0 -pg 1 -lvl 2 -x 540 -y 130 -defaultsOSRD
-preplace netloc Controller_0_ld_calc_c 1 0 3 10 10 NJ 10 700
-preplace netloc Controller_0_ld_correct_error_c 1 0 3 30 260 NJ 260 700
-preplace netloc Controller_0_ld_error_c 1 0 3 20 20 NJ 20 710
-preplace netloc FSK_Block_correction_1_error_calc_fin 1 1 1 N 140
-preplace netloc FSK_Block_correction_1_error_check_fin 1 1 1 340 120n
-preplace netloc FSK_Block_correction_1_error_correct_fin 1 1 1 330 160n
-preplace netloc Net 1 0 2 30 40 340J
-levelinfo -pg 1 -30 180 540 750
-pagesize -pg 1 -db -bbox -sgen -30 0 750 270
+preplace inst controller_demodulat_0 -pg 1 -lvl 1 -x 110 -y -200 -defaultsOSRD
+preplace inst FSK_Demodulator_Block_0 -pg 1 -lvl 1 -x 110 -y -30 -defaultsOSRD
+preplace netloc controller_demodulat_0_start 1 0 2 -20 70 240
+preplace netloc Net 1 0 1 -30 -210n
+preplace netloc Net1 1 0 1 -40 -230n
+preplace netloc FSK_Demodulator_Block_0_done 1 0 2 -10 60 230
+levelinfo -pg 1 -60 110 340
+pagesize -pg 1 -db -bbox -sgen -200 -290 450 180
 "
 }
 {

@@ -8,7 +8,7 @@ entity FSK_Demodulator_Block is
            fsk_in      : in  STD_LOGIC;  
            data_out    : out STD_LOGIC_VECTOR (79 downto 0);
            start       : in  STD_LOGIC;  
-           done        : out STD_LOGIC   
+           finish        : out STD_LOGIC   
            );
 end FSK_Demodulator_Block;
 
@@ -30,17 +30,17 @@ architecture Behavioral of FSK_Demodulator_Block is
 begin
     process(clk, reset)
     begin
-        if reset = '1' then
+        if reset = '0' then
             high_counter <= 0;
             low_counter <= 0;
             bit_index <= 0;
             last_fsk_in <= '0';
             modulating <= '0';
-            done <= '0';
+            finish <= '0';
         elsif rising_edge(clk) then
             if start = '1' then
                 modulating <= '1';
-                done <= '0';
+                finish <= '0';
             end if;
 
             if modulating = '1' then
@@ -57,7 +57,7 @@ begin
                     else
                         bit_index <= 0;
                         modulating <= '0';
-                        done <= '1';
+                        finish <= '1';
                     end if;
                 else
                     high_counter <= high_counter + 1;
