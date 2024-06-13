@@ -1,29 +1,29 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Wed Jun 12 13:53:09 2024" VIVADOVERSION="2023.1">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Thu Jun 13 12:41:27 2024" VIVADOVERSION="2023.1">
 
   <SYSTEMINFO ARCH="zynq" DEVICE="7z020" NAME="Block_correctionV2" PACKAGE="clg400" SPEEDGRADE="-1"/>
 
   <EXTERNALPORTS>
     <PORT DIR="I" NAME="clk" SIGIS="undef" SIGNAME="External_Ports_clk">
       <CONNECTIONS>
-        <CONNECTION INSTANCE="Adder_0" PORT="clk"/>
         <CONNECTION INSTANCE="find_error_0" PORT="clk"/>
         <CONNECTION INSTANCE="correct_error_0" PORT="clk"/>
         <CONNECTION INSTANCE="calc_parity_0" PORT="clk"/>
         <CONNECTION INSTANCE="Output_memmory_0" PORT="clk"/>
         <CONNECTION INSTANCE="Input_memmory_0" PORT="clk"/>
         <CONNECTION INSTANCE="ControllerV2_0" PORT="clk"/>
+        <CONNECTION INSTANCE="Adder_0" PORT="clk"/>
       </CONNECTIONS>
     </PORT>
     <PORT DIR="I" NAME="rst" SIGIS="undef" SIGNAME="External_Ports_rst">
       <CONNECTIONS>
-        <CONNECTION INSTANCE="Adder_0" PORT="rst"/>
         <CONNECTION INSTANCE="find_error_0" PORT="rst"/>
         <CONNECTION INSTANCE="correct_error_0" PORT="rst"/>
         <CONNECTION INSTANCE="calc_parity_0" PORT="rst"/>
         <CONNECTION INSTANCE="Output_memmory_0" PORT="rst"/>
         <CONNECTION INSTANCE="Input_memmory_0" PORT="rst"/>
         <CONNECTION INSTANCE="ControllerV2_0" PORT="rst"/>
+        <CONNECTION INSTANCE="Adder_0" PORT="rst"/>
       </CONNECTIONS>
     </PORT>
     <PORT DIR="I" NAME="data_avaible" SIGIS="undef" SIGNAME="External_Ports_data_avaible">

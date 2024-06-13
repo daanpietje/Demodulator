@@ -37,6 +37,7 @@ entity controller_demodulator is
         rst : in STD_LOGIC;
         start : out STD_LOGIC;
         data_send : in STD_LOGIC;
+        data_ready : out STD_LOGIC;
         finish : in STD_LOGIC
    );
 end controller_demodulator;
@@ -70,14 +71,14 @@ end process;
 
 -- presentstate
 process (presentstate)
-variable outbus : std_logic;
+variable outbus : std_logic_vector(1 downto 0);
 begin
     case presentstate is
-        when S0 => outbus := '1';  -- fsk
-        when S1 => outbus := '0'; -- waiting till data is processed
+        when S0 => outbus := "01";  -- fsk
+        when S1 => outbus := "10"; -- waiting till data is processed
     end case;
-    start <= outbus after 1 ns;
-    
+    start <= outbus(0) after 1 ns;
+    data_ready <= outbus(1) after 1 ns;
     end process;
 
 end Behavioral;

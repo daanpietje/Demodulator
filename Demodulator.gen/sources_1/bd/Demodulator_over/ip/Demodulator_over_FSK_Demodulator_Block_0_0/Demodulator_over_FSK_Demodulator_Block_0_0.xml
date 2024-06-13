@@ -194,7 +194,7 @@
         </spirit:wire>
       </spirit:port>
       <spirit:port>
-        <spirit:name>done</spirit:name>
+        <spirit:name>finish</spirit:name>
         <spirit:wire>
           <spirit:direction>out</spirit:direction>
           <spirit:wireTypeDefs>

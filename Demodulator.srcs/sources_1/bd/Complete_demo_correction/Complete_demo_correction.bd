@@ -1,0 +1,190 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x932BFAA881C2E566",
+      "device": "xc7z020clg400-1",
+      "gen_directory": "../../../../Demodulator.gen/sources_1/bd/Complete_demo_correction",
+      "name": "Complete_demo_correction",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2023.1",
+      "validated": "true"
+    },
+    "design_tree": {
+      "Demodulator_over_wra_0": "",
+      "Block_correctionV2_w_0": ""
+    },
+    "ports": {
+      "clk": {
+        "direction": "I"
+      },
+      "reset": {
+        "direction": "I"
+      },
+      "fsk_in": {
+        "direction": "I"
+      },
+      "data_out": {
+        "direction": "O",
+        "left": "127",
+        "right": "0"
+      },
+      "ready_send": {
+        "direction": "O"
+      },
+      "data_send": {
+        "direction": "I"
+      }
+    },
+    "components": {
+      "Demodulator_over_wra_0": {
+        "vlnv": "xilinx.com:module_ref:Demodulator_over_wrapper:1.0",
+        "xci_name": "Complete_demo_correction_Demodulator_over_wra_0_1",
+        "xci_path": "ip\\Complete_demo_correction_Demodulator_over_wra_0_1\\Complete_demo_correction_Demodulator_over_wra_0_1.xci",
+        "inst_hier_path": "Demodulator_over_wra_0",
+        "reference_info": {
+          "ref_type": "unknown",
+          "ref_name": "Demodulator_over_wrapper",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "reset",
+                "value_src": "constant"
+              }
+            }
+          },
+          "data_out": {
+            "direction": "O",
+            "left": "79",
+            "right": "0"
+          },
+          "data_ready": {
+            "direction": "O"
+          },
+          "data_send": {
+            "direction": "I"
+          },
+          "fsk_in": {
+            "direction": "I"
+          },
+          "reset": {
+            "type": "rst",
+            "direction": "I"
+          }
+        }
+      },
+      "Block_correctionV2_w_0": {
+        "vlnv": "xilinx.com:module_ref:Block_correctionV2_wrapper:1.0",
+        "xci_name": "Complete_demo_correction_Block_correctionV2_w_0_0",
+        "xci_path": "ip\\Complete_demo_correction_Block_correctionV2_w_0_0\\Complete_demo_correction_Block_correctionV2_w_0_0.xci",
+        "inst_hier_path": "Block_correctionV2_w_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "Block_correctionV2_wrapper",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "rst",
+                "value_src": "constant"
+              }
+            }
+          },
+          "data_avaible": {
+            "direction": "I"
+          },
+          "data_in": {
+            "direction": "I",
+            "left": "79",
+            "right": "0"
+          },
+          "data_out": {
+            "direction": "O",
+            "left": "127",
+            "right": "0"
+          },
+          "data_send": {
+            "direction": "I"
+          },
+          "ready_recieve": {
+            "direction": "O"
+          },
+          "ready_send": {
+            "direction": "O"
+          },
+          "rst": {
+            "type": "rst",
+            "direction": "I"
+          }
+        }
+      }
+    },
+    "nets": {
+      "Block_correctionV2_w_0_data_out": {
+        "ports": [
+          "Block_correctionV2_w_0/data_out",
+          "data_out"
+        ]
+      },
+      "Block_correctionV2_w_0_ready_recieve": {
+        "ports": [
+          "Block_correctionV2_w_0/ready_recieve",
+          "Demodulator_over_wra_0/data_send"
+        ]
+      },
+      "Block_correctionV2_w_0_ready_send": {
+        "ports": [
+          "Block_correctionV2_w_0/ready_send",
+          "ready_send"
+        ]
+      },
+      "Demodulator_over_wra_0_data_out": {
+        "ports": [
+          "Demodulator_over_wra_0/data_out",
+          "Block_correctionV2_w_0/data_in"
+        ]
+      },
+      "Demodulator_over_wra_0_data_ready": {
+        "ports": [
+          "Demodulator_over_wra_0/data_ready",
+          "Block_correctionV2_w_0/data_avaible"
+        ]
+      },
+      "Net": {
+        "ports": [
+          "clk",
+          "Demodulator_over_wra_0/clk",
+          "Block_correctionV2_w_0/clk"
+        ]
+      },
+      "data_send_1": {
+        "ports": [
+          "data_send",
+          "Block_correctionV2_w_0/data_send"
+        ]
+      },
+      "fsk_in_1": {
+        "ports": [
+          "fsk_in",
+          "Demodulator_over_wra_0/fsk_in"
+        ]
+      },
+      "reset_1": {
+        "ports": [
+          "reset",
+          "Demodulator_over_wra_0/reset",
+          "Block_correctionV2_w_0/rst"
+        ]
+      }
+    }
+  }
+}

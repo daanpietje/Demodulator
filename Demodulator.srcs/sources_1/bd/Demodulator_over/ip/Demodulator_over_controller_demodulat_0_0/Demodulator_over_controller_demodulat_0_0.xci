@@ -40,6 +40,7 @@
         "rst": [ { "direction": "in" } ],
         "start": [ { "direction": "out" } ],
         "data_send": [ { "direction": "in" } ],
+        "data_ready": [ { "direction": "out" } ],
         "finish": [ { "direction": "in" } ]
       },
       "interfaces": {
