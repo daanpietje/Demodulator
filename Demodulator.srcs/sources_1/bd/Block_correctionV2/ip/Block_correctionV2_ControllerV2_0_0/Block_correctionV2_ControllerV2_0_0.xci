@@ -43,7 +43,7 @@
         "error_finish": [ { "direction": "in" } ],
         "correct_error_finish": [ { "direction": "in" } ],
         "data_send": [ { "direction": "in" } ],
-        "ready_recieve": [ { "direction": "out" } ],
+        "data_recieved": [ { "direction": "out" } ],
         "ready_send": [ { "direction": "out" } ],
         "ld_calc_c": [ { "direction": "out" } ],
         "ld_error_c": [ { "direction": "out" } ],
