@@ -1,0 +1,905 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0xCAE2B53C57FE290",
+      "device": "xc7z020clg400-1",
+      "gen_directory": "../../../../Demodulator.gen/sources_1/bd/DaanDerekModule",
+      "name": "DaanDerekModule",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2023.1"
+    },
+    "design_tree": {
+      "Encoder4B5B_0": "",
+      "FSK_Modulator_0": "",
+      "ControllerV2_0": "",
+      "Output_memmory_0": "",
+      "calc_parity_0": "",
+      "Adder_0": "",
+      "correct_error_0": "",
+      "EBCS_0": "",
+      "controller_demodulat_0": "",
+      "Input_memmory_0": "",
+      "FourBFiveBDecoder_0": "",
+      "FSK_Demodulator_Block_0": "",
+      "find_error_0": ""
+    },
+    "ports": {
+      "clk": {
+        "direction": "I"
+      },
+      "nrst": {
+        "direction": "I"
+      },
+      "NaarMees": {
+        "direction": "O"
+      },
+      "dataOut": {
+        "direction": "O",
+        "left": "127",
+        "right": "0"
+      },
+      "dataSend": {
+        "direction": "I"
+      },
+      "readySend": {
+        "direction": "O"
+      },
+      "dataIn": {
+        "direction": "I",
+        "left": "127",
+        "right": "0"
+      }
+    },
+    "components": {
+      "Encoder4B5B_0": {
+        "vlnv": "xilinx.com:module_ref:Encoder4B5B:1.0",
+        "xci_name": "DaanDerekModule_Encoder4B5B_0_0",
+        "xci_path": "ip\\DaanDerekModule_Encoder4B5B_0_0\\DaanDerekModule_Encoder4B5B_0_0.xci",
+        "inst_hier_path": "Encoder4B5B_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "Encoder4B5B",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I"
+          },
+          "nReset": {
+            "direction": "I"
+          },
+          "dataIn": {
+            "direction": "I",
+            "left": "79",
+            "right": "0"
+          },
+          "dataOutReady": {
+            "direction": "I"
+          },
+          "dataOut": {
+            "direction": "O"
+          },
+          "dataInReady": {
+            "direction": "O"
+          }
+        }
+      },
+      "FSK_Modulator_0": {
+        "vlnv": "xilinx.com:module_ref:FSK_Modulator:1.0",
+        "xci_name": "DaanDerekModule_FSK_Modulator_0_0",
+        "xci_path": "ip\\DaanDerekModule_FSK_Modulator_0_0\\DaanDerekModule_FSK_Modulator_0_0.xci",
+        "inst_hier_path": "FSK_Modulator_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "FSK_Modulator",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I"
+          },
+          "nReset": {
+            "direction": "I"
+          },
+          "DataIn": {
+            "direction": "I"
+          },
+          "ready": {
+            "direction": "O"
+          },
+          "fsk_out": {
+            "direction": "O"
+          }
+        }
+      },
+      "ControllerV2_0": {
+        "vlnv": "xilinx.com:module_ref:ControllerV2:1.0",
+        "xci_name": "DaanDerekModule_ControllerV2_0_0",
+        "xci_path": "ip\\DaanDerekModule_ControllerV2_0_0\\DaanDerekModule_ControllerV2_0_0.xci",
+        "inst_hier_path": "ControllerV2_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "ControllerV2",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "rst",
+                "value_src": "constant"
+              }
+            }
+          },
+          "rst": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "data_avaible": {
+            "direction": "I"
+          },
+          "calc_finish": {
+            "direction": "I"
+          },
+          "error_finish": {
+            "direction": "I"
+          },
+          "correct_error_finish": {
+            "direction": "I"
+          },
+          "data_send": {
+            "direction": "I"
+          },
+          "data_recieved": {
+            "direction": "O"
+          },
+          "ready_send": {
+            "direction": "O"
+          },
+          "ld_calc_c": {
+            "direction": "O"
+          },
+          "ld_error_c": {
+            "direction": "O"
+          },
+          "ld_correct_error_c": {
+            "direction": "O"
+          },
+          "ld_input_memmory": {
+            "direction": "O"
+          },
+          "ld_adder": {
+            "direction": "O"
+          },
+          "sel_adder": {
+            "direction": "O"
+          },
+          "ld_output_memmory": {
+            "direction": "O"
+          }
+        }
+      },
+      "Output_memmory_0": {
+        "vlnv": "xilinx.com:module_ref:Output_memmory:1.0",
+        "xci_name": "DaanDerekModule_Output_memmory_0_0",
+        "xci_path": "ip\\DaanDerekModule_Output_memmory_0_0\\DaanDerekModule_Output_memmory_0_0.xci",
+        "inst_hier_path": "Output_memmory_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "Output_memmory",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "rst",
+                "value_src": "constant"
+              }
+            }
+          },
+          "rst": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "ld": {
+            "direction": "I"
+          },
+          "data_in": {
+            "direction": "I",
+            "left": "127",
+            "right": "0"
+          },
+          "data_out": {
+            "direction": "O",
+            "left": "127",
+            "right": "0"
+          }
+        }
+      },
+      "calc_parity_0": {
+        "vlnv": "xilinx.com:module_ref:calc_parity:1.0",
+        "xci_name": "DaanDerekModule_calc_parity_0_0",
+        "xci_path": "ip\\DaanDerekModule_calc_parity_0_0\\DaanDerekModule_calc_parity_0_0.xci",
+        "inst_hier_path": "calc_parity_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "calc_parity",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "rst",
+                "value_src": "constant"
+              }
+            }
+          },
+          "rst": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "ld": {
+            "direction": "I"
+          },
+          "data_in": {
+            "direction": "I",
+            "left": "79",
+            "right": "0"
+          },
+          "finish": {
+            "direction": "O"
+          },
+          "row_parity": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          },
+          "col_parity": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          },
+          "row_parity_calc": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          },
+          "col_parity_calc": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          }
+        }
+      },
+      "Adder_0": {
+        "vlnv": "xilinx.com:module_ref:Adder:1.0",
+        "xci_name": "DaanDerekModule_Adder_0_0",
+        "xci_path": "ip\\DaanDerekModule_Adder_0_0\\DaanDerekModule_Adder_0_0.xci",
+        "inst_hier_path": "Adder_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "Adder",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "rst",
+                "value_src": "constant"
+              }
+            }
+          },
+          "rst": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "ld": {
+            "direction": "I"
+          },
+          "sel": {
+            "direction": "I"
+          },
+          "data_in": {
+            "direction": "I",
+            "left": "63",
+            "right": "0"
+          },
+          "data_out": {
+            "direction": "O",
+            "left": "127",
+            "right": "0"
+          }
+        }
+      },
+      "correct_error_0": {
+        "vlnv": "xilinx.com:module_ref:correct_error:1.0",
+        "xci_name": "DaanDerekModule_correct_error_0_0",
+        "xci_path": "ip\\DaanDerekModule_correct_error_0_0\\DaanDerekModule_correct_error_0_0.xci",
+        "inst_hier_path": "correct_error_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "correct_error",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "rst",
+                "value_src": "constant"
+              }
+            }
+          },
+          "rst": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "ld": {
+            "direction": "I"
+          },
+          "data_in": {
+            "direction": "I",
+            "left": "79",
+            "right": "0"
+          },
+          "data_out": {
+            "direction": "O",
+            "left": "63",
+            "right": "0"
+          },
+          "row_error": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "finish": {
+            "direction": "O"
+          },
+          "col_error": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          }
+        }
+      },
+      "EBCS_0": {
+        "vlnv": "xilinx.com:module_ref:EBCS:1.0",
+        "xci_name": "DaanDerekModule_EBCS_0_0",
+        "xci_path": "ip\\DaanDerekModule_EBCS_0_0\\DaanDerekModule_EBCS_0_0.xci",
+        "inst_hier_path": "EBCS_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "EBCS",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I"
+          },
+          "nReset": {
+            "direction": "I"
+          },
+          "dataIn": {
+            "direction": "I",
+            "left": "127",
+            "right": "0"
+          },
+          "dataOut": {
+            "direction": "O",
+            "left": "79",
+            "right": "0"
+          },
+          "dataInReady": {
+            "direction": "O"
+          },
+          "dataOutReady": {
+            "direction": "I"
+          }
+        }
+      },
+      "controller_demodulat_0": {
+        "vlnv": "xilinx.com:module_ref:controller_demodulator:1.0",
+        "xci_name": "DaanDerekModule_controller_demodulat_0_0",
+        "xci_path": "ip\\DaanDerekModule_controller_demodulat_0_0\\DaanDerekModule_controller_demodulat_0_0.xci",
+        "inst_hier_path": "controller_demodulat_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "controller_demodulator",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "rst",
+                "value_src": "constant"
+              }
+            }
+          },
+          "rst": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "start": {
+            "direction": "O"
+          },
+          "data_send": {
+            "direction": "I"
+          },
+          "data_ready": {
+            "direction": "O"
+          },
+          "finish": {
+            "direction": "I"
+          }
+        }
+      },
+      "Input_memmory_0": {
+        "vlnv": "xilinx.com:module_ref:Input_memmory:1.0",
+        "xci_name": "DaanDerekModule_Input_memmory_0_0",
+        "xci_path": "ip\\DaanDerekModule_Input_memmory_0_0\\DaanDerekModule_Input_memmory_0_0.xci",
+        "inst_hier_path": "Input_memmory_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "Input_memmory",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "data_in": {
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "rst",
+                "value_src": "constant"
+              }
+            }
+          },
+          "rst": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "ld": {
+            "direction": "I"
+          },
+          "ready": {
+            "direction": "O"
+          },
+          "data_out": {
+            "direction": "O",
+            "left": "79",
+            "right": "0"
+          }
+        }
+      },
+      "FourBFiveBDecoder_0": {
+        "vlnv": "xilinx.com:module_ref:FourBFiveBDecoder:1.0",
+        "xci_name": "DaanDerekModule_FourBFiveBDecoder_0_0",
+        "xci_path": "ip\\DaanDerekModule_FourBFiveBDecoder_0_0\\DaanDerekModule_FourBFiveBDecoder_0_0.xci",
+        "inst_hier_path": "FourBFiveBDecoder_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "FourBFiveBDecoder",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "reset",
+                "value_src": "constant"
+              }
+            }
+          },
+          "reset": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "data_ready": {
+            "direction": "I"
+          },
+          "data_in": {
+            "direction": "I",
+            "left": "4",
+            "right": "0"
+          },
+          "data_out": {
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          }
+        }
+      },
+      "FSK_Demodulator_Block_0": {
+        "vlnv": "xilinx.com:module_ref:FSK_Demodulator_Block:1.0",
+        "xci_name": "DaanDerekModule_FSK_Demodulator_Block_0_0",
+        "xci_path": "ip\\DaanDerekModule_FSK_Demodulator_Block_0_0\\DaanDerekModule_FSK_Demodulator_Block_0_0.xci",
+        "inst_hier_path": "FSK_Demodulator_Block_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "FSK_Demodulator_Block",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "reset",
+                "value_src": "constant"
+              }
+            }
+          },
+          "reset": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "fsk_in": {
+            "direction": "I"
+          },
+          "data_out": {
+            "direction": "O",
+            "left": "4",
+            "right": "0"
+          },
+          "start": {
+            "direction": "I"
+          },
+          "finish": {
+            "direction": "O"
+          }
+        }
+      },
+      "find_error_0": {
+        "vlnv": "xilinx.com:module_ref:find_error:1.0",
+        "xci_name": "DaanDerekModule_find_error_0_0",
+        "xci_path": "ip\\DaanDerekModule_find_error_0_0\\DaanDerekModule_find_error_0_0.xci",
+        "inst_hier_path": "find_error_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "find_error",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "rst",
+                "value_src": "constant"
+              }
+            }
+          },
+          "rst": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "ld": {
+            "direction": "I"
+          },
+          "row_parity": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "col_parity": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "row_parity_calc": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "col_parity_calc": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "row_error": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          },
+          "error": {
+            "direction": "O",
+            "left": "1",
+            "right": "0"
+          },
+          "finish": {
+            "direction": "O"
+          },
+          "col_error": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          }
+        }
+      }
+    },
+    "nets": {
+      "Adder_0_data_out": {
+        "ports": [
+          "Adder_0/data_out",
+          "Output_memmory_0/data_in"
+        ]
+      },
+      "ControllerV2_0_data_recieved": {
+        "ports": [
+          "ControllerV2_0/data_recieved",
+          "controller_demodulat_0/data_send"
+        ]
+      },
+      "ControllerV2_0_ld_adder": {
+        "ports": [
+          "ControllerV2_0/ld_adder",
+          "Adder_0/ld"
+        ]
+      },
+      "ControllerV2_0_ld_calc_c": {
+        "ports": [
+          "ControllerV2_0/ld_calc_c",
+          "calc_parity_0/ld"
+        ]
+      },
+      "ControllerV2_0_ld_correct_error_c": {
+        "ports": [
+          "ControllerV2_0/ld_correct_error_c",
+          "correct_error_0/ld"
+        ]
+      },
+      "ControllerV2_0_ld_error_c": {
+        "ports": [
+          "ControllerV2_0/ld_error_c",
+          "find_error_0/ld"
+        ]
+      },
+      "ControllerV2_0_ld_input_memmory": {
+        "ports": [
+          "ControllerV2_0/ld_input_memmory",
+          "Input_memmory_0/ld"
+        ]
+      },
+      "ControllerV2_0_ld_output_memmory": {
+        "ports": [
+          "ControllerV2_0/ld_output_memmory",
+          "Output_memmory_0/ld"
+        ]
+      },
+      "ControllerV2_0_ready_send": {
+        "ports": [
+          "ControllerV2_0/ready_send",
+          "readySend"
+        ]
+      },
+      "ControllerV2_0_sel_adder": {
+        "ports": [
+          "ControllerV2_0/sel_adder",
+          "Adder_0/sel"
+        ]
+      },
+      "EBCS_0_dataInReady": {
+        "ports": [
+          "EBCS_0/dataInReady",
+          "NaarMees"
+        ]
+      },
+      "EBCS_0_dataOut": {
+        "ports": [
+          "EBCS_0/dataOut",
+          "Encoder4B5B_0/dataIn"
+        ]
+      },
+      "Encoder4B5B_0_dataInReady": {
+        "ports": [
+          "Encoder4B5B_0/dataInReady",
+          "EBCS_0/dataOutReady"
+        ]
+      },
+      "Encoder4B5B_0_dataOut": {
+        "ports": [
+          "Encoder4B5B_0/dataOut",
+          "FSK_Modulator_0/DataIn"
+        ]
+      },
+      "FSK_Demodulator_Block_0_data_out": {
+        "ports": [
+          "FSK_Demodulator_Block_0/data_out",
+          "FourBFiveBDecoder_0/data_in"
+        ]
+      },
+      "FSK_Demodulator_Block_0_finish": {
+        "ports": [
+          "FSK_Demodulator_Block_0/finish",
+          "FourBFiveBDecoder_0/data_ready"
+        ]
+      },
+      "FSK_Modulator_0_fsk_out": {
+        "ports": [
+          "FSK_Modulator_0/fsk_out",
+          "FSK_Demodulator_Block_0/fsk_in"
+        ]
+      },
+      "FSK_Modulator_0_ready": {
+        "ports": [
+          "FSK_Modulator_0/ready",
+          "Encoder4B5B_0/dataOutReady"
+        ]
+      },
+      "FourBFiveBDecoder_0_data_out": {
+        "ports": [
+          "FourBFiveBDecoder_0/data_out",
+          "Input_memmory_0/data_in"
+        ]
+      },
+      "Input_memmory_0_data_out": {
+        "ports": [
+          "Input_memmory_0/data_out",
+          "calc_parity_0/data_in",
+          "correct_error_0/data_in"
+        ]
+      },
+      "Input_memmory_0_ready": {
+        "ports": [
+          "Input_memmory_0/ready",
+          "controller_demodulat_0/finish"
+        ]
+      },
+      "Output_memmory_0_data_out": {
+        "ports": [
+          "Output_memmory_0/data_out",
+          "dataOut"
+        ]
+      },
+      "calc_parity_0_col_parity": {
+        "ports": [
+          "calc_parity_0/col_parity",
+          "find_error_0/col_parity"
+        ]
+      },
+      "calc_parity_0_col_parity_calc": {
+        "ports": [
+          "calc_parity_0/col_parity_calc",
+          "find_error_0/col_parity_calc"
+        ]
+      },
+      "calc_parity_0_finish": {
+        "ports": [
+          "calc_parity_0/finish",
+          "ControllerV2_0/calc_finish"
+        ]
+      },
+      "calc_parity_0_row_parity": {
+        "ports": [
+          "calc_parity_0/row_parity",
+          "find_error_0/row_parity"
+        ]
+      },
+      "calc_parity_0_row_parity_calc": {
+        "ports": [
+          "calc_parity_0/row_parity_calc",
+          "find_error_0/row_parity_calc"
+        ]
+      },
+      "clk_1": {
+        "ports": [
+          "clk",
+          "FSK_Modulator_0/clk",
+          "Encoder4B5B_0/clk",
+          "calc_parity_0/clk",
+          "correct_error_0/clk",
+          "ControllerV2_0/clk",
+          "Output_memmory_0/clk",
+          "Adder_0/clk",
+          "EBCS_0/clk",
+          "controller_demodulat_0/clk",
+          "Input_memmory_0/clk",
+          "FourBFiveBDecoder_0/clk",
+          "FSK_Demodulator_Block_0/clk",
+          "find_error_0/clk"
+        ]
+      },
+      "controller_demodulat_0_data_ready": {
+        "ports": [
+          "controller_demodulat_0/data_ready",
+          "ControllerV2_0/data_avaible"
+        ]
+      },
+      "controller_demodulat_0_start": {
+        "ports": [
+          "controller_demodulat_0/start",
+          "FSK_Demodulator_Block_0/start"
+        ]
+      },
+      "correct_error_0_data_out": {
+        "ports": [
+          "correct_error_0/data_out",
+          "Adder_0/data_in"
+        ]
+      },
+      "correct_error_0_finish": {
+        "ports": [
+          "correct_error_0/finish",
+          "ControllerV2_0/correct_error_finish"
+        ]
+      },
+      "dataIn_1": {
+        "ports": [
+          "dataIn",
+          "EBCS_0/dataIn"
+        ]
+      },
+      "dataSend_1": {
+        "ports": [
+          "dataSend",
+          "ControllerV2_0/data_send"
+        ]
+      },
+      "find_error_0_col_error": {
+        "ports": [
+          "find_error_0/col_error",
+          "correct_error_0/col_error"
+        ]
+      },
+      "find_error_0_finish": {
+        "ports": [
+          "find_error_0/finish",
+          "ControllerV2_0/error_finish"
+        ]
+      },
+      "find_error_0_row_error": {
+        "ports": [
+          "find_error_0/row_error",
+          "correct_error_0/row_error"
+        ]
+      },
+      "nrst_1": {
+        "ports": [
+          "nrst",
+          "FSK_Modulator_0/nReset",
+          "Encoder4B5B_0/nReset",
+          "calc_parity_0/rst",
+          "correct_error_0/rst",
+          "Adder_0/rst",
+          "Output_memmory_0/rst",
+          "ControllerV2_0/rst",
+          "EBCS_0/nReset",
+          "controller_demodulat_0/rst",
+          "Input_memmory_0/rst",
+          "FourBFiveBDecoder_0/reset",
+          "FSK_Demodulator_Block_0/reset",
+          "find_error_0/rst"
+        ]
+      }
+    }
+  }
+}

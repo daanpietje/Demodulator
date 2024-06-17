@@ -43,7 +43,7 @@ entity controller_demodulator is
 end controller_demodulator;
 
 architecture Behavioral of controller_demodulator is
-type state is (S0, S1, Su);
+type state is (S0, S1, S2, Su);
 signal presentstate: state;
 signal nextstate : state;
 begin
@@ -74,8 +74,10 @@ process (presentstate)
 variable outbus : std_logic_vector(1 downto 0);
 begin
     case presentstate is
-        when S0 => outbus := "01";  -- fsk
-        when S1 => outbus := "10"; -- waiting till data is processed
+        when S0 => outbus := "01"; -- fsk start
+        when S1 => outbus := "10"; -- waiting for data send
+        when S2 => outbus := "00";
+        when others => outbus := "00"; 
     end case;
     start <= outbus(0) after 1 ns;
     data_ready <= outbus(1) after 1 ns;

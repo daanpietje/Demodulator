@@ -1,28 +1,18 @@
 {
    "ActiveEmotionalView":"Default View",
-   "Default View_ScaleFactor":"1.0",
-   "Default View_TopLeft":"-1080,-282",
+   "Default View_ScaleFactor":"2.17638",
+   "Default View_TopLeft":"-49,95",
    "ExpandedHierarchyInLayout":"",
    "guistr":"# # String gsaved with Nlview 7.5.8 2022-09-21 7111 VDI=41 GEI=38 GUI=JA:10.0
 #  -string -flagsOSRD
-preplace port port-id_data_send -pg 1 -lvl 0 -x 0 -y 190 -defaultsOSRD
-preplace port port-id_fsk_in -pg 1 -lvl 0 -x 0 -y 270 -defaultsOSRD
-preplace port port-id_clk -pg 1 -lvl 0 -x 0 -y 60 -defaultsOSRD
-preplace port port-id_reset -pg 1 -lvl 0 -x 0 -y 80 -defaultsOSRD
-preplace port port-id_data_ready -pg 1 -lvl 3 -x 560 -y 190 -defaultsOSRD
-preplace portBus data_out -pg 1 -lvl 3 -x 560 -y 80 -defaultsOSRD
-preplace inst FSK_Demodulator_Block_0 -pg 1 -lvl 2 -x 420 -y 90 -defaultsOSRD
-preplace inst controller_demodulat_0 -pg 1 -lvl 1 -x 160 -y 180 -defaultsOSRD
-preplace netloc FSK_Demodulator_Block_0_data_out 1 2 1 NJ 80
-preplace netloc FSK_Demodulator_Block_0_done 1 0 3 30 280 300J 180 540
-preplace netloc Net 1 0 2 30 50 290J
-preplace netloc Net1 1 0 2 20 60 NJ
-preplace netloc controller_demodulat_0_start 1 1 1 300 120n
-preplace netloc data_send_1 1 0 1 NJ 190
-preplace netloc fsk_in_1 1 0 2 NJ 270 290J
-preplace netloc controller_demodulat_0_data_ready 1 1 2 NJ 190 NJ
-levelinfo -pg 1 0 160 420 560
-pagesize -pg 1 -db -bbox -sgen -120 0 700 290
+preplace port port-id_data_send -pg 1 -lvl 0 -x -10 -y 190 -defaultsOSRD
+preplace port port-id_fsk_in -pg 1 -lvl 0 -x -10 -y 270 -defaultsOSRD
+preplace port port-id_clk -pg 1 -lvl 0 -x -10 -y 50 -defaultsOSRD
+preplace port port-id_reset -pg 1 -lvl 0 -x -10 -y 80 -defaultsOSRD
+preplace port port-id_data_ready -pg 1 -lvl 3 -x 570 -y 190 -defaultsOSRD
+preplace portBus data_out -pg 1 -lvl 3 -x 570 -y 80 -defaultsOSRD
+levelinfo -pg 1 -10 160 420 570
+pagesize -pg 1 -db -bbox -sgen -130 0 720 290
 "
 }
 {

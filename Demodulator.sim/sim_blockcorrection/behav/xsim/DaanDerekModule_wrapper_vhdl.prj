@@ -1,0 +1,18 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../Demodulator.srcs/sources_1/imports/Nieuwe map/4b5bEncoder.vhd" \
+"../../../../Demodulator.srcs/sources_1/imports/Nieuwe map/FSK_Modulator.vhd" \
+"../../../../Demodulator.srcs/sources_1/new/ControllerV2.vhd" \
+"../../../../Demodulator.srcs/sources_1/new/Output_memmory.vhd" \
+"../../../../Demodulator.srcs/sources_1/new/calc_parity.vhd" \
+"../../../../Demodulator.srcs/sources_1/new/Adder.vhd" \
+"../../../../Demodulator.srcs/sources_1/new/correct_error.vhd" \
+"../../../../Demodulator.srcs/sources_1/new/find_error.vhd" \
+"../../../../Demodulator.srcs/sources_1/imports/Nieuwe map/ErrorBlockCorrectionSetup.vhd" \
+"../../../../Demodulator.srcs/sources_1/new/controller_demodulator.vhd" \
+"../../../../Demodulator.srcs/sources_1/new/demodulator.vhd" \
+"../../../../Demodulator.srcs/sources_1/new/5B4BDecoder.vhd" \
+"../../../../Demodulator.srcs/sources_1/new/Input_memmory.vhd" \
+
+# Do not sort compile order
+nosort

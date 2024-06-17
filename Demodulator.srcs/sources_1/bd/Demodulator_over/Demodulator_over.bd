@@ -7,13 +7,9 @@
       "name": "Demodulator_over",
       "rev_ctrl_bd_flag": "RevCtrlBdOff",
       "synth_flow_mode": "Hierarchical",
-      "tool_version": "2023.1",
-      "validated": "true"
+      "tool_version": "2023.1"
     },
-    "design_tree": {
-      "FSK_Demodulator_Block_0": "",
-      "controller_demodulat_0": ""
-    },
+    "design_tree": {},
     "ports": {
       "data_out": {
         "direction": "O",
@@ -34,140 +30,6 @@
       },
       "data_ready": {
         "direction": "O"
-      }
-    },
-    "components": {
-      "FSK_Demodulator_Block_0": {
-        "vlnv": "xilinx.com:module_ref:FSK_Demodulator_Block:1.0",
-        "xci_name": "Demodulator_over_FSK_Demodulator_Block_0_0",
-        "xci_path": "ip\\Demodulator_over_FSK_Demodulator_Block_0_0\\Demodulator_over_FSK_Demodulator_Block_0_0.xci",
-        "inst_hier_path": "FSK_Demodulator_Block_0",
-        "reference_info": {
-          "ref_type": "hdl",
-          "ref_name": "FSK_Demodulator_Block",
-          "boundary_crc": "0x0"
-        },
-        "ports": {
-          "clk": {
-            "type": "clk",
-            "direction": "I",
-            "parameters": {
-              "ASSOCIATED_RESET": {
-                "value": "reset",
-                "value_src": "constant"
-              }
-            }
-          },
-          "reset": {
-            "type": "rst",
-            "direction": "I"
-          },
-          "fsk_in": {
-            "direction": "I"
-          },
-          "data_out": {
-            "direction": "O",
-            "left": "79",
-            "right": "0"
-          },
-          "start": {
-            "direction": "I"
-          },
-          "finish": {
-            "direction": "O"
-          }
-        }
-      },
-      "controller_demodulat_0": {
-        "vlnv": "xilinx.com:module_ref:controller_demodulator:1.0",
-        "xci_name": "Demodulator_over_controller_demodulat_0_0",
-        "xci_path": "ip\\Demodulator_over_controller_demodulat_0_0\\Demodulator_over_controller_demodulat_0_0.xci",
-        "inst_hier_path": "controller_demodulat_0",
-        "reference_info": {
-          "ref_type": "hdl",
-          "ref_name": "controller_demodulator",
-          "boundary_crc": "0x0"
-        },
-        "ports": {
-          "clk": {
-            "type": "clk",
-            "direction": "I",
-            "parameters": {
-              "ASSOCIATED_RESET": {
-                "value": "rst",
-                "value_src": "constant"
-              }
-            }
-          },
-          "rst": {
-            "type": "rst",
-            "direction": "I"
-          },
-          "start": {
-            "direction": "O"
-          },
-          "data_send": {
-            "direction": "I"
-          },
-          "data_ready": {
-            "direction": "O"
-          },
-          "finish": {
-            "direction": "I"
-          }
-        }
-      }
-    },
-    "nets": {
-      "FSK_Demodulator_Block_0_data_out": {
-        "ports": [
-          "FSK_Demodulator_Block_0/data_out",
-          "data_out"
-        ]
-      },
-      "FSK_Demodulator_Block_0_done": {
-        "ports": [
-          "FSK_Demodulator_Block_0/finish",
-          "controller_demodulat_0/finish"
-        ]
-      },
-      "Net": {
-        "ports": [
-          "reset",
-          "FSK_Demodulator_Block_0/reset",
-          "controller_demodulat_0/rst"
-        ]
-      },
-      "Net1": {
-        "ports": [
-          "clk",
-          "FSK_Demodulator_Block_0/clk",
-          "controller_demodulat_0/clk"
-        ]
-      },
-      "controller_demodulat_0_data_ready": {
-        "ports": [
-          "controller_demodulat_0/data_ready",
-          "data_ready"
-        ]
-      },
-      "controller_demodulat_0_start": {
-        "ports": [
-          "controller_demodulat_0/start",
-          "FSK_Demodulator_Block_0/start"
-        ]
-      },
-      "data_send_1": {
-        "ports": [
-          "data_send",
-          "controller_demodulat_0/data_send"
-        ]
-      },
-      "fsk_in_1": {
-        "ports": [
-          "fsk_in",
-          "FSK_Demodulator_Block_0/fsk_in"
-        ]
       }
     }
   }

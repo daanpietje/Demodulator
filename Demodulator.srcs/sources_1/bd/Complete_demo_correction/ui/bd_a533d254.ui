@@ -7,23 +7,23 @@
 #  -string -flagsOSRD
 preplace port port-id_clk -pg 1 -lvl 0 -x -10 -y 20 -defaultsOSRD
 preplace port port-id_reset -pg 1 -lvl 0 -x -10 -y 140 -defaultsOSRD
-preplace port port-id_fsk_in -pg 1 -lvl 0 -x -10 -y 120 -defaultsOSRD
+preplace port port-id_fsk_in -pg 1 -lvl 0 -x -10 -y 110 -defaultsOSRD
 preplace port port-id_ready_send -pg 1 -lvl 3 -x 660 -y 20 -defaultsOSRD
-preplace port port-id_data_send -pg 1 -lvl 0 -x -10 -y 0 -defaultsOSRD
-preplace portBus data_out -pg 1 -lvl 3 -x 660 -y 0 -defaultsOSRD
+preplace port port-id_data_send -pg 1 -lvl 0 -x -10 -y -10 -defaultsOSRD
+preplace portBus data_out -pg 1 -lvl 3 -x 660 -y -10 -defaultsOSRD
 preplace inst Demodulator_over_wra_0 -pg 1 -lvl 1 -x 160 -y 110 -defaultsOSRD
 preplace inst Block_correctionV2_w_0 -pg 1 -lvl 2 -x 470 -y 140 -defaultsOSRD
-preplace netloc Block_correctionV2_w_0_data_out 1 2 1 620 0n
-preplace netloc Block_correctionV2_w_0_ready_recieve 1 0 3 30 -10 NJ -10 610
+preplace netloc Block_correctionV2_w_0_data_out 1 2 1 620 -10n
+preplace netloc Block_correctionV2_w_0_ready_recieve 1 0 3 30 10 NJ 10 610
 preplace netloc Block_correctionV2_w_0_ready_send 1 2 1 630 20n
 preplace netloc Demodulator_over_wra_0_data_out 1 1 1 290 100n
 preplace netloc Demodulator_over_wra_0_data_ready 1 1 1 N 120
 preplace netloc Net 1 0 2 20 20 310J
-preplace netloc data_send_1 1 0 2 NJ 0 300
-preplace netloc fsk_in_1 1 0 1 NJ 120
-preplace netloc reset_1 1 0 2 20 200 310J
+preplace netloc data_send_1 1 0 2 NJ -10 300
+preplace netloc fsk_in_1 1 0 1 10J 110n
+preplace netloc reset_1 1 0 2 30 200 310J
 levelinfo -pg 1 -10 160 470 660
-pagesize -pg 1 -db -bbox -sgen -130 -20 820 240
+pagesize -pg 1 -db -bbox -sgen -130 -30 820 240
 "
 }
 0

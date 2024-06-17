@@ -10,10 +10,10 @@
       "tool_version": "2023.1"
     },
     "design_tree": {
-      "find_error_0": "",
       "correct_error_0": "",
       "calc_parity_0": "",
-      "Controller_0": ""
+      "Controller_0": "",
+      "find_error_0": ""
     },
     "ports": {
       "Data_out_port": {
@@ -34,69 +34,6 @@
       }
     },
     "components": {
-      "find_error_0": {
-        "vlnv": "xilinx.com:module_ref:find_error:1.0",
-        "xci_name": "block_correction_find_error_0_0",
-        "xci_path": "ip\\block_correction_find_error_0_0\\block_correction_find_error_0_0.xci",
-        "inst_hier_path": "find_error_0",
-        "reference_info": {
-          "ref_type": "hdl",
-          "ref_name": "find_error",
-          "boundary_crc": "0x0"
-        },
-        "ports": {
-          "clk": {
-            "type": "clk",
-            "direction": "I",
-            "parameters": {
-              "ASSOCIATED_RESET": {
-                "value": "rst",
-                "value_src": "constant"
-              }
-            }
-          },
-          "rst": {
-            "type": "rst",
-            "direction": "I"
-          },
-          "ld": {
-            "direction": "I"
-          },
-          "row_parity": {
-            "direction": "I",
-            "left": "7",
-            "right": "0"
-          },
-          "col_parity": {
-            "direction": "I",
-            "left": "7",
-            "right": "0"
-          },
-          "row_parity_calc": {
-            "direction": "I",
-            "left": "7",
-            "right": "0"
-          },
-          "col_parity_calc": {
-            "direction": "I",
-            "left": "7",
-            "right": "0"
-          },
-          "row_error": {
-            "direction": "O",
-            "left": "7",
-            "right": "0"
-          },
-          "finish": {
-            "direction": "O"
-          },
-          "col_error": {
-            "direction": "O",
-            "left": "7",
-            "right": "0"
-          }
-        }
-      },
       "correct_error_0": {
         "vlnv": "xilinx.com:module_ref:correct_error:1.0",
         "xci_name": "block_correction_correct_error_0_0",
@@ -255,6 +192,74 @@
             "direction": "O"
           }
         }
+      },
+      "find_error_0": {
+        "vlnv": "xilinx.com:module_ref:find_error:1.0",
+        "xci_name": "block_correction_find_error_0_0",
+        "xci_path": "ip\\block_correction_find_error_0_0\\block_correction_find_error_0_0.xci",
+        "inst_hier_path": "find_error_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "find_error",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "rst",
+                "value_src": "constant"
+              }
+            }
+          },
+          "rst": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "ld": {
+            "direction": "I"
+          },
+          "row_parity": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "col_parity": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "row_parity_calc": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "col_parity_calc": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "row_error": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          },
+          "error": {
+            "direction": "O",
+            "left": "1",
+            "right": "0"
+          },
+          "finish": {
+            "direction": "O"
+          },
+          "col_error": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          }
+        }
       }
     },
     "nets": {
@@ -279,19 +284,19 @@
       "Net": {
         "ports": [
           "clk",
-          "find_error_0/clk",
           "correct_error_0/clk",
           "calc_parity_0/clk",
-          "Controller_0/clk"
+          "Controller_0/clk",
+          "find_error_0/clk"
         ]
       },
       "Net1": {
         "ports": [
           "rst",
-          "find_error_0/rst",
           "correct_error_0/rst",
           "calc_parity_0/rst",
-          "Controller_0/rst"
+          "Controller_0/rst",
+          "find_error_0/rst"
         ]
       },
       "calc_parity_0_Finish": {

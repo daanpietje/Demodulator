@@ -11,6 +11,7 @@ Port (
     row_parity_calc : in STD_LOGIC_VECTOR(7 downto 0);
     col_parity_calc : in STD_LOGIC_VECTOR(7 downto 0);
     row_error : out STD_LOGIC_VECTOR(7 downto 0);
+    error : out STD_LOGIC_VECTOR(1 downto 0);
     finish : out STD_LOGIC;
     col_error : out STD_LOGIC_VECTOR(7 downto 0)
 );
@@ -19,6 +20,7 @@ end find_error;
 architecture Behavioral of find_error is
     signal row_error_t : STD_LOGIC_VECTOR(7 downto 0);
     signal col_error_t : STD_LOGIC_VECTOR(7 downto 0);
+    signal aantal_fouten : integer;
 begin
 process(clk, rst)
 begin
@@ -43,6 +45,13 @@ if ld = '1' then
     finish <= '1';
 end if;
 end if;
+    
+    for p in 0 to 7 loop
+        if row_error_t(p) = '1' then
+            
+        end if;
+    end loop;
+    
     row_error <= row_error_t;
     col_error <= col_error_t;
 end process;

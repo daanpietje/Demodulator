@@ -1,0 +1,72 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.879616",
+   "Default View_TopLeft":"683,51",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.5.8 2022-09-21 7111 VDI=41 GEI=38 GUI=JA:10.0
+#  -string -flagsOSRD
+preplace port port-id_clk -pg 1 -lvl 0 -x -20 -y 60 -defaultsOSRD
+preplace port port-id_nrst -pg 1 -lvl 0 -x -20 -y 90 -defaultsOSRD
+preplace port port-id_NaarMees -pg 1 -lvl 11 -x 3490 -y 760 -defaultsOSRD
+preplace port port-id_dataSend -pg 1 -lvl 0 -x -20 -y 210 -defaultsOSRD
+preplace port port-id_readySend -pg 1 -lvl 11 -x 3490 -y -70 -defaultsOSRD
+preplace portBus dataOut -pg 1 -lvl 11 -x 3490 -y 390 -defaultsOSRD
+preplace portBus dataIn -pg 1 -lvl 0 -x -20 -y 760 -defaultsOSRD
+preplace inst Encoder4B5B_0 -pg 1 -lvl 1 -x 190 -y 90 -defaultsOSRD
+preplace inst FSK_Modulator_0 -pg 1 -lvl 2 -x 510 -y 290 -defaultsOSRD
+preplace inst ControllerV2_0 -pg 1 -lvl 4 -x 1150 -y -10 -defaultsOSRD
+preplace inst Output_memmory_0 -pg 1 -lvl 10 -x 3320 -y 390 -defaultsOSRD
+preplace inst calc_parity_0 -pg 1 -lvl 6 -x 1830 -y 430 -defaultsOSRD
+preplace inst Adder_0 -pg 1 -lvl 9 -x 2990 -y 520 -defaultsOSRD
+preplace inst correct_error_0 -pg 1 -lvl 8 -x 2590 -y 570 -defaultsOSRD
+preplace inst EBCS_0 -pg 1 -lvl 1 -x 190 -y 750 -defaultsOSRD
+preplace inst controller_demodulat_0 -pg 1 -lvl 3 -x 770 -y 650 -defaultsOSRD
+preplace inst Input_memmory_0 -pg 1 -lvl 6 -x 1830 -y 650 -defaultsOSRD
+preplace inst FourBFiveBDecoder_0 -pg 1 -lvl 5 -x 1480 -y 620 -defaultsOSRD
+preplace inst FSK_Demodulator_Block_0 -pg 1 -lvl 4 -x 1150 -y 640 -defaultsOSRD
+preplace inst find_error_0 -pg 1 -lvl 7 -x 2230 -y 330 -defaultsOSRD
+preplace netloc Adder_0_data_out 1 9 1 3130 420n
+preplace netloc ControllerV2_0_data_recieved 1 2 3 650J -10 900 -170 1320
+preplace netloc ControllerV2_0_ld_adder 1 4 5 N 30 N 30 N 30 N 30 2750
+preplace netloc ControllerV2_0_ld_calc_c 1 4 2 N -50 1620
+preplace netloc ControllerV2_0_ld_correct_error_c 1 4 4 N -10 N -10 N -10 2410
+preplace netloc ControllerV2_0_ld_error_c 1 4 3 N -30 N -30 2000
+preplace netloc ControllerV2_0_ld_input_memmory 1 4 2 N 10 1610
+preplace netloc ControllerV2_0_ld_output_memmory 1 4 6 N 70 N 70 N 70 N 70 N 70 3130
+preplace netloc ControllerV2_0_ready_send 1 4 7 N -70 N -70 N -70 N -70 N -70 NJ -70 NJ
+preplace netloc ControllerV2_0_sel_adder 1 4 5 N 50 N 50 N 50 N 50 2740
+preplace netloc EBCS_0_dataInReady 1 1 10 N 760 N 760 N 760 N 760 N 760 N 760 N 760 N 760 N 760 NJ
+preplace netloc EBCS_0_dataOut 1 0 2 40 270 330J
+preplace netloc Encoder4B5B_0_dataInReady 1 0 2 50 190 330J
+preplace netloc Encoder4B5B_0_dataOut 1 1 1 340 80n
+preplace netloc FSK_Demodulator_Block_0_data_out 1 4 1 1320 630n
+preplace netloc FSK_Demodulator_Block_0_finish 1 4 1 1330 630n
+preplace netloc FSK_Modulator_0_fsk_out 1 2 2 N 300 900
+preplace netloc FSK_Modulator_0_ready 1 0 3 50 180 NJ 180 610
+preplace netloc FourBFiveBDecoder_0_data_out 1 5 1 N 620
+preplace netloc Input_memmory_0_data_out 1 5 3 1680 560 2040J 580 N
+preplace netloc Input_memmory_0_ready 1 2 5 650 740 NJ 740 NJ 740 NJ 740 1980
+preplace netloc Output_memmory_0_data_out 1 10 1 NJ 390
+preplace netloc calc_parity_0_col_parity 1 6 1 2050 350n
+preplace netloc calc_parity_0_col_parity_calc 1 6 1 2070 390n
+preplace netloc calc_parity_0_finish 1 3 4 960 130 N 130 N 130 1980
+preplace netloc calc_parity_0_row_parity 1 6 1 2000 330n
+preplace netloc calc_parity_0_row_parity_calc 1 6 1 1990 370n
+preplace netloc clk_1 1 0 10 20 280 410 210 630 210 940 530 1340 530 1660 530 2040 460 2440 460 2840 360 N
+preplace netloc controller_demodulat_0_data_ready 1 3 1 910 -30n
+preplace netloc controller_demodulat_0_start 1 3 1 890 640n
+preplace netloc correct_error_0_data_out 1 8 1 N 560
+preplace netloc correct_error_0_finish 1 3 6 980 -150 N -150 N -150 1980 -80 N -80 2730
+preplace netloc dataIn_1 1 0 1 NJ 760
+preplace netloc dataSend_1 1 0 4 0J 0 NJ 0 NJ 0 920
+preplace netloc find_error_0_col_error 1 7 1 2390 360n
+preplace netloc find_error_0_finish 1 3 5 970 -160 N -160 N -160 2000 -90 2390J
+preplace netloc find_error_0_row_error 1 7 1 2400 300n
+preplace netloc nrst_1 1 0 10 30 290 400 200 640 200 950 520 1350 520 1670 540 2060 450 2450 450 2850 380 N
+levelinfo -pg 1 -20 190 510 770 1150 1480 1830 2230 2590 2990 3320 3490
+pagesize -pg 1 -db -bbox -sgen -170 -210 3640 920
+"
+}
+{
+   "da_clkrst_cnt":"4"
+}

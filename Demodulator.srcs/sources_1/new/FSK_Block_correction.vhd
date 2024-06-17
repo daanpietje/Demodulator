@@ -54,8 +54,6 @@ begin
                                      data_block(i*8 + 3) xor data_block(i*8 + 4) xor data_block(i*8 + 5) xor
                                      data_block(i*8 + 6) xor data_block(i*8 + 7) after 1 ns;           
      end loop;
-     error_check_ld <= '1';
-     error_check_ld <= '1';
      end if;
      -- error check
      if error_check_ld = '1' then

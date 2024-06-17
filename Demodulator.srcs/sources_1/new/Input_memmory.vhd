@@ -32,15 +32,18 @@ use IEEE.STD_LOGIC_1164.ALL;
 --use UNISIM.VComponents.all;
 
 entity Input_memmory is
-    Port ( data_in : in STD_LOGIC_VECTOR (79 downto 0);
+    Port ( data_in : in STD_LOGIC_VECTOR (3 downto 0);
            clk : in STD_LOGIC;
            rst : in STD_LOGIC;
            ld : in STD_LOGIC;
+           ready : out STD_LOGIC;
            data_out : out STD_LOGIC_VECTOR (79 downto 0)
            );
 end Input_memmory;
 
 architecture Behavioral of Input_memmory is
+signal data_temp : STD_LOGIC_VECTOR (79 downto 0);
+signal counter : integer ;
 
 begin
 process(clk, rst)
@@ -49,9 +52,19 @@ begin
         data_out <= "00000000000000000000000000000000000000000000000000000000000000000000000000000000";
     elsif rising_edge(clk) then
         if ld = '1' then
-            data_out <= data_in;
+            data_out <= data_temp;
         end if;
     end if;
+end process;
+
+process(clk, rst)
+begin 
+    for l in 0 to 19 loop
+        data_temp(l + 3 downto l)  <= data_in;
+        if l = 19 then
+            ready <= '1';
+        end if;
+    end loop;
 end process;
 
 end Behavioral;
